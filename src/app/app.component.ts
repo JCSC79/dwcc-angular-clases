@@ -1,20 +1,35 @@
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  animations: [
+    trigger('estadoBoton', [
+      state('normal', style({
+        transform: 'scale(1)',
+        backgroundColor: 'blue',
+        color: 'white'
+      })),
+      state('premido', style({
+        transform: 'scale(1.2)',
+        backgroundColor: 'red',
+        color: 'yellow'
+      })),
+      transition('normal <=> premido', [
+        animate('300ms ease-in-out')
+      ])
+    ])
+  ]
 })
 export class AppComponent {
-  title = '02-TypeScript';
+  title = 'Botón Animado';
+  premido: boolean = false;
 
-  // Declaramos unha propiedade de clase (variable) de tipo numérico inicializada a un valor
-  numero1: number = 5;
-  /* Declaramos unha propiedade de clase de tipo numérico non inicializada (engadimos nas opcións de compilador do tsconfig.json a seguinte clave
-    "strictPropertyInitialization": false,)
-  */
-  numero2: number;
+  alternarEstado() {
+    this.premido = !this.premido;
+  }
 }
