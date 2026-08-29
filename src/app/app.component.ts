@@ -1,20 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TruncarTextoPipe } from './truncar-texto.pipe';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [CommonModule, TruncarTextoPipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = '02-TypeScript';
-
-  // Declaramos unha propiedade de clase (variable) de tipo numérico inicializada a un valor
-  numero1: number = 5;
-  /* Declaramos unha propiedade de clase de tipo numérico non inicializada (engadimos nas opcións de compilador do tsconfig.json a seguinte clave
-    "strictPropertyInitialization": false,)
-  */
-  numero2: number;
+  title = 'pipes-personalizados';
+  textoLongo: string = 'Este é un texto de exemplo moi longo que imos acurtar cun pipe personalizado de Angular. O obxectivo deste pipe será garantir que non se corten as palabras pola metade, senón que se busque o último espazo dentro do límite permitido e se faga o corte nese mesmo lugar, situando puntos suspensivos. Este é un texto de exemplo moi longo que imos acurtar cun pipe personalizado de Angular. O obxectivo deste pipe será garantir que non se corten as palabras pola metade, senón que se busque o último espazo dentro do límite permitido e se faga o corte nese mesmo lugar, situando puntos suspensivos.';
 }

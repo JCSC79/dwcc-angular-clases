@@ -1,0 +1,13 @@
+<h1>Exemplo de uso dun pipe personalizado para truncar texto</h1>
+
+<!-- Texto orixinal -->
+<p>Texto orixinal: {{ textoLongo }}</p>
+
+<!-- Texto truncado a 100 carácteres -->
+<p>Texto truncado a 100: {{ textoLongo | truncarTexto:100 }}</p>
+
+<!-- Texto truncado a 150 carácteres -->
+<p>Texto truncado a 150: {{ textoLongo | truncarTexto:150 }}</p>
+
+<!-- Texto truncado a 200 carácteres -->
+<p>Texto truncado a 200: {{ textoLongo | truncarTexto:200 }}</p>
