@@ -1,15 +1,7 @@
-# REPASO COMUNICACIÓN ENTRE COMPOÑENTES
+# EXERCICIO DE REPASO DE DIRECTIVAS
 
-- Queremos unha aplicación con tres compoñentes: app, emisor, receptor.
-- Emisor e Receptor serán fillas de app.
-- En Receptor cargarase un cadrado cunha cor de fondo que será verde, azul ou vermella.
-- En Emisor haberá 3 radiobotóns exclusivos entre si que nos permitirán escoller a cor do cadro que amosa o Receptor.
-
-1ª SOLUCIÓN:
-    - Pasamos o valor da cor escollida dende o Emisor cara o Receptor mediante un servizo con Observables
-
-2ª SOLUCIÓN:
-    - Pasamos o valor da cor escollida dende o Emisor cara o Receptor mediante output (dende o Emisor á Raíz) e Input (dende a Raíz ao Receptor)
-
-3ª SOLUCIÓN:
-    - Pasamos o valor da cor escollida dende o Emisor cara o Receptor mediante rutas (ao premer en cada radiobotón cárgase a ruta do Receptor pasándolle a cor escollida como parámetro)
+- Completa o código da aplicación para que a táboa HTML se encha cos datos do array 'series' respectando a estrutura.
+- Amosa a data de primeira emisión en formato dd/mm/aaaa.
+- Pon unha cor de fondo distinta ás liñas pares que ás impares.
+- Se unha serie xa non está en emisión aparecerá con fondo gris.
+- Se prememos o botón 'Baleirar táboa' baleirarase o array e no lugar da táboa aparecerá unha mensaxe dicindo 'NON HAI SERIES QUE AMOSAR'.

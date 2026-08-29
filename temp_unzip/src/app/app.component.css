@@ -1,9 +1,44 @@
-div {
-    padding: 200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
+button {
+    margin-bottom: 20px;
+    padding: 0.5rem 0.9rem;
+    border: 1px solid #c8c8c8;
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #dcdcdc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #c8c8c8;
+}
+
+th,
+td {
+    padding: 0.6rem 0.8rem;
+    border-bottom: 1px solid #e3e3e3;
+    text-align: left;
+}
+
+thead th {
+    background: #f0f0f0;
+}
+
+tbody tr:hover {
+    background: #f7f7f7;
+}
+
+.impar {
+    background-color: aliceblue;
+}
+
+.par  {
+    background-color: beige;
+}
+
+.foraEmision {
+    background-color: lightgray;
 }
