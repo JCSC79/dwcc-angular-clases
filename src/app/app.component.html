@@ -1,2 +1,30 @@
-<app-emisor></app-emisor>
-<app-receptor></app-receptor>
+<h1>
+    Ordenación de Series de TV por Título e Primeira Emisión
+</h1>
+
+<!-- ↑↓ -->
+
+<table *ngIf="series.length > 0; else nonHaiSeries">
+    <thead>
+        <tr>
+            <th>Título</th>
+            <th>Primeira emisión</th>
+            <th>Xénero</th>
+            <th>Idioma</th>
+            <th>En emisión</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let serie of series">
+            <td>{{ serie.titulo }}</td>
+            <td>{{ serie.primeiraEmision | date: 'dd/MM/yyyy' }}</td>
+            <td>{{ serie.xenero }}</td>
+            <td>{{ serie.idioma }}</td>
+            <td>{{ serie.enEmision ? 'Si' : 'Non' }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<ng-template #nonHaiSeries>
+    <p>NON HAI SERIES QUE CUMPRAN OS CRITERIOS INDICADOS</p>
+</ng-template>

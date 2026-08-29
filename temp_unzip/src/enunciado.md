@@ -1,10 +1,7 @@
-# EXERCICIO DE REPASO DE FORMULARIOS REACTIVOS
+# EXERCICIO DE REPASO DE ORDENACIÓN
 
-- Queremos unha aplicación que actúe como CRUD (parcial) de obxectos de tipo Factura (numero, dataEmision, razonSocial, CIF).
-- Terá un formulario reactivo con validación de campo obrigatorio sobre todos os campos.
-- Terá un botón CREAR:
-  - Ao premelo tomará os datos do formulario, creará un obxecto Factura e imprimiráo por consola.
-  - Se non se cumpre a validación dalgún campo, este botón estará deshabilitado.
-- Terá un botón CANCELAR:
-  - Ao premelo limparase o formulario e todas as mensaxes de validación (e desbloquearase o botón CREAR)
-- Aparecerá xusto debaixo de cada campo unha mensaxe de validación só cando non se cumpra a mesma
+- Completa o código da aplicación para que a táboa HTML sexa ordenable polos campos **Título** e **Primeira emisión**:
+  - A táboa estará inicialmente ordenada alfabéticamente por título.
+  - Ao premer nun campo por vez primeira ordenarase ascendentemente.
+  - Ao premer nun campo xa ordenado invertirase a orde.
+  - A carón do título do campo actualmente ordenado aparecerá unha frecha cara arriba ou cara abaixo sinalando a orde que se estea a aplicar nese intre (↑↓).
