@@ -1,20 +1,21 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { EmisorComponent } from './emisor/emisor.component';
+import { ReceptorComponent } from './receptor/receptor.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [CommonModule, EmisorComponent, ReceptorComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = '02-TypeScript';
+  title = 'servizo-mensaxeria';
+  receptores: number[] = []; // Lista de receptores activos
 
-  // Declaramos unha propiedade de clase (variable) de tipo numérico inicializada a un valor
-  numero1: number = 5;
-  /* Declaramos unha propiedade de clase de tipo numérico non inicializada (engadimos nas opcións de compilador do tsconfig.json a seguinte clave
-    "strictPropertyInitialization": false,)
-  */
-  numero2: number;
+  // Este método engade un novo receptor ao final do array
+  engadirReceptor() {
+    this.receptores.push(this.receptores.length-1);
+  }
 }

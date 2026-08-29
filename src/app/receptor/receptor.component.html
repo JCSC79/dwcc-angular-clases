@@ -1,0 +1,12 @@
+<h2>Receptor</h2>
+<div>
+    <h4>Mensaxes recibidas</h4>
+    <p>Última mensaxe: {{ ultimaMensaxe }}</p>
+
+    <h4>Historial de mensaxes</h4>
+    <ul>
+        <li *ngFor="let mensaxe of historial">
+            {{ mensaxe }}
+        </li>
+    </ul>
+</div>
