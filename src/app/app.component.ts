@@ -1,20 +1,19 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = '02-TypeScript';
+  title = '07-ngFor';
+  equipos: string[];
 
-  // Declaramos unha propiedade de clase (variable) de tipo numérico inicializada a un valor
-  numero1: number = 5;
-  /* Declaramos unha propiedade de clase de tipo numérico non inicializada (engadimos nas opcións de compilador do tsconfig.json a seguinte clave
-    "strictPropertyInitialization": false,)
-  */
-  numero2: number;
+  constructor() {
+    this.equipos = ["Celta de Vigo", "Real Madrid", "Barcelona", "Valencia", "Athletic Club", "Atlético de Madrid", "Real Betis Balompié"];
+  }
 }
