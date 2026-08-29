@@ -3,7 +3,6 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "strictNullChecks": false,
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,

@@ -1,28 +1,10 @@
-<div>
-    <h1>Exercicio de Repaso de Formularios Reactivos</h1>
-    <!-- Este formulario ten os mesmos campos que un obxecto de tipo factura -->
-    <form [formGroup]="formularioFacturas">
-        <label for="numero">Nº de factura</label>
-        <input type="number" formControlName="numero">
-        <p *ngIf="formularioFacturas.get('numero').errors && formularioFacturas.get('numero').touched">*Este campo é
-            obrigatorio</p>
-        <label for="dataEmision">Data de emisión</label>
-        <input type="date" formControlName="dataEmision">
-        <p *ngIf="formularioFacturas.get('dataEmision').errors && formularioFacturas.get('dataEmision').touched">
-            *Este campo é obrigatorio</p>
-        <label for="razonSocial">Razón social</label>
-        <input type="text" formControlName="razonSocial">
-        <p *ngIf="formularioFacturas.get('razonSocial').errors && formularioFacturas.get('razonSocial').touched">
-            *Este campo é obrigatorio</p>
-        <label for="CIF">CIF</label>
-        <input type="text" formControlName="CIF">
-        <p *ngIf="formularioFacturas.get('CIF').errors && formularioFacturas.get('CIF').touched">*Este campo é
-            obrigatorio</p>
-        <button type="button" [disabled]="formularioFacturas.invalid" (click)="crear()">
-            CREAR
-        </button>
-        <button type="button" (click)="cancelar()">
-            CANCELAR
-        </button>
-    </form>
-</div>
+<input type="checkbox" name="pasar" (click)="cambiar()">
+<label for="pasar">
+    Deixar pasar
+</label>
+
+<button type="button" [routerLink]="['/permitido']">
+    NAVEGAR
+</button>
+
+<router-outlet></router-outlet>
