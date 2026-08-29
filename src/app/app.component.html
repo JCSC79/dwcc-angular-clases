@@ -1,0 +1,243 @@
+<!-- CABECEIRA DA PÁXINA -->
+<section class="hero is-primary is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                REXISTRO DE ACCIDENTES
+            </h1>
+            <h2 class="subtitle">
+                Aseguradora S.A.
+            </h2>
+        </div>
+    </div>
+</section>
+
+<!-- FORMULARIO REACTIVO CON VALIDACIÓN -->
+<div class="container">
+    <section class="section">
+        <form [formGroup]="formulario">
+            <!-- Campo NÚMERO DE PARTE -->
+            <div class="field">
+                <label class="label" for="numParte">Nº de parte</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="number" formControlName="numParte" [class.is-success]="numParteValido" [class.is-danger]="numParteInvalido">
+                    <!-- Cargamos unha icona por defecto -->
+                    <span *ngIf="campoNumParte.untouched" class="icon is-small is-left">
+                        <i class="fas fa-hashtag" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Cargamos unha icona no caso de que o campo sexa válido -->
+                    <span *ngIf="numParteValido" class="icon is-small is-left">
+                        <i class="fas fa-check" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Cargamos unha icona no caso de que o campo sexa inválido -->
+                    <span *ngIf="numParteInvalido" class="icon is-small is-right">
+                        <i class="fas fa-ban" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Mensaxes de validación -->
+                    <div *ngIf="numParteInvalido">
+                        <p class="help is-danger">*este é un campo requirido</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Campo MATRÍCULA -->
+            <div class="field">
+                <label class="label" for="matricula">Matrícula</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="text" formControlName="matricula" [class.is-success]="matriculaValido" [class.is-danger]="matriculaInvalido">
+                    <!-- Cargamos unha icona por defecto -->
+                    <span *ngIf="campoMatricula.untouched" class="icon is-small is-left">
+                        <i class="fas fa-car" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Cargamos unha icona no caso de que o campo sexa válido -->
+                    <span *ngIf="matriculaValido" class="icon is-small is-left">
+                        <i class="fas fa-check" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Cargamos unha icona no caso de que o campo sexa inválido -->
+                    <span *ngIf="matriculaInvalido" class="icon is-small is-right">
+                        <i class="fas fa-ban" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Mensaxes de validación -->
+                    <div *ngIf="matriculaInvalido">
+                        <p class="help is-danger">*este é un campo requirido</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Campo GRAVIDADE -->
+            <div class="field">
+                <label class="label" for="gravidade">Gravidade</label>
+                <div class="control has-icons-left has-icons-right">
+                    <select class="select is-fullwidth input" formControlName="gravidade" [class.is-success]="gravidadeValido" [class.is-danger]="gravidadeInvalido">
+                        <option value="" disabled></option>
+                        <option value="1">Lene</option>
+                        <option value="2">Grave</option>
+                        <option value="3">Moi grave</option>
+                    </select>
+                    <!-- Cargamos unha icona por defecto -->
+                    <span *ngIf="campoGravidade.untouched" class="icon is-small is-left">
+                        <i class="fas fa-car-burst" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Cargamos unha icona no caso de que o campo sexa válido -->
+                    <span *ngIf="gravidadeValido" class="icon is-small is-left">
+                        <i class="fas fa-check" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Cargamos unha icona no caso de que o campo sexa inválido -->
+                    <span *ngIf="gravidadeInvalido" class="icon is-small is-right">
+                        <i class="fas fa-ban" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Mensaxes de validación -->
+                    <div *ngIf="gravidadeInvalido">
+                        <p class="help is-danger">*este é un campo requirido</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Campo DESCRICIÓN -->
+            <div class="field">
+                <label class="label" for="descricion">Descrición</label>
+                <div class="control has-icons-left has-icons-right">
+                    <textarea class="textarea input" cols="40" rows="10" formControlName="descricion" [class.is-success]="descricionValido" [class.is-danger]="descricionInvalido">
+                    </textarea>
+                    <!-- Cargamos unha icona por defecto -->
+                    <span *ngIf="campoDescricion.untouched" class="icon is-small is-left">
+                        <i class="fas fa-comment-dots" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Cargamos unha icona no caso de que o campo sexa válido -->
+                    <span *ngIf="descricionValido" class="icon is-small is-left">
+                        <i class="fas fa-check" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Cargamos unha icona no caso de que o campo sexa inválido -->
+                    <span *ngIf="descricionInvalido" class="icon is-small is-right">
+                        <i class="fas fa-ban" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Contador de carácteres -->
+                    <span [ngClass]="{ erro : campoDescricion.value.length>300  }">
+                        {{ campoDescricion.value.length }}/300
+                    </span>
+                    <!-- Mensaxes de validación -->
+                    <div *ngIf="descricionInvalido">
+                        <p class="help is-danger" *ngIf="campoDescricion.hasError('required')">*este é un campo
+                            requirido
+                        </p>
+                        <p class="help is-danger" *ngIf="campoDescricion.hasError('maxlength')">*a lonxitude máxima
+                            deste
+                            campo son 300
+                            carácteres
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Campo DATA -->
+            <div class="field">
+                <label class="label" for="data">Data</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="date" formControlName="data" [class.is-success]="dataValido" [class.is-danger]="dataInvalido">
+                    <!-- Cargamos unha icona por defecto -->
+                    <span *ngIf="campoData.untouched" class="icon is-small is-left">
+                        <i class="fas fa-clock" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Cargamos unha icona no caso de que o campo sexa válido -->
+                    <span *ngIf="dataValido" class="icon is-small is-left">
+                        <i class="fas fa-check" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Cargamos unha icona no caso de que o campo sexa inválido -->
+                    <span *ngIf="dataInvalido" class="icon is-small is-right">
+                        <i class="fas fa-ban" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Mensaxes de validación -->
+                    <div *ngIf="dataInvalido">
+                        <p class="help is-danger">*este é un campo requirido</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Campo E-MAIL -->
+            <div class="field">
+                <label class="label" for="email">E-mail</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" formControlName="email" [class.is-success]="emailValido" [class.is-danger]="emailInvalido">
+                    <!-- Cargamos unha icona por defecto -->
+                    <span *ngIf="campoEmail.untouched" class="icon is-small is-left">
+                        <i class="fas fa-envelope" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Cargamos unha icona no caso de que o campo sexa válido -->
+                    <span *ngIf="emailValido" class="icon is-small is-left">
+                        <i class="fas fa-check" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Cargamos unha icona no caso de que o campo sexa inválido -->
+                    <span *ngIf="emailInvalido" class="icon is-small is-right">
+                        <i class="fas fa-ban" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Mensaxes de validación -->
+                    <div *ngIf="emailInvalido">
+                        <p class="help is-danger" *ngIf="campoEmail.hasError('required')">*este é un campo requirido</p>
+                        <p class="help is-danger" *ngIf="campoEmail.hasError('email')">*formato de e-mail incorrecto</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Campo TELÉFONO-->
+            <div class="field">
+                <label class="label" for="telefono">Teléfono</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="text" formControlName="telefono" [class.is-success]="telefonoValido" [class.is-danger]="telefonoInvalido">
+                    <!-- Cargamos unha icona por defecto -->
+                    <span *ngIf="campoTelefono.untouched" class="icon is-small is-left">
+                        <i class="fas fa-phone" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Cargamos unha icona no caso de que o campo sexa válido -->
+                    <span *ngIf="telefonoValido" class="icon is-small is-left">
+                        <i class="fas fa-ban" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Cargamos unha icona no caso de que o campo sexa inválido -->
+                    <span *ngIf="telefonoInvalido" class="icon is-small is-right">
+                        <i class="fas fa-ban" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Mensaxes de validación -->
+                    <div *ngIf="telefonoInvalido">
+                        <p class="help is-danger">*este é un campo requirido</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Campo NÚMERO DE VÍTIMAS -->
+            <div class="field">
+                <label class="label" for="numVitimas">Nº de vítimas</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="number" formControlName="numVitimas" [class.is-success]="numVitimasValido" [class.is-danger]="numVitimasInvalido">
+                    <!-- Cargamos unha icona por defecto -->
+                    <span *ngIf="campoNumVitimas.untouched" class="icon is-small is-left">
+                        <i class="fas fa-truck-medical" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Cargamos unha icona no caso de que o campo sexa válido -->
+                    <span *ngIf="numVitimasValido" class="icon is-small is-left">
+                        <i class="fas fa-check" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Cargamos unha icona no caso de que o campo sexa inválido -->
+                    <span *ngIf="numVitimasInvalido" class="icon is-small is-right">
+                        <i class="fas fa-ban" data-fa-i2svg="false"></i>
+                    </span>
+                    <!-- Mensaxes de validación -->
+                    <div *ngIf="numVitimasInvalido">
+                        <p class="help is-danger">*este é un campo requirido</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botóns do formulario -->
+            <div class="field is-grouped is-grouped-right">
+                <!-- Botón REXISTRAR -->
+                <div class="control">
+                    <button class="button is-primary" type="button" (click)="rexistrar()">Rexistrar</button>
+                </div>
+
+                <!-- Botón CANCELAR -->
+                <div class="control">
+                    <button class="button is-light" type="button" (click)="cancelar()">Cancelar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
