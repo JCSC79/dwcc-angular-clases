@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Component, inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -8,13 +9,26 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = '02-TypeScript';
+export class AppComponent implements OnInit {
+  title = 'WebStorage';
+  texto: string = "";
+  navegador: boolean = isPlatformBrowser(inject(PLATFORM_ID));
+  
+  escribirWS() {
+    // Unha posible solución para o erro de referencia ao acceder a WebStorage
+    if (this.navegador) {
+      localStorage.setItem("clave","valor");
+    }
+  }
 
-  // Declaramos unha propiedade de clase (variable) de tipo numérico inicializada a un valor
-  numero1: number = 5;
-  /* Declaramos unha propiedade de clase de tipo numérico non inicializada (engadimos nas opcións de compilador do tsconfig.json a seguinte clave
-    "strictPropertyInitialization": false,)
-  */
-  numero2: number;
+  lerWS() {
+    // Outra posible solución para o erro de referencia ao acceder a WebStorage
+    if (typeof localStorage !== 'undefined') {
+      this.texto = localStorage.getItem("clave");
+    }
+  }
+
+  ngOnInit(): void {
+    
+  }
 }
