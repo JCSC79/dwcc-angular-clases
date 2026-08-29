@@ -1,19 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet, RouterLink } from '@angular/router';
+import { FillaComponent } from './filla/filla.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink],
+  imports: [FillaComponent, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Repaso Guards';
-  acceso: boolean = false;
-
-  cambiar(): void {
-    this.acceso = !this.acceso;
-    localStorage.setItem("acceso", this.acceso.toString());
-  }
+  title = 'Exercicio Repaso @Input';
+  texto: string = '';
 }
