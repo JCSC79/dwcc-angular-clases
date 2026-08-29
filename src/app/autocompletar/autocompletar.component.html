@@ -1,0 +1,15 @@
+<form>
+    <mat-form-field>
+        <mat-label>
+            Días da Semana:
+        </mat-label>
+        <input type="text" aria-label="Días da Semana" matInput [formControl]="semana" [matAutocomplete]="auto">
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+            @for (opcion of opcionsFiltradas | async; track opcion) {
+                <mat-option [value]="opcion">
+                    {{ opcion }}
+                </mat-option>
+            }
+        </mat-autocomplete>
+    </mat-form-field>
+</form>

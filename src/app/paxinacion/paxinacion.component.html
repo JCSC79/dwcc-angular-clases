@@ -1,0 +1,41 @@
+<div>
+    <table mat-table [dataSource]="datos" class="mat-elevation-z8">
+        <!-- Columna NOME -->
+        <ng-container matColumnDef="NOME">
+            <th mat-header-cell *matHeaderCellDef>
+                NOME
+            </th>
+            <td mat-cell *matCellDef="let gato">
+                {{ gato.nome }}
+            </td>
+        </ng-container>
+
+        <!-- Columna RAZA -->
+        <ng-container matColumnDef="RAZA">
+            <th mat-header-cell *matHeaderCellDef>
+                RAZA
+            </th>
+            <td mat-cell *matCellDef="let gato">
+                {{ gato.raza }}
+            </td>
+        </ng-container>
+
+        <!-- Columna IDADE -->
+        <ng-container matColumnDef="IDADE">
+            <th mat-header-cell *matHeaderCellDef>
+                IDADE
+            </th>
+            <td mat-cell *matCellDef="let gato">
+                {{ gato.idade }}
+            </td>
+        </ng-container>
+
+        <!-- Definimos a orixe dos datos das columnas -->
+        <tr mat-header-row *matHeaderRowDef="columnas"></tr>
+        <tr mat-row *matRowDef="let row; columns: columnas;"></tr>
+    </table>
+
+    <!-- ENGADIMOS O PAXINADOR DE ANGULAR MATERIAL -->
+     <mat-paginator [length]="200" [pageSize]="10" [pageSizeOptions]="[5,10,50]" showFirstLastButtons>
+     </mat-paginator>
+</div>
