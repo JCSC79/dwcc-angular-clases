@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { FillaComponent } from './filla/filla.component';
-import { FormsModule } from '@angular/forms';
+import { EmisorComponent } from './emisor/emisor.component';
+import { ReceptorComponent } from './receptor/receptor.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FillaComponent, FormsModule],
+  imports: [EmisorComponent, ReceptorComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Exercicio Repaso @Input';
-  texto: string = '';
+  title = 'Repaso de Servizos con Observables';
 }

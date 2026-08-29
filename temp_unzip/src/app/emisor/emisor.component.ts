@@ -1,27 +1,20 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { CoresService } from '../cores.service';
+import { MensaxeriaService } from '../mensaxeria.service';
 
 @Component({
   selector: 'app-emisor',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [],
   templateUrl: './emisor.component.html',
   styleUrl: './emisor.component.css'
 })
 export class EmisorComponent {
-  formulario: FormGroup;
+  
+  // Incorporamos o servizo como propiedade privada a través do constructor para que sexa "SINGLETON" (iso significa que tanto o Emisor como o Receptor accederán ao mesmo obxecto servizo)
+  constructor(private servizo: MensaxeriaService) {}
 
-  constructor(private elaborador: FormBuilder, private servizoCores: CoresService) {
-    this.formulario = this.elaborador.group({
-      cor: []      
-    });
-  }
-
-  ngOnInit(): void {
-    this.formulario.valueChanges.subscribe(valor => {
-      this.servizoCores.cambiarCor(valor.cor);
-    });
+  cambiarTexto(): void {
+    this.servizo.escribirMensaxe('Ola mundo!');
   }
 
 }

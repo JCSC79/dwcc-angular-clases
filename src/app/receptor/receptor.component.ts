@@ -1,5 +1,5 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
-import { CoresService } from '../cores.service';
+import { Component } from '@angular/core';
+import { MensaxeriaService } from '../mensaxeria.service';
 
 @Component({
   selector: 'app-receptor',
@@ -9,13 +9,16 @@ import { CoresService } from '../cores.service';
   styleUrl: './receptor.component.css'
 })
 export class ReceptorComponent {
-  @ViewChild('caixa') caixa!: ElementRef<HTMLElement>;
+  texto: string = ''; // Propiedade na que gardamos o valor da mensaxe recibida do servizo
 
-  constructor(private servizoCores: CoresService) { }
+  // Incorporamos o servizo como propiedade privada a través do constructor para que sexa "SINGLETON" (iso significa que tanto o Emisor como o Receptor accederán ao mesmo obxecto servizo)
+  constructor(private servizo: MensaxeriaService) { }
 
+  // Cando a compoñente estea lista realizamos a subscrición ao Observable do servizo, o que nos vai permitir ter sempre unha copia actualizada da mensaxe gardada na propiedade 'texto'
   ngOnInit(): void {
-    this.servizoCores.subscribirse$().subscribe(cor => {
-      this.caixa.nativeElement.style.backgroundColor = cor;
+    this.servizo.subscribirse().subscribe((mensaxe) => {
+      this.texto = mensaxe;
     });
   }
+
 }
