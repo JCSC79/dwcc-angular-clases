@@ -1,0 +1,2 @@
+<input [(ngModel)]="titulo" placeholder="Escribe unha nova tarefa" />
+<button (click)="engadirTarefa()" [disabled]="titulo.trim() === ''">Engadir</button>

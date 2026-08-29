@@ -1,0 +1,11 @@
+<h2>Lista de Tarefas</h2>
+<app-nova-tarefa (tarefaEngadida)="engadirTarefa($event)"></app-nova-tarefa> <!-- ✅ Capturamos o evento -->
+
+<ul>
+  <li *ngFor="let tarefa of tarefas">
+    <span>{{ tarefa.titulo }}</span> <!-- ✅ Eliminamos `ngClass` -->
+    <button (click)="completarTarefa(tarefa.id)" [disabled]="tarefa.completada">
+      ✔
+    </button>
+  </li>
+</ul>
