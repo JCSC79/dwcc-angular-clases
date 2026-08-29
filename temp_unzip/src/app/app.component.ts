@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
 import { Serie } from './serie';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  textoBusca: string = "";
   title = 'Exercicio de Repaso de Filtrado';
   series: Serie[] = [
     { titulo: "Dragon Ball", primeiraEmision: new Date("1986-02-26"), xenero: "Anime", idioma: "Xaponés", enEmision: false },
@@ -63,4 +65,16 @@ export class AppComponent {
     { titulo: "Band of Brothers", primeiraEmision: new Date("2001-09-09"), xenero: "War drama", idioma: "Inglés", enEmision: false },
     { titulo: "The Boys", primeiraEmision: new Date("2019-07-26"), xenero: "Superhero", idioma: "Inglés", enEmision: true },
   ];
+  seriesTemp: Serie[] = [...this.series]; // Este array será sobre o que traballemos ao facer os filtrados para non perder os datos orixinais
+
+  // Este método execútase cada vez que cambia unha propiedade de clase, como "textoBusca" cambia cada vez que se escribe no input, entón este método válenos para facer o filtrado
+  ngDoCheck(): void {
+    if (this.textoBusca.trim() === "") {
+      // Se o texto de busca está baleiro, recuperamos o array orixinal
+      this.seriesTemp = [...this.series];
+    } else {
+      // Se o texto de busca non está baleiro, filtramos o array orixinal quedándonos con aquelas series cuxo título (en minúscula) conteña o texto de busca (en minúscula)
+      this.seriesTemp = this.series.filter(serie => serie.titulo.toLowerCase().includes(this.textoBusca.toLowerCase()));
+    }
+  }
 }

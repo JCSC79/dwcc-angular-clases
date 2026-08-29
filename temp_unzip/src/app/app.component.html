@@ -3,10 +3,10 @@
 </h1>
 
 <form>
-    <input type="text" name="filtro" placeholder="Escribe aquí para filtrar por título">
+    <input type="text" name="filtro" placeholder="Escribe aquí para filtrar por título" [(ngModel)]="textoBusca">
 </form>
 
-<table *ngIf="series.length > 0; else nonHaiSeries">
+<table *ngIf="seriesTemp.length > 0; else nonHaiSeries">
     <thead>
         <tr>
             <th>Título</th>
@@ -17,7 +17,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let serie of series">
+        <tr *ngFor="let serie of seriesTemp">
             <td>{{ serie.titulo }}</td>
             <td>{{ serie.primeiraEmision | date: 'dd/MM/yyyy' }}</td>
             <td>{{ serie.xenero }}</td>
