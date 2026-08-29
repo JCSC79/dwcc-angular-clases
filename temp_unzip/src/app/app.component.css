@@ -1,19 +1,27 @@
-button {
-    margin-bottom: 20px;
-    padding: 0.5rem 0.9rem;
-    border: 1px solid #c8c8c8;
-    background: #f5f5f5;
-    cursor: pointer;
+h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    margin-bottom: 2rem;
 }
 
-button:hover {
-    background: #dcdcdc;
+form {
+    text-align: center;
+}
+
+input {
+    margin-bottom: 2rem;
+    border: 2px solid #c8c8c8;
+    border-radius: 25px;
+    padding: 0.5rem 0.8rem;
+    width: 30%;
+    font-family: 'Trebuchet MS';
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     border: 1px solid #c8c8c8;
+    font-family: 'Trebuchet MS';
 }
 
 th,
@@ -23,22 +31,10 @@ td {
     text-align: left;
 }
 
-thead th {
+th {
     background: #f0f0f0;
 }
 
 tbody tr:hover {
     background: #f7f7f7;
-}
-
-.impar {
-    background-color: aliceblue;
-}
-
-.par  {
-    background-color: beige;
-}
-
-.foraEmision {
-    background-color: lightgray;
 }
