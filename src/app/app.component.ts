@@ -63,4 +63,47 @@ export class AppComponent {
     { titulo: "Band of Brothers", primeiraEmision: new Date("2001-09-09"), xenero: "War drama", idioma: "Inglés", enEmision: false },
     { titulo: "The Boys", primeiraEmision: new Date("2019-07-26"), xenero: "Superhero", idioma: "Inglés", enEmision: true },
   ];
+  campoOrden: string = 'titulo';
+  ordenAscendente: boolean = true;
+
+  // Este método establece os criterios de ordenación
+  fixarCriterios(campo: string): void {
+    if (this.campoOrden !== campo) {
+      // Se o campo escollido é distinto do campo polo que xa estaba ordenada a táboa, marcamos o campo escollido como o novo campo de ordenación e poñemos a orde en ascendente
+      this.campoOrden = campo;
+      this.ordenAscendente = true;
+    } else {
+      // Se o campo escollido é o mesmo que o campo polo que xa estaba ordenada a táboa, só invertimos a orde
+      this.ordenAscendente = !this.ordenAscendente;
+    }
+
+    // Reordenamos cos novos criterios
+    this.ordenar();
+  }
+
+  // Este método reordena o array segundo os criterios escollidos
+  ordenar(): void {
+
+    this.series = this.series.sort((a, b) => {
+
+      if (this.campoOrden === 'titulo') {
+        if (this.ordenAscendente) {
+          return a.titulo < b.titulo ? -1 : 1;
+        } else {
+          return a.titulo < b.titulo ? 1 : -1;
+        }
+      } else {
+        if (this.ordenAscendente) {
+          return a.primeiraEmision.getTime() < b.primeiraEmision.getTime() ? -1 : 1;
+        } else {
+          return a.primeiraEmision.getTime() < b.primeiraEmision.getTime() ? 1 : -1;
+        }
+      }
+    });
+  }
+
+  // Ao inicializarse a compoñente ordenamos polos criterios iniciais (campo título e orde ascendente)
+  ngOnInit(): void {
+    this.ordenar();
+  }
 }

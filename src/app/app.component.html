@@ -7,8 +7,18 @@
 <table *ngIf="series.length > 0; else nonHaiSeries">
     <thead>
         <tr>
-            <th>Título</th>
-            <th>Primeira emisión</th>
+            <th (click)="fixarCriterios('titulo')">
+                Título
+                <span *ngIf="campoOrden == 'titulo'">
+                   {{ ordenAscendente ? '↑' : '↓'}} 
+                </span>
+            </th>
+            <th (click)="fixarCriterios('primeiraEmision')">
+                Primeira emisión
+                <span *ngIf="campoOrden == 'primeiraEmision'">
+                   {{ ordenAscendente ? '↑' : '↓'}} 
+                </span>
+            </th>
             <th>Xénero</th>
             <th>Idioma</th>
             <th>En emisión</th>
