@@ -1,15 +1,16 @@
 #!/bin/bash
 
 # Ruta base donde tienes las carpetas de los ejercicios en el disco externo
-DIR_EJEMPLOS="/media/jcscmint/HD RESPALDO JC1GB/Compartida DWCC/Exemplos/Tema 5"
+# DIR_EJEMPLOS="/media/jcscmint/HD RESPALDO JC1GB/Compartida DWCC/Exemplos/Tema 5"
+DIR_EJEMPLOS="/media/jcscmint/HD RESPALDO JC1GB/Compartida DWCC/Exemplos/Tema 6"
 
 # Nos aseguramos de estar en main y actualizados
 git checkout main
 
-# Recorremos cada carpeta que empiece por T5 o T05 dentro de la ruta
-for d in "$DIR_EJEMPLOS"/T05E*; do
+# Recorremos cada carpeta que empiece por T6 o T06 dentro de la ruta
+for d in "$DIR_EJEMPLOS"/T06E*; do
     if [ -d "$d" ]; then
-        # Extraemos solo el nombre de la carpeta (ej: T05E01-TypeScript)
+        # Extraemos solo el nombre de la carpeta (ej: T06E01-TypeScript)
         NOMBRE_RAMA=$(basename "$d")
         
         echo "----------------------------------------"
@@ -33,4 +34,4 @@ for d in "$DIR_EJEMPLOS"/T05E*; do
     fi
 done
 
-echo "¡Todos los ejercicios del Tema 5 han sido subidos a sus respectivas ramas!"
+echo "¡Todos los ejercicios del Tema 6 han sido subidos a sus respectivas ramas!"

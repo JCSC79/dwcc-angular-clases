@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Usuario } from './usuario';
 
 @Component({
   selector: 'app-root',
@@ -9,12 +10,20 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = '02-TypeScript';
+  title = 'Interfaces de Implementación';
+  usuario: Usuario = {
+    uid: 1,
+    nome: "Saínza Castro",
+    login: "sainzac",
+    email: "sainzacastro@empresa.gal",
+    contrasinal: "abc123..",
+    empresa: "Empresa Galicia",
+    cambiarDepartamento: (depto) => {
+      this.usuario.departamento = depto;
+    }
+  }
 
-  // Declaramos unha propiedade de clase (variable) de tipo numérico inicializada a un valor
-  numero1: number = 5;
-  /* Declaramos unha propiedade de clase de tipo numérico non inicializada (engadimos nas opcións de compilador do tsconfig.json a seguinte clave
-    "strictPropertyInitialization": false,)
-  */
-  numero2: number;
+  clicar() {
+    this.usuario.cambiarDepartamento("Desenvolvemento");
+  }
 }
