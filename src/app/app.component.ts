@@ -1,20 +1,41 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = '02-TypeScript';
+  title = 'formulario-ficheiro';
 
-  // Declaramos unha propiedade de clase (variable) de tipo numérico inicializada a un valor
-  numero1: number = 5;
-  /* Declaramos unha propiedade de clase de tipo numérico non inicializada (engadimos nas opcións de compilador do tsconfig.json a seguinte clave
-    "strictPropertyInitialization": false,)
-  */
-  numero2: number;
+  formulario: FormGroup;
+  datos: File | null = null;
+
+  constructor(private elaborador: FormBuilder) {
+    this.formulario = elaborador.group({
+      ficheiro: [null]
+    })
+  }
+
+  cambioFicheiro(evento: Event): void {
+    let entrada = evento.target as HTMLInputElement;
+
+    // Se foi escollido algún ficheiro
+    if (entrada.files && entrada.files.length > 0) {
+      this.datos = entrada.files[0]; // Gardamos en "datos" o ficheiro escollido
+      try {
+        this.formulario.patchValue({ ficheiro: this.datos }); // Cargamos no formulario os datos do ficheiro escollido
+      } catch(erro) {}
+    }
+  }
+
+  enviar(): void {
+    if (this.datos) {
+      console.log(this.datos);
+    }
+  }
 }

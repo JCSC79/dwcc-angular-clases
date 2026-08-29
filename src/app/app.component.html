@@ -1,0 +1,8 @@
+<form [formGroup]="formulario" (ngSubmit)="enviar()">
+    <label for="ficheiro">Selecciona un ficheiro:</label>
+    <input type="file" name="ficheiro" id="ficheiro" formControlName="ficheiro" (change)="cambioFicheiro($event)">
+
+    <button type="submit">Enviar Ficheiro</button>
+</form>
+
+<p *ngIf="datos">Ficheiro Seleccionado: {{ datos.name }}</p>
