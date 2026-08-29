@@ -9,12 +9,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = '02-TypeScript';
-
-  // Declaramos unha propiedade de clase (variable) de tipo numérico inicializada a un valor
-  numero1: number = 5;
-  /* Declaramos unha propiedade de clase de tipo numérico non inicializada (engadimos nas opcións de compilador do tsconfig.json a seguinte clave
-    "strictPropertyInitialization": false,)
-  */
-  numero2: number;
+  title = '14-enlazado-propiedades';
+  documentacion : string = 'https://angular.dev/docs';
+  logo : string = 'https://angular.dev/assets/images/press-kit/angular_icon_gradient.gif';
 }
