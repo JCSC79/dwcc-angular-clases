@@ -1,0 +1,15 @@
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+    width: 300px;
+    gap: 7px;
+}
+
+.erro {
+    color: red;
+}
+
+.erroControl {
+    border: 2px solid red;
+}

@@ -1,0 +1,85 @@
+<form [formGroup]="formulario">
+    <!-- Campo NÚMERO DE PARTE -->
+    <label for="numParte">Nº de parte</label>
+    <input type="number" formControlName="numParte" [ngClass]="{ erroControl : campoNumParte.errors && campoNumParte.touched }">
+    <!-- Mensaxes de validación -->
+    <div *ngIf="campoNumParte.errors && campoNumParte.touched">
+        <p class="erro">*este é un campo requirido</p>
+    </div>
+
+    <!-- Campo MATRÍCULA -->
+    <label for="matricula">Matrícula</label>
+    <input type="text" formControlName="matricula" [ngClass]="{ erroControl : campoNumParte.errors && campoNumParte.touched }">
+    <!-- Mensaxes de validación -->
+    <div *ngIf="campoMatricula.errors && campoMatricula.touched">
+        <p class="erro">*este é un campo requirido</p>
+    </div>
+
+    <!-- Campo GRAVIDADE -->
+    <label for="gravidade">Gravidade</label>
+    <select formControlName="gravidade" [ngClass]="{ erroControl : campoNumParte.errors && campoNumParte.touched }">
+        <option value="" disabled></option>
+        <option value="1">Lene</option>
+        <option value="2">Grave</option>
+        <option value="3">Moi grave</option>
+    </select>
+    <!-- Mensaxes de validación -->
+    <div *ngIf="campoGravidade.errors && campoGravidade.touched">
+        <p class="erro">*este é un campo requirido</p>
+    </div>
+
+    <!-- Campo DESCRICIÓN -->
+    <label for="descricion">Descrición</label>
+    <textarea cols="40" rows="10" formControlName="descricion" [ngClass]="{ erroControl : campoNumParte.errors && campoNumParte.touched }">
+    </textarea>
+    <!-- Contador de carácteres -->
+    <span [ngClass]="{ erro : campoDescricion.value.length>300  }">
+        {{ campoDescricion.value.length }}/300
+    </span>
+
+    <!-- Mensaxes de validación -->
+    <div *ngIf="campoDescricion.errors && campoDescricion.touched">
+        <p class="erro" *ngIf="campoDescricion.hasError('required')">*este é un campo requirido</p>
+        <p class="erro" *ngIf="campoDescricion.hasError('maxlength')">*a lonxitude máxima deste campo son 300 carácteres
+        </p>
+    </div>
+
+    <!-- Campo DATA -->
+    <label for="data">Data</label>
+    <input type="date" formControlName="data" [ngClass]="{ erroControl : campoNumParte.errors && campoNumParte.touched }">
+    <!-- Mensaxes de validación -->
+    <div *ngIf="campoData.errors && campoData.touched">
+        <p class="erro">*este é un campo requirido</p>
+    </div>
+
+    <!-- Campo E-MAIL -->
+    <label for="email">E-mail</label>
+    <input type="email" formControlName="email" [ngClass]="{ erroControl : campoNumParte.errors && campoNumParte.touched }">
+    <!-- Mensaxes de validación -->
+    <div *ngIf="campoEmail.errors && campoEmail.touched">
+        <p class="erro" *ngIf="campoEmail.hasError('required')">*este é un campo requirido</p>
+        <p class="erro" *ngIf="campoEmail.hasError('email')">*formato de e-mail incorrecto</p>
+    </div>
+
+    <!-- Campo TELÉFONO-->
+    <label for="telefono">Teléfono</label>
+    <input type="text" formControlName="telefono" [ngClass]="{ erroControl : campoNumParte.errors && campoNumParte.touched }">
+    <!-- Mensaxes de validación -->
+    <div *ngIf="campoTelefono.errors && campoTelefono.touched">
+        <p class="erro">*este é un campo requirido</p>
+    </div>
+
+    <!-- Campo NÚMERO DE VÍTIMAS -->
+    <label for="numVitimas">Nº de vítimas</label>
+    <input type="number" formControlName="numVitimas" [ngClass]="{ erroControl : campoNumParte.errors && campoNumParte.touched }">
+    <!-- Mensaxes de validación -->
+    <div *ngIf="campoNumVitimas.errors && campoNumVitimas.touched">
+        <p class="erro">*este é un campo requirido</p>
+    </div>
+
+    <!-- Botón REXISTRAR -->
+    <button type="button" (click)="rexistrar()">Rexistrar</button>
+
+    <!-- Botón CANCELAR -->
+    <button type="button" (click)="cancelar()">Cancelar</button>
+</form>
