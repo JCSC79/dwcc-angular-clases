@@ -1,20 +1,26 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { style } from '@angular/animations';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = '02-TypeScript';
+  title = 'HostListener';
 
-  // Declaramos unha propiedade de clase (variable) de tipo numérico inicializada a un valor
-  numero1: number = 5;
-  /* Declaramos unha propiedade de clase de tipo numérico non inicializada (engadimos nas opcións de compilador do tsconfig.json a seguinte clave
-    "strictPropertyInitialization": false,)
-  */
-  numero2: number;
+  // Tomamos a referencia do elemento 'caixa' de HTML
+  @ViewChild('caixa') caixa: ElementRef;
+
+  // Ao pasar o rato por riba do elemento poñemos unha cor de fondo azul
+  @HostListener('mouseenter') aoPasarRato(): void {
+    this.caixa.nativeElement.style.backgroundColor = 'blue';
+  }
+
+  // Ao sacar o rato de enriba do elemento poñemos unha cor de fondo vermella
+  @HostListener('mouseleave') aoSacarRato(): void {
+    this.caixa.nativeElement.style.backgroundColor = 'red';
+  }
 }
