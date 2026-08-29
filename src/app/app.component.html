@@ -1,0 +1,23 @@
+<div class="contedor">
+    <h1>Listaxe de Tarefas</h1>
+
+    <!-- Mini-formulario para crear novas tarefas -->
+     <form [formGroup]="formulario">
+        <input type="text" formControlName="texto">
+        <button type="button" (click)="engadir()">
+            Crear tarefa
+        </button>
+     </form>
+
+     <!-- Listaxe de tarefas -->
+      <ul>
+        <li *ngFor="let tarefa of tarefas" [@entradaSaida] [@realzada]="tarefa.completada ? 'completada' : 'pendente'">
+            <span (click)="completar(tarefa)" [class.completado]="tarefa.completada">
+                {{ tarefa.texto }}
+            </span>
+            <button type="button" (click)="eliminar(tarefa)">
+                X
+            </button>
+        </li>
+      </ul>
+</div>
