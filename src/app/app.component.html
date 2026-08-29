@@ -1,0 +1,40 @@
+<form [formGroup]="formularioAccidente" (ngSubmit)="rexistrar($event)">
+  <!-- Campo NÚMERO DE PARTE -->
+  <label for="numParte">Nº de parte</label>
+  <input type="number" formControlName="numParte">
+
+  <!-- Campo MATRÍCULA -->
+  <label for="matricula">Matrícula</label>
+  <input type="text" formControlName="matricula">
+
+  <!-- Campo GRAVIDADE -->
+  <label for="gravidade">Gravidade</label>
+  <select formControlName="gravidade">
+    <option value="1">Lene</option>
+    <option value="2">Grave</option>
+    <option value="3">Moi grave</option>
+  </select>
+
+  <!-- Campo DESCRICIÓN -->
+  <label for="descricion">Descrición</label>
+  <textarea cols="40" rows="10" formControlName="descricion"></textarea>
+
+  <!-- Campo DATA -->
+  <label for="data">Data</label>
+  <input type="date" formControlName="data">
+
+  <!-- Campo E-MAIL -->
+  <label for="email">E-mail</label>
+  <input type="email" formControlName="email">
+
+  <!-- Campo TELÉFONO-->
+  <label for="telefono">Teléfono</label>
+  <input type="text" formControlName="telefono">
+
+  <!-- Campo NÚMERO DE VÍTIMAS -->
+  <label for="numVitimas">Nº de vítimas</label>
+  <input type="number" formControlName="numVitimas">
+
+  <!-- Botón REXISTRAR -->
+  <button type="submit">Rexistrar</button>
+</form>
