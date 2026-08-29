@@ -1,0 +1,25 @@
+<h1>Directivas Personalizadas</h1>
+
+<h3>Directiva Ocultar</h3>
+
+<!-- Este botón alterna a visibilidade do div -->
+<button (click)="amosar=!amosar">
+    {{ amosar ? 'Ocultar' : 'Amosar' }} cadro
+</button>
+
+<!-- Este div amósase ou ocúltase en función da propiedade "amosar" grazas á directiva OcultarDirective -->
+<div [appOcultar]="amosar">
+    Este cadro só é visible cando "amosar" é verdadeiro
+</div>
+
+<h3>Directiva Destacar</h3>
+
+<!-- Este parágrafo destácase en cor de fondo amarela grazas á directiva DestacarDirective (como non recibe ningún dato externo non precisa de enlazado de propiedades) -->
+<p appDestacar>
+    Pasa o rato por riba para destacar en amarelo
+</p>
+
+<!-- Este parágrafo destácase na cor de fondo recibida como parámetro grazas á directiva DestacarDirectiva (como recibe un dato externo si precisa de enlazado de propiedades) -->
+<p [appDestacar]="cor">
+    Pasa o rato por riba para destacar na cor indicada pola propiedade 'cor' ({{ cor }})
+</p>

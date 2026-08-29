@@ -1,20 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { OcultarDirective } from './directives/ocultar.directive';
+import { DestacarDirective } from './directives/destacar.directive';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [OcultarDirective, DestacarDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = '02-TypeScript';
-
-  // Declaramos unha propiedade de clase (variable) de tipo numérico inicializada a un valor
-  numero1: number = 5;
-  /* Declaramos unha propiedade de clase de tipo numérico non inicializada (engadimos nas opcións de compilador do tsconfig.json a seguinte clave
-    "strictPropertyInitialization": false,)
-  */
-  numero2: number;
+  title = 'Directivas Personalizadas';
+  // Esta propiedade vai determinar a visibilidade dos elementos que usen a directiva "Ocultar"  
+  amosar: boolean = true;
+  // Esta propiedade vai determinar o valor dunha cor de fondo
+  cor: string = 'lightgreen';
 }
