@@ -1,0 +1,11 @@
+<h1>Sección de probas</h1>
+<p>Contido da sección de probas</p>
+<!-- Este enlace carga a compoñente Probas A en router-outlet pasándolle como parámetro estándar o texto 'Ola mundo!' -->
+<a [routerLink]="['/probas/probas-a','Ola mundo!']">Ir a páxina de Probas A</a>
+<br>
+<!-- Este enlace carga a compoñente Probas B en router-outlet pasándolle como parámetros estándar os números '24' e '12.35' -->
+<a [routerLink]="['/probas/probas-b',24,12.35]">Ir a páxina de Probas B</a>
+<br>
+
+<!-- Outro xeito de navegar cara a compoñente Probas B -->
+ <button type="button" (click)="navegarB(2.5,21)">Ir á compoñente B</button>
