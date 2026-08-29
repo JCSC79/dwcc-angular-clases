@@ -1,0 +1,14 @@
+<h2>Exemplo de carga de compoñentes mediante *ngComponentOutlet</h2>
+
+<!-- Ao premer este botón establécese a compoñente A  como compoñente activa -->
+<button (click)="componhenteActiva=componhenteA">
+    Cargar a Compoñente A
+</button>
+<br>
+<!-- Ao premer este botón establécese a compoñente B  como compoñente activa -->
+<button (click)="componhenteActiva=componhenteB">
+    Cargar a Compoñente B
+</button>
+
+<!-- A compoñente activa cargarase a través deste ng-container usando *ngComponentOutlet -->
+ <ng-container *ngComponentOutlet="componhenteActiva"></ng-container>
