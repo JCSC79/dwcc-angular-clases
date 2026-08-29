@@ -1,4 +1,15 @@
-# EXERCICIO DE REPASO: SIMULACIÓN DE CHAT
+# REPASO COMUNICACIÓN ENTRE COMPOÑENTES
 
-- Completa o código da aplicación para que as dúas compoñentes de tipo Conversador se comporten como un chat (tipo WhatsApp) comunicándose a través dun servizo. A comunicación ten que ser instantánea en ambos casos.
-- Exemplo de funcionamento: ao escribir no campo de texto do Conversador da esquerda e premer o seu botón "Enviar", esa mensaxe terá que aparecer tanto no campo "mensaxes" da esquerda como no da dereita.
+- Queremos unha aplicación con tres compoñentes: app, emisor, receptor.
+- Emisor e Receptor serán fillas de app.
+- En Receptor cargarase un cadrado cunha cor de fondo que será verde, azul ou vermella.
+- En Emisor haberá 3 radiobotóns exclusivos entre si que nos permitirán escoller a cor do cadro que amosa o Receptor.
+
+1ª SOLUCIÓN:
+    - Pasamos o valor da cor escollida dende o Emisor cara o Receptor mediante un servizo con Observables
+
+2ª SOLUCIÓN:
+    - Pasamos o valor da cor escollida dende o Emisor cara o Receptor mediante output (dende o Emisor á Raíz) e Input (dende a Raíz ao Receptor)
+
+3ª SOLUCIÓN:
+    - Pasamos o valor da cor escollida dende o Emisor cara o Receptor mediante rutas (ao premer en cada radiobotón cárgase a ruta do Receptor pasándolle a cor escollida como parámetro)

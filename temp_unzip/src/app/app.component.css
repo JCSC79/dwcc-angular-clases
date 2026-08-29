@@ -1,11 +1,9 @@
-h1 {
-    text-align: center;
-    margin-top: 20px;}
-
 div {
+    padding: 200px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
 }
