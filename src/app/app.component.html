@@ -1,0 +1,11 @@
+<h2>Cesta</h2>
+
+<button (click)="decrementar()">−</button>
+<span>{{ contador }}</span>
+<button (click)="incrementar()">+</button>
+
+<div [ngPlural]="contador">
+  <ng-template ngPluralCase="=0">Non hai elementos na cesta.</ng-template>
+  <ng-template ngPluralCase="=1">Hai 1 elemento na cesta.</ng-template>
+  <ng-template ngPluralCase="other">Hai {{ contador }} elementos na cesta.</ng-template>
+</div>
