@@ -1,0 +1,33 @@
+<h2>Exemplo 1: *ngIf con else que carga un ng-template</h2>
+
+<!-- Ao premer o botón invírtese o valor da propiedade "logueado" -->
+<button (click)="logueado = !logueado">
+  {{ logueado ? 'Pechar sesión' : 'Iniciar sesión' }}
+</button>
+
+<p *ngIf="logueado; else bloqueAnonimo">
+  Benvida, {{ usuaria}}!
+</p>
+
+<ng-template #bloqueAnonimo>
+  <p>Precisas iniciar sesión para continuar.</p>
+</ng-template>
+
+<h2>Exemplo 2: vistas personalizadas usando ng-template con *ngTemplateOutlet</h2>
+
+<ul>
+  <!-- Percorremos o array xerando un "li" para cada produto -->
+  <li *ngFor="let produto of produtos">
+    <!-- Para cada produto cargamos a plantilla "produtoVista" pasándolle dous parámetros por contexto (o modelo do produto -implícito-) e o prezo do produto -->
+    <ng-container *ngTemplateOutlet="produtoVista; context: {
+            $implicit : produto.modelo,
+            prezo : produto.prezo
+        } ">
+    </ng-container>
+  </li>
+</ul>
+
+<!-- Definimos a plantilla "produtoVista" que recibe dous parámetros por contexto: modelo é implícito (polo que non é preciso reasignalo) namentres que prezo non o é -->
+<ng-template #produtoVista let-modelo let-prezo="prezo">
+  {{ modelo }} - {{ prezo.toFixed(2)}} €
+</ng-template>
