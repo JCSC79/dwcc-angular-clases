@@ -1,0 +1,14 @@
+.menu {
+    width: 400px;
+    height: 100vh;
+    background-color: #bbb;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}

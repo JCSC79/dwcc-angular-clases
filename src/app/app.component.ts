@@ -1,20 +1,33 @@
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  animations: [
+    trigger('estadoMenu', [
+      state('oculto', style({
+        transform: 'translateX(-100%)',
+        opacity: 0
+      })),
+      state('visible', style({
+        transform: 'translateX(0)',
+        opacity: 1
+      })),
+      transition('oculto <=> visible', [
+        animate('300ms ease-in-out')
+      ])
+    ])
+  ]
 })
 export class AppComponent {
-  title = '02-TypeScript';
+  title = 'Menú Despregable Animado';
+  menuVisible: boolean = false;
 
-  // Declaramos unha propiedade de clase (variable) de tipo numérico inicializada a un valor
-  numero1: number = 5;
-  /* Declaramos unha propiedade de clase de tipo numérico non inicializada (engadimos nas opcións de compilador do tsconfig.json a seguinte clave
-    "strictPropertyInitialization": false,)
-  */
-  numero2: number;
+  alternarVisibilidade(): void {
+    this.menuVisible = !this.menuVisible;
+  }
 }

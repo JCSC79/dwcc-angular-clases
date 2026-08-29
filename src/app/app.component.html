@@ -1,0 +1,8 @@
+<!-- Este div representa o menú lateral ocultable -->
+ <div class="menu" [@estadoMenu]="menuVisible ? 'visible' : 'oculto'">
+    <p>MENU LATERAL</p>
+ </div>
+
+ <button type="button" (click)="alternarVisibilidade()">
+    Alternar Visibilidade do Menú
+ </button>
