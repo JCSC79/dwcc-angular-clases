@@ -23,7 +23,7 @@ for zipfile in "$DIR_ZIPS"/*.zip; do
 
         # Limpiamos la carpeta temporal y descomprimimos el zip actual en ella
         rm -rf "$TEMP_DIR/*"
-        unzip -q "$zipfile" -d "$TEMP_DIR"
+        unzip -q -o "$zipfile" -d "$TEMP_DIR"
 
         # 1. Creamos y nos cambiamos a la nueva rama desde main
         git checkout main
