@@ -1,20 +1,24 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ProbasComponent } from './probas/probas.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [ProbasComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = '02-TypeScript';
+  title = 'Ciclo de Vida das Compoñentes';
+  amosar: boolean = true;
+  texto: string = "";
 
-  // Declaramos unha propiedade de clase (variable) de tipo numérico inicializada a un valor
-  numero1: number = 5;
-  /* Declaramos unha propiedade de clase de tipo numérico non inicializada (engadimos nas opcións de compilador do tsconfig.json a seguinte clave
-    "strictPropertyInitialization": false,)
-  */
-  numero2: number;
+  cambiarTexto(): void {
+    this.texto = "Ola mundo!";
+  }
+
+  eliminarComponhente(): void {
+    this.amosar = false;
+  }
 }
