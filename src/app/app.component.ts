@@ -1,20 +1,29 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { PasoapasoComponent } from './pasoapaso/pasoapaso.component';
+import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [CommonModule, PasoapasoComponent, ReactiveFormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = '02-TypeScript';
+  title = 'control-a-medida';
+  formulario: FormGroup;
 
-  // Declaramos unha propiedade de clase (variable) de tipo numérico inicializada a un valor
-  numero1: number = 5;
-  /* Declaramos unha propiedade de clase de tipo numérico non inicializada (engadimos nas opcións de compilador do tsconfig.json a seguinte clave
-    "strictPropertyInitialization": false,)
-  */
-  numero2: number;
+  constructor(private elaborador: FormBuilder) {
+    this.formulario = this.elaborador.group({
+      artigo: ['',],
+      descricion: ['',],
+      cantidade: [0,]
+    })
+  }
+
+  gardar(): void {
+    console.table(this.formulario.value);
+  }
+
 }
