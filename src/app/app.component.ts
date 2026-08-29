@@ -1,20 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { IncidenciasService } from './incidencias.service';
+import { FormularioAltaComponent } from './formulario-alta/formulario-alta.component';
+import { ListaxeIncidenciasComponent } from './listaxe-incidencias/listaxe-incidencias.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,FormularioAltaComponent,ListaxeIncidenciasComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  providers: [IncidenciasService]
 })
 export class AppComponent {
-  title = '02-TypeScript';
-
-  // Declaramos unha propiedade de clase (variable) de tipo numérico inicializada a un valor
-  numero1: number = 5;
-  /* Declaramos unha propiedade de clase de tipo numérico non inicializada (engadimos nas opcións de compilador do tsconfig.json a seguinte clave
-    "strictPropertyInitialization": false,)
-  */
-  numero2: number;
+  title = 'servizos-observables-v2';
 }
