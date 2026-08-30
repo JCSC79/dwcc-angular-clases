@@ -1,15 +1,15 @@
-# 🎯 HTTP EN SERVICIOS
+# 🎯 PROMESAS EN SERVICIOS
 
 ## ¿Qué se usa?
 
 Este ejercicio enseña:
-- **HttpClient**
-- **GET**
+- **Promise**
+- **async/await**
 - Patrones y mejores prácticas
 
 ## ❓ ¿Por qué se usa?
 
-Comunicación con API Este concepto es fundamental porque:
+Manejo asincrónico Este concepto es fundamental porque:
 
 1. **Reutilización** - Permite escribir código más limpio y mantenible
 2. **Escalabilidad** - Facilita crecer y extender la aplicación
@@ -20,8 +20,8 @@ Comunicación con API Este concepto es fundamental porque:
 
 | Concepto | Sintaxis | Ejemplo | Memorizar |
 |----------|----------|---------|-----------|
-| HttpClient | Ver código | app.component.ts | Mirar el src/ |
-| Patrón | Estructura | HTTP Services | Practicar |
+| Promise | Ver código | app.component.ts | Mirar el src/ |
+| Patrón | Estructura | Services Promises | Practicar |
 
 ## 🔗 Conexiones con Otros Conceptos
 
@@ -52,7 +52,7 @@ Si prefieres aprender en español, aquí hay opciones:
 
 - [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
 - [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
-- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=http+services+en+español)
+- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=services+promises+en+español)
 
 ## ⚠️ Notas Importantes
 
