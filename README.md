@@ -58,6 +58,14 @@ Recursos externos para aprender más:
 💡 **Tip:** Si pasa objeto, el hijo recibe referencia (cambios se reflejan en padre)
 
 
+## 📚 Recursos en ESPAÑOL
+
+Si prefieres aprender en español, aquí hay opciones:
+
+- [Comunidad Angular España (DEV.to)](https://dev.to/t/angular/top/week)
+- [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
+- [Artículos sobre Angular en español (buscar)](https://www.google.com/search?q=angular+@input+en+español)
+
 ## 🚀 Cómo Ejecutar
 
 ```bash
