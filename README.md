@@ -20,29 +20,45 @@ Los Observables son fundamentales en Angular moderno:
 
 | Sintaxis | Significado |
 |----------|------------|
-| `const obs$ = of(valor)` | Observable que emite un valor |\n| `obs$.subscribe(valor => { })` | Suscribirse a Observable |\n| `obs$.pipe(map(...), filter(...))` | Transformar datos |\n| `| async` | Auto-subscribe en template |\n
+| `const obs$ = of(valor)` | Observable que emite un valor |
+| `obs$.subscribe(valor => { })` | Suscribirse a Observable |
+| `obs$.pipe(map(...), filter(...))` | Transformar datos |
+| `| async` | Auto-subscribe en template |
+
 
 ## 🔗 Conexiones con Otros Conceptos
 
 Este concepto se relaciona con:
 
-- **T06E05-servizos** - Servicios usando Observables\n- **T06E07-servizos-observables** - Casos avanzados\n- **T06E10-animacions-boton** - Animaciones con Observables\n
+- **T06E05-servizos** - Servicios usando Observables
+- **T06E07-servizos-observables** - Casos avanzados
+- **T06E10-animacions-boton** - Animaciones con Observables
+
 
 ## 📖 Documentación Oficial
 
 Lecturas recomendadas en orden:
 
-1. [RxJS Observables](https://rxjs.dev/)\n1. [Angular & RxJS](https://angular.dev/guide/observables)\n1. [Common Operators](https://rxjs.dev/api)\n
+1. [RxJS Observables](https://rxjs.dev/)
+1. [Angular & RxJS](https://angular.dev/guide/observables)
+1. [Common Operators](https://rxjs.dev/api)
+
 
 ## 🎥 Ejemplos y Videos
 
 Recursos externos para aprender más:
 
-- [RxJS Tutorial](https://www.learnrxjs.io/)\n- [Observable Examples](https://stackblitz.com/rxjs/observable)\n- [Observables in Angular (YouTube)](https://www.youtube.com/results?search_query=angular+rxjs+observables)\n
+- [RxJS Tutorial](https://www.learnrxjs.io/)
+- [Observable Examples](https://stackblitz.com/rxjs/observable)
+- [Observables in Angular (YouTube)](https://www.youtube.com/results?search_query=angular+rxjs+observables)
+
 
 ## ⚠️ Notas Importantes - Qué Hacer y Qué NO Hacer
 
-❌ **NO:** Olvidar unsubscribe (memory leak)\n✅ **SÍ:** Usar async pipe o takeUntil en OnDestroy\n💡 **Tip:** $ por convención: datos$ = Observable\n
+❌ **NO:** Olvidar unsubscribe (memory leak)
+✅ **SÍ:** Usar async pipe o takeUntil en OnDestroy
+💡 **Tip:** $ por convención: datos$ = Observable
+
 
 ## 🚀 Cómo Ejecutar
 
