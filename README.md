@@ -17,9 +17,46 @@ Este repositorio utiliza una **estructura multi-rama inteligente**: cada ejercic
 
 - [Instalación Rápida](#instalación-rápida)
 - [Cómo Usar Este Repositorio](#cómo-usar-este-repositorio)
+- [📚 Recursos Didácticos (Documentación)](#-recursos-didácticos-documentación)
 - [Lista Completa de Ejercicios](#lista-completa-de-ejercicios)
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Solución de Problemas](#solución-de-problemas)
+
+---
+
+## 📚 Recursos Didácticos (Documentación)
+
+Este repositorio incluye **documentación oficial en PDF** que cubre los conceptos principales de Angular por tema:
+
+### 📖 Tema 5 - Fundamentos de Angular
+
+**[📥 Descargar: Tema 5 - Introducción a Angular.pdf](docs/Tema%205%20-%20Introdución%20a%20Angular.pdf)**
+
+Este documento cubre los conceptos fundamentales necesarios para entender los ejercicios T05E01 hasta T05E28:
+- ✅ Introducción a TypeScript en Angular
+- ✅ Interpolación y Data Binding
+- ✅ Componentes y Propiedades
+- ✅ Directivas integradas (*ngIf, *ngFor, *ngSwitch, etc.)
+- ✅ Estilos y CSS en Componentes
+- ✅ Event Binding y Two-Way Binding
+- ✅ Directivas Personalizadas
+
+### 📖 Tema 6 - Conceptos Avanzados
+
+**[📥 Descargar: Tema 6 - Servicios, Módulos e Rutas en Angular.pdf](docs/Tema%206%20-%20Servizos%2C%20Módulos%20e%20Rutas%20en%20Angular.pdf)**
+
+Este documento cubre temas avanzados para los ejercicios T06E01 hasta T06E34:
+- ✅ Servicios y Inyección de Dependencias
+- ✅ Observables y RxJS
+- ✅ Rutas y Navegación
+- ✅ Lazy Loading y Módulos
+- ✅ Formularios Reactivos
+- ✅ HttpClient y Comunicación Backend
+- ✅ Animaciones y Ciclo de Vida
+- ✅ Pipes y Transformaciones
+- ✅ Testing y Unit Tests
+
+> 💡 **Recomendación**: Descarga los PDFs y consulta los capítulos correspondientes mientras trabajas en cada ejercicio.
 
 ---
 
