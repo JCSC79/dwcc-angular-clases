@@ -47,6 +47,14 @@ Recursos externos para aprender más:
 
 ❌ **NO:** Usar ngFor sin trackBy en listas grandes (rendimiento malo)\n✅ **SÍ:** Usar trackBy: trackByFn (devuelve id único para cada item)\n💡 **Tip:** *ngFor + async pipe: *ngFor="item of items$ | async"\n⚠️ **Cuidado:** Agregar/quitar items actualiza índices\n
 
+## 📚 Recursos en ESPAÑOL
+
+Si prefieres aprender en español, aquí hay opciones:
+
+- [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
+- [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
+- [YouTube - Tutoriales en Español](https://www.youtube.com/results?search_query=angular+tutorial+en+español)
+
 ## 🚀 Cómo Ejecutar
 
 ```bash
