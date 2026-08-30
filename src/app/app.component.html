@@ -1,8 +1,12 @@
+<!-- H1: Elemento principal -->
 <h1>Equipos de {{division}} División</h1>
+<!-- UL: Elemento principal -->
 <ul>
+    <!-- LI: Elemento principal -->
     <li *ngFor="let equipo of equipos">{{ equipo }}</li>
 </ul>
 
+<!-- BUTTON: Elemento principal -->
 <button (click)="mudarDivision()">
     MUDAR DIVISIÓN
 </button>
