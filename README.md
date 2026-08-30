@@ -1,26 +1,18 @@
-# 📘 T05E13 - Directiva *ngIf
+# 📘 T05E13 - Concepto Angular
 
 ## 🎯 Objetivo del Ejercicio
 
-Aprender y dominar **Directiva *ngIf** en Angular.
+Aprender y dominar **Concepto Angular** en Angular.
 
-Este ejercicio te enseña cómo mostrar o ocultar elementos basado en una condición, fundamental para construir
-aplicaciones interactivas y bien estructuradas.
+Este ejercicio enseña cómo demuestra un concepto de angular.
 
 ---
 
 ## 📚 Conceptos Clave
 
-### 1. **Directiva *ngIf**
+### Concepto Angular
 
-Directiva *ngIf es un concepto clave en Angular que te permite:
-
-- Condicionales en plantilla
-- Rendering condicional
-
-```typescript
-// Ejemplo de Directiva *ngIf
-```
+Demuestra un concepto de Angular es fundamental para...
 
 ---
 
@@ -28,27 +20,19 @@ Directiva *ngIf es un concepto clave en Angular que te permite:
 
 ### TypeScript (`app.component.ts`)
 
-El componente contiene la lógica de la aplicación.
-
-**Propiedades principales:** title, title, cargar
-
-**Métodos:** constructor
-
 ```typescript
 // Lógica del componente
 ```
 
 ### HTML (`app.component.html`)
 
-La plantilla define la interfaz de usuario.
-
 ```html
-<!-- Elementos HTML que forman la interfaz -->
+<!-- Plantilla HTML -->
 ```
 
 ### CSS (`app.component.css`)
 
-Los estilos definen la apariencia visual.
+Los estilos CSS definen la apariencia.
 
 ---
 
@@ -65,42 +49,21 @@ ng serve -o
 ## 💡 Ejercicios Propuestos
 
 ### Nivel 1: Básico
-1. Entender los conceptos básicos y hacer el ejemplo funcionar
+1. Entender los conceptos y hacer funcionar el código
 
 ### Nivel 2: Intermedio
-2. Modificar el código para agregar nueva funcionalidad
+2. Modificar el código para agregar funcionalidad
 
 ### Nivel 3: Avanzado
-3. Crear una variante más compleja del ejercicio
-
----
-
-## 🔗 Recursos Complementarios
-
-- [Documentación oficial de Angular](https://angular.io/docs)
-- [Guías de Angular](https://angular.io/guide)
+3. Crear una variante más compleja
 
 ---
 
 ## 🎓 Conceptos Aprendidos
 
-✅ Comprensión de Directiva *ngIf
-✅ Aplicación práctica en componentes
+✅ Concepto Angular
+✅ Aplicación práctica
 ✅ Mejores prácticas
-
----
-
-## 📌 Notas Importantes
-
-- Revisa los comentarios en el código para entender cada parte
-- Practica modificando los valores y viendo los cambios
-- Intenta los ejercicios propuestos
-
----
-
-## 🚀 Próximo Paso
-
-Continúa con el siguiente ejercicio para profundizar en Angular.
 
 ---
 
