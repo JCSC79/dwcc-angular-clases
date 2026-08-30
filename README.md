@@ -1,60 +1,54 @@
-# 📘 T05E06-enlazado-bidireccional - Two-Way Binding (Enlazado Bidireccional)
+# 📘 T05E06-enlazado-bidireccional - Two-Way Binding
 
 ## 🎯 Objetivo del Ejercicio
 
-Sincronizar datos entre la clase TypeScript y la plantilla HTML de forma bidireccional usando [(ngModel)]
+Sincronizar datos bidireccionalm
 
-**Tema**: Dominarás la sincronización automática de datos en ambas direcciones
+Aprenderás conceptos fundamentales de Angular aplicados de forma práctica.
 
 ---
 
 ## 📚 Conceptos Clave
 
-### 1. **Two-Way Binding**
-Concepto fundamental para entender two-way binding (enlazado bidireccional).
+### Concepto Principal
+Este ejercicio enseña los fundamentos y buenas prácticas de two-way binding.
 
-### 2. **ngModel**
-Concepto fundamental para entender two-way binding (enlazado bidireccional).
-
-### 3. **FormsModule**
-Concepto fundamental para entender two-way binding (enlazado bidireccional).
-
-### 4. **Sincronización de datos**
-Concepto fundamental para entender two-way binding (enlazado bidireccional).
+### Aplicación Práctica
+Los conceptos aprendidos serán aplicables en proyectos reales y profesionales.
 
 ---
 
 ## 🔍 Desglose del Código
 
-### TypeScript (`app.component.ts`)
+### TypeScript (`src/app/app.component.ts`)
 
-Los componentes en Angular están formados por:
-- **Decorador @Component**: Configura el selector, template y estilos
+El componente TypeScript contiene:
+- **Decorador @Component**: Configuración del componente
 - **Propiedades**: Variables que almacenan datos
-- **Métodos**: Funciones que ejecutan lógica
-- **Constructor**: Se ejecuta al crear el componente
+- **Métodos**: Lógica que ejecuta acciones
+- **Constructor**: Inicialización del componente
 
-### HTML (`app.component.html`)
+### HTML (`src/app/app.component.html`)
 
-La plantilla HTML es donde:
-- Se muestra la interfaz del usuario
-- Se vinculan datos con el modelo TypeScript
-- Se capturan eventos del usuario
-- Se aplican directivas y pipes
+La plantilla HTML implementa:
+- Interfaz de usuario
+- Vinculación de datos
+- Captura de eventos
+- Directivas estructurales
 
-### CSS (`app.component.css`)
+### CSS (`src/app/app.component.css`)
 
-Estilos específicos del componente que:
+Estilos específicos que:
 - Se aplican solo a este componente
-- No contaminan otros componentes
 - Mejoran la apariencia visual
+- No contaminan otros componentes
 
 ---
 
 ## 🚀 Cómo Ejecutar
 
 ```bash
-# 1. Ir a la rama
+# 1. Cambiar a la rama
 git checkout T05E06-enlazado-bidireccional
 
 # 2. Instalar dependencias
@@ -62,68 +56,68 @@ npm install --legacy-peer-deps
 
 # 3. Ejecutar servidor
 ng serve -o
-```
 
-**Resultado esperado:**
-El navegador abrirá http://localhost:4200 y podrás ver la aplicación funcionando.
+# 4. Acceder a la aplicación
+# El navegador abrirá http://localhost:4200
+```
 
 ---
 
 ## 💡 Ejercicios Propuestos
 
 ### Nivel 1: Modificaciones Básicas
-
 1. Cambia los valores de las propiedades
 2. Modifica el HTML para mostrar datos diferentes
 3. Añade nuevas propiedades a la clase
 
 ### Nivel 2: Lógica Interactiva
-
 4. Agrega un método que modifique las propiedades
 5. Crea un evento que ejecute el método
 6. Implementa condicionales en la plantilla
 
 ### Nivel 3: Desafío Avanzado
-
-7. Combina múltiples conceptos del ejercicio
+7. Combina múltiples conceptos
 8. Crea funcionalidades nuevas
 9. Mejora la interfaz visualmente
 
 ---
 
+## 📌 Conceptos Aprendidos
+
+✅ Entender la estructura de componentes Angular
+✅ Trabajar con propiedades y métodos
+✅ Vincular datos con plantillas HTML
+✅ Capturar eventos del usuario
+✅ Aplicar estilos CSS
+✅ Usar directivas y pipes
+
+---
+
 ## 🔗 Recursos Complementarios
 
-- [Angular Documentation](https://angular.io/docs)
+- [Angular Oficial](https://angular.io)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 - [MDN Web Docs](https://developer.mozilla.org/)
+- [Angular Style Guide](https://angular.io/guide/styleguide)
 
 ---
 
-## 🎓 Conceptos Aprendidos
-
-✅ Two-Way Binding
-✅ ngModel
-✅ FormsModule
-✅ Sincronización de datos
-
----
-
-## 📌 Notas Importantes
+## ⚠️ Notas Importantes
 
 - Angular es un framework basado en componentes
 - Cada componente es independiente y reutilizable
 - TypeScript proporciona seguridad de tipos
-- La plantilla HTML se actualiza automáticamente
+- La detección de cambios es automática
 - Los estilos CSS son locales al componente
 
 ---
 
 ## 🚀 Próximo Paso
 
-Continúa con **T05E07-componhentes - Componentes Básicos**
+Continúa con **T05E07-componhentes** para profundizar en los conceptos.
 
 ---
 
-**¡Felicidades!** 🎉 Ya entiendes two-way binding (enlazado bidireccional), un concepto clave en Angular.
+**¡Felicidades!** 🎉 Ya entiendes two-way binding, un concepto clave en Angular.
 
-*Última actualización: 2026-08-30 08:15*
+*Última actualización: 2026-08-30 08:18*
