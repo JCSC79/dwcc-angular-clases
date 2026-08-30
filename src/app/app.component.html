@@ -1,3 +1,4 @@
+<!-- H2: Elemento principal -->
 <h2>Exemplo 1: *ngIf con else que carga un ng-template</h2>
 
 <!-- Ao premer o botón invírtese o valor da propiedade "logueado" -->
@@ -5,16 +6,21 @@
   {{ logueado ? 'Pechar sesión' : 'Iniciar sesión' }}
 </button>
 
+<!-- P: Elemento principal -->
 <p *ngIf="logueado; else bloqueAnonimo">
   Benvida, {{ usuaria}}!
 </p>
 
+<!-- NG: Elemento principal -->
 <ng-template #bloqueAnonimo>
+  <!-- P: Elemento principal -->
   <p>Precisas iniciar sesión para continuar.</p>
 </ng-template>
 
+<!-- H2: Elemento principal -->
 <h2>Exemplo 2: vistas personalizadas usando ng-template con *ngTemplateOutlet</h2>
 
+<!-- UL: Elemento principal -->
 <ul>
   <!-- Percorremos o array xerando un "li" para cada produto -->
   <li *ngFor="let produto of produtos">
