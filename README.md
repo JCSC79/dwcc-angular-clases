@@ -59,6 +59,14 @@ Recursos externos para aprender más:
 💡 **Tip:** *ngIf con async pipe: *ngIf="datos$ | async as dato" para Observables
 
 
+## 📚 Recursos en ESPAÑOL
+
+Si prefieres aprender en español, aquí hay opciones:
+
+- [Dev.to - Artículos Angular EN ESPAÑOL](https://dev.to/search?q=angular%20ngif%20español)
+- [Comunidades Angular Hispanas](https://es.stackoverflow.com/questions/tagged/angular)
+- [YouTube - Tutoriales en Español](https://www.youtube.com/results?search_query=angular+ngif+tutorial+español)
+
 ## 🚀 Cómo Ejecutar
 
 ```bash
