@@ -1,26 +1,18 @@
-# 📘 T05E06 - Two-Way Binding (Enlazado Bidireccional)
+# 📘 T05E06 - Two-Way Binding
 
 ## 🎯 Objetivo del Ejercicio
 
-Aprender y dominar **Two-Way Binding (Enlazado Bidireccional)** en Angular.
+Aprender y dominar **Two-Way Binding** en Angular.
 
-Este ejercicio te enseña cómo sincronización automática de datos entre el componente y la plantilla con [(ngmodel)], fundamental para construir
-aplicaciones interactivas y bien estructuradas.
+Este ejercicio enseña cómo sincronización automática de datos.
 
 ---
 
 ## 📚 Conceptos Clave
 
-### 1. **Two-Way Binding (Enlazado Bidireccional)**
+### Two-Way Binding
 
-Two-Way Binding (Enlazado Bidireccional) es un concepto clave en Angular que te permite:
-
-- Cambios en inputs sincronizados con propiedades
-- Formularios reactivos
-
-```typescript
-// Ejemplo de Two-Way Binding (Enlazado Bidireccional)
-```
+Sincronización automática de datos es fundamental para...
 
 ---
 
@@ -28,27 +20,19 @@ Two-Way Binding (Enlazado Bidireccional) es un concepto clave en Angular que te 
 
 ### TypeScript (`app.component.ts`)
 
-El componente contiene la lógica de la aplicación.
-
-**Propiedades principales:** title, title, string
-
-**Métodos:** resetearTitulo
-
 ```typescript
 // Lógica del componente
 ```
 
 ### HTML (`app.component.html`)
 
-La plantilla define la interfaz de usuario.
-
 ```html
-<!-- Elementos HTML que forman la interfaz -->
+<!-- Plantilla HTML -->
 ```
 
 ### CSS (`app.component.css`)
 
-Los estilos definen la apariencia visual.
+Los estilos CSS definen la apariencia.
 
 ---
 
@@ -65,42 +49,21 @@ ng serve -o
 ## 💡 Ejercicios Propuestos
 
 ### Nivel 1: Básico
-1. Entender los conceptos básicos y hacer el ejemplo funcionar
+1. Entender los conceptos y hacer funcionar el código
 
 ### Nivel 2: Intermedio
-2. Modificar el código para agregar nueva funcionalidad
+2. Modificar el código para agregar funcionalidad
 
 ### Nivel 3: Avanzado
-3. Crear una variante más compleja del ejercicio
-
----
-
-## 🔗 Recursos Complementarios
-
-- [Documentación oficial de Angular](https://angular.io/docs)
-- [Guías de Angular](https://angular.io/guide)
+3. Crear una variante más compleja
 
 ---
 
 ## 🎓 Conceptos Aprendidos
 
-✅ Comprensión de Two-Way Binding (Enlazado Bidireccional)
-✅ Aplicación práctica en componentes
+✅ Two-Way Binding
+✅ Aplicación práctica
 ✅ Mejores prácticas
-
----
-
-## 📌 Notas Importantes
-
-- Revisa los comentarios en el código para entender cada parte
-- Practica modificando los valores y viendo los cambios
-- Intenta los ejercicios propuestos
-
----
-
-## 🚀 Próximo Paso
-
-Continúa con el siguiente ejercicio para profundizar en Angular.
 
 ---
 
