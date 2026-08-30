@@ -1,37 +1,73 @@
-# 📚 Angular Services
+# 📚 Angular Services: @Injectable
 
-## 🎯 Objetivo
-Aprender sobre **@Injectable decorator** en Angular.
+## 🎯 ¿Qué se usa en este ejercicio?
 
-## 📚 Conceptos clave
-- **@Injectable decorator**
-- **singleton pattern**
-- **inyección dependencias**
+- **@Injectable decorator** - Marca clase como servicio inyectable
+- **Dependency Injection** - Angular proporciona instancia del servicio
+- **Singleton pattern** - Una única instancia para toda la app
+- **Compartir datos** entre componentes
 
-## 🔍 Ejemplo clave
-```typescript
-@Injectable() service comparte lógica entre componentes
-```
+## ❓ ¿Por qué se usa?
 
-## 🚀 Cómo ejecutar
+Los servicios son esenciales para compartir lógica y datos:
+- **Reutilización** de código entre múltiples componentes
+- **Inyección de dependencias** - Fácil testing y mocking
+- **Singleton** - Una instancia para toda la aplicación
+- **Separación de responsabilidades** - Lógica fuera de componentes
+- **Comunicación** entre componentes sin relación padre/hijo
+
+## 💾 Recordar - Sintaxis Clave para Memorizar
+
+| Sintaxis | Significado |
+|----------|------------|
+| `@Injectable({ providedIn: 'root' })` | Registra servicio globalmente |\n| `constructor(private servicio: MiServicio)` | Inyecta servicio en componente |\n| `providedIn: 'root' ≠ NgModule` | Nuevo en Angular 14+ |\n
+
+## 🔗 Conexiones con Otros Conceptos
+
+Este concepto se relaciona con:
+
+- **T06E06-servizos-observables** - Servicios con RxJS Observables\n- **T06E05-servizos** - Comunicación con servicios\n- **T06E10-animacions-boton** - Servicios para lógica compartida\n
+
+## 📖 Documentación Oficial
+
+Lecturas recomendadas en orden:
+
+1. [Angular Services](https://angular.dev/guide/creating-services)\n1. [@Injectable](https://angular.dev/api/core/Injectable)\n1. [Dependency Injection](https://angular.dev/guide/dependency-injection)\n
+
+## 🎥 Ejemplos y Videos
+
+Recursos externos para aprender más:
+
+- [Services Tutorial](https://www.w3schools.com/angular/angular_services.asp)\n- [Dependency Injection](https://stackblitz.com/angular/services)\n- [Services Deep Dive (YouTube)](https://www.youtube.com/results?search_query=angular+services+dependency+injection)\n
+
+## ⚠️ Notas Importantes - Qué Hacer y Qué NO Hacer
+
+❌ **NO:** Crear instancias manualmente (new MiServicio) - USA DI\n✅ **SÍ:** Declarar en constructor para que Angular inyecte\n💡 **Tip:** providedIn: 'root' para servicios globales\n
+
+## 🚀 Cómo Ejecutar
+
 ```bash
 npm install --legacy-peer-deps
 ng serve
+# Abre http://localhost:4200
 ```
 
-## 💡 Ejercicios propuestos
+## 💡 Ejercicios Propuestos
 
-### Nivel 1: Reproducir el ejemplo
-- Revisa el código y modifica valores
+### Nivel 1: Reproduce y Entiende
+1. Ejecuta el código y observa el comportamiento
+2. Lee los comentarios en el código fuente
+3. Experimenta con valores diferentes
 
-### Nivel 2: Extender
-- Agrega nuevas propiedades o métodos
+### Nivel 2: Modifica y Experimenta
+1. Cambia la lógica existente
+2. Agrega nuevas funcionalidades
+3. Combina con otros conceptos
 
-### Nivel 3: Aplicar
-- Crea un caso de uso similar
-
-## 🔗 Recursos
-- [Angular Docs](https://angular.dev/docs)
+### Nivel 3: Crea y Aplica
+1. Implementa desde cero
+2. Resuelve un problema real
+3. Integra en un proyecto mayor
 
 ---
-Ejercicio de DWCC - Angular
+**Ejercicio de DWCC - Angular**
