@@ -6,6 +6,7 @@
 - **Property Binding** - Sintaxis [propiedad]= para pasar datos
 - **Componentes padre/hijo** - Relación jerárquica
 
+
 ## ❓ ¿Por qué se usa?
 
 En Angular, los datos fluyen de padre a hijo mediante @Input. Este patrón es fundamental porque:
@@ -27,23 +28,35 @@ En Angular, los datos fluyen de padre a hijo mediante @Input. Este patrón es fu
 
 Este concepto se relaciona con:
 
-- **T05E04-enlazado-propiedades** - Property Binding [propiedad]\n- **T05E11-output** - Comunicación inversa: hijo → padre\n- **T05E12-input-output** - Combinación de @Input + @Output\n
+- **T05E04-enlazado-propiedades** - Property Binding [propiedad]
+- **T05E11-output** - Comunicación inversa: hijo → padre
+- **T05E12-input-output** - Combinación de @Input + @Output
+
 
 ## 📖 Documentación Oficial
 
 Lecturas recomendadas en orden:
 
-1. [Angular @Input](https://angular.dev/guide/directives-pipes#input-and-output-properties)\n1. [Component Interaction](https://angular.dev/guide/components/inputs-outputs)\n1. [Property Binding](https://angular.dev/guide/templates/property-binding)\n
+- [Angular @Input (Oficial)](https://angular.dev/guide/directives-pipes#input-and-output-properties)
+- [Component Interaction (Oficial)](https://angular.dev/guide/components/inputs-outputs)
+- [Property Binding (Oficial)](https://angular.dev/guide/templates/property-binding)
+
 
 ## 🎥 Ejemplos y Videos
 
 Recursos externos para aprender más:
 
-- [Angular Input Example (Official)](https://angular.io/guide/inputs-outputs#input)\n- [Component Communication (YouTube)](https://www.youtube.com/results?search_query=angular+input+decorator)\n- [StackBlitz Example](https://stackblitz.com/angular/component-inputs-outputs)\n
+- [Tutorial Angular Input (W3Schools)](https://www.w3schools.com/angular/angular_inputs.asp)
+- [StackBlitz - Component Inputs](https://stackblitz.com/angular/component-inputs-outputs)
+- [YouTube: Component Communication (inglés)](https://www.youtube.com/results?search_query=angular+input+decorator)
+
 
 ## ⚠️ Notas Importantes - Qué Hacer y Qué NO Hacer
 
-❌ **NO:** Modificar directamente la propiedad @Input en el hijo (usa OnChanges si necesitas reaccionar)\n✅ **SÍ:** Usar setter para detectar cambios: @Input() set valor(v) { ... }\n💡 **Tip:** Si pasa objeto, el hijo recibe referencia (cambios se reflejan en padre)\n
+❌ **NO:** Modificar directamente la propiedad @Input en el hijo (usa OnChanges si necesitas reaccionar)
+✅ **SÍ:** Usar setter para detectar cambios: @Input() set valor(v) { ... }
+💡 **Tip:** Si pasa objeto, el hijo recibe referencia (cambios se reflejan en padre)
+
 
 ## 🚀 Cómo Ejecutar
 
@@ -56,19 +69,19 @@ ng serve
 ## 💡 Ejercicios Propuestos
 
 ### Nivel 1: Reproduce y Entiende
-1. Ejecuta el código y observa qué pasa
-2. Abre DevTools (F12) → Elements
-3. Verifica los cambios en el DOM
+1. Ejecuta el código y observa el comportamiento
+2. Lee los comentarios en el código fuente
+3. Experimenta con valores diferentes
 
 ### Nivel 2: Modifica y Experimenta
-1. Cambia los valores iniciales
-2. Agrega nuevas propiedades
-3. Prueba diferentes tipos de datos
+1. Cambia la lógica existente
+2. Agrega nuevas funcionalidades
+3. Combina con otros conceptos
 
 ### Nivel 3: Crea y Aplica
-1. Crea un componente similar desde cero
-2. Implementa tu propio caso de uso
-3. Combina con otros conceptos
+1. Implementa desde cero
+2. Resuelve un problema real
+3. Integra en un proyecto mayor
 
 ---
 **Ejercicio de DWCC - Angular**
