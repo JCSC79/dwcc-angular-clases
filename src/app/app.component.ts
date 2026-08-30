@@ -2,6 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
+/**
+ * Componente que demuestra Directiva *ngFor
+ * 
+ * Iterar sobre arrays para repetir elementos en la plantilla
+ */
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -10,6 +16,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  // title: propiedade que almacena un valor
   title = '07-ngFor';
   equipos: string[];
 
