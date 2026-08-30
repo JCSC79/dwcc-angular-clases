@@ -59,6 +59,14 @@ Recursos externos para aprender más:
 💡 **Tip:** providedIn: 'root' para servicios globales
 
 
+## 📚 Recursos en ESPAÑOL
+
+Si prefieres aprender en español, aquí hay opciones:
+
+- [Dev.to - Angular Services](https://dev.to/search?q=angular+services+español)
+- [Stack Overflow ES - Services](https://es.stackoverflow.com/questions/tagged/angular)
+- [YouTube - Tutoriales en Español](https://www.youtube.com/results?search_query=angular+servicios+tutorial+español)
+
 ## 🚀 Cómo Ejecutar
 
 ```bash
