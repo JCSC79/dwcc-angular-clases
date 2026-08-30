@@ -20,29 +20,44 @@ Los servicios son esenciales para compartir lógica y datos:
 
 | Sintaxis | Significado |
 |----------|------------|
-| `@Injectable({ providedIn: 'root' })` | Registra servicio globalmente |\n| `constructor(private servicio: MiServicio)` | Inyecta servicio en componente |\n| `providedIn: 'root' ≠ NgModule` | Nuevo en Angular 14+ |\n
+| `@Injectable({ providedIn: 'root' })` | Registra servicio globalmente |
+| `constructor(private servicio: MiServicio)` | Inyecta servicio en componente |
+| `providedIn: 'root' ≠ NgModule` | Nuevo en Angular 14+ |
+
 
 ## 🔗 Conexiones con Otros Conceptos
 
 Este concepto se relaciona con:
 
-- **T06E06-servizos-observables** - Servicios con RxJS Observables\n- **T06E05-servizos** - Comunicación con servicios\n- **T06E10-animacions-boton** - Servicios para lógica compartida\n
+- **T06E06-servizos-observables** - Servicios con RxJS Observables
+- **T06E05-servizos** - Comunicación con servicios
+- **T06E10-animacions-boton** - Servicios para lógica compartida
+
 
 ## 📖 Documentación Oficial
 
 Lecturas recomendadas en orden:
 
-1. [Angular Services](https://angular.dev/guide/creating-services)\n1. [@Injectable](https://angular.dev/api/core/Injectable)\n1. [Dependency Injection](https://angular.dev/guide/dependency-injection)\n
+1. [Angular Services](https://angular.dev/guide/creating-services)
+1. [@Injectable](https://angular.dev/api/core/Injectable)
+1. [Dependency Injection](https://angular.dev/guide/dependency-injection)
+
 
 ## 🎥 Ejemplos y Videos
 
 Recursos externos para aprender más:
 
-- [Services Tutorial](https://www.w3schools.com/angular/angular_services.asp)\n- [Dependency Injection](https://stackblitz.com/angular/services)\n- [Services Deep Dive (YouTube)](https://www.youtube.com/results?search_query=angular+services+dependency+injection)\n
+- [Services Tutorial](https://www.w3schools.com/angular/angular_services.asp)
+- [Dependency Injection](https://stackblitz.com/angular/services)
+- [Services Deep Dive (YouTube)](https://www.youtube.com/results?search_query=angular+services+dependency+injection)
+
 
 ## ⚠️ Notas Importantes - Qué Hacer y Qué NO Hacer
 
-❌ **NO:** Crear instancias manualmente (new MiServicio) - USA DI\n✅ **SÍ:** Declarar en constructor para que Angular inyecte\n💡 **Tip:** providedIn: 'root' para servicios globales\n
+❌ **NO:** Crear instancias manualmente (new MiServicio) - USA DI
+✅ **SÍ:** Declarar en constructor para que Angular inyecte
+💡 **Tip:** providedIn: 'root' para servicios globales
+
 
 ## 🚀 Cómo Ejecutar
 
