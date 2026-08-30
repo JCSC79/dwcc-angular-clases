@@ -16,6 +16,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  // Para mostrar literalmente la sintaxis {{ }}
+  sintaxisInterpolacion = '{{ }}';
+  
   // Título de la aplicación
   title = 'T05E03 - Interpolación de Strings y Expresiones';
   
