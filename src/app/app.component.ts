@@ -3,6 +3,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CompOcultaComponent } from './comp-oculta/comp-oculta.component';
 
+/**
+ * Componente que demuestra Componente de Angular
+ * 
+ * Demuestra conceptos de Angular
+ */
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -11,6 +17,7 @@ import { CompOcultaComponent } from './comp-oculta/comp-oculta.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  // title: propiedade que almacena un valor
   title = '05-ngIf';
   cargar: boolean; // Declaramos a propiedade de clase de tipo booleano
 
