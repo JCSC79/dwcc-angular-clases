@@ -1,15 +1,15 @@
-# 🎯 DECORADORES PERSONALIZADOS
+# 🎯 INYECCIÓN DE DEPENDENCIAS
 
 ## ¿Qué se usa?
 
 Este ejercicio enseña:
-- **@Decorator**
-- **metadata**
+- **@Injectable**
+- **providers**
 - Patrones y mejores prácticas
 
 ## ❓ ¿Por qué se usa?
 
-Crear decoradores propios Este concepto es fundamental porque:
+DI en Angular Este concepto es fundamental porque:
 
 1. **Reutilización** - Permite escribir código más limpio y mantenible
 2. **Escalabilidad** - Facilita crecer y extender la aplicación
@@ -20,8 +20,8 @@ Crear decoradores propios Este concepto es fundamental porque:
 
 | Concepto | Sintaxis | Ejemplo | Memorizar |
 |----------|----------|---------|-----------|
-| @Decorator | Ver código | app.component.ts | Mirar el src/ |
-| Patrón | Estructura | Decorators | Practicar |
+| @Injectable | Ver código | app.component.ts | Mirar el src/ |
+| Patrón | Estructura | Dependency Injection | Practicar |
 
 ## 🔗 Conexiones con Otros Conceptos
 
@@ -52,7 +52,7 @@ Si prefieres aprender en español, aquí hay opciones:
 
 - [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
 - [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
-- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=decorators+en+español)
+- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=dependency+injection+en+español)
 
 ## ⚠️ Notas Importantes
 
