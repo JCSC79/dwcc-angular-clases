@@ -22,4 +22,7 @@ export class AppComponent {
   
   // Mensaje de bienvenida
   mensaje = 'Bienvenido a Angular!';
+  
+  // Para mostrar literalmente la sintaxis {{ }}
+  sintaxisInterpolacion = '{{ }}';
 }
