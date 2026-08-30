@@ -1,15 +1,15 @@
-# 🎯 EJERCICIO: GRÁFICOS
+# 🎯 EJERCICIO: DASHBOARD
 
 ## ¿Qué se usa?
 
 Este ejercicio enseña:
-- **Librerías**
-- **datos**
+- **Composición**
+- **múltiples componentes**
 - Patrones y mejores prácticas
 
 ## ❓ ¿Por qué se usa?
 
-Representación de datos Este concepto es fundamental porque:
+Vista compleja Este concepto es fundamental porque:
 
 1. **Reutilización** - Permite escribir código más limpio y mantenible
 2. **Escalabilidad** - Facilita crecer y extender la aplicación
@@ -20,8 +20,8 @@ Representación de datos Este concepto es fundamental porque:
 
 | Concepto | Sintaxis | Ejemplo | Memorizar |
 |----------|----------|---------|-----------|
-| Librerías | Ver código | app.component.ts | Mirar el src/ |
-| Patrón | Estructura | Charts | Practicar |
+| Composición | Ver código | app.component.ts | Mirar el src/ |
+| Patrón | Estructura | Dashboard | Practicar |
 
 ## 🔗 Conexiones con Otros Conceptos
 
@@ -52,7 +52,7 @@ Si prefieres aprender en español, aquí hay opciones:
 
 - [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
 - [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
-- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=charts+en+español)
+- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=dashboard+en+español)
 
 ## ⚠️ Notas Importantes
 
