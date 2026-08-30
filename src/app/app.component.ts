@@ -1,5 +1,11 @@
 import { Component, HostListener } from '@angular/core';
 
+/**
+ * Componente que demuestra Componente de Angular
+ * 
+ * Demuestra conceptos de Angular
+ */
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -8,6 +14,7 @@ import { Component, HostListener } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  // title: propiedade que almacena un valor
   title = 'HostListener para eventos de teclado e scroll';
   contaEnter: number = 0; // Contador de pulsacións da tecla ENTER
   contaShiftQ: number = 0; // Contador de pulsacións da combinación SHIFT + Q
