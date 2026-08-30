@@ -19,29 +19,45 @@ Las directivas personalizadas permiten reutilizar lógica en la plantilla:
 
 | Sintaxis | Significado |
 |----------|------------|
-| `@Directive({ selector: '[appNombre]' })` | Sintaxis [appNombre] |\n| `constructor(private el: ElementRef)` | Acceso al elemento DOM |\n| `this.renderer.setStyle(this.el.nativeElement, ...)` | Manipulación segura del DOM |\n| `[appNombre] vs <app-nombre>` | Directiva vs Componente |\n
+| `@Directive({ selector: '[appNombre]' })` | Sintaxis [appNombre] |
+| `constructor(private el: ElementRef)` | Acceso al elemento DOM |
+| `this.renderer.setStyle(this.el.nativeElement, ...)` | Manipulación segura del DOM |
+| `[appNombre] vs <app-nombre>` | Directiva vs Componente |
+
 
 ## 🔗 Conexiones con Otros Conceptos
 
 Este concepto se relaciona con:
 
-- **T05E26-HostBinding** - Vincular propiedades del host\n- **T05E27-HostListener** - Escuchar eventos del host\n- **T05E24-ngClass-ngStyle** - Directivas built-in de Angular\n
+- **T05E26-HostBinding** - Vincular propiedades del host
+- **T05E27-HostListener** - Escuchar eventos del host
+- **T05E24-ngClass-ngStyle** - Directivas built-in de Angular
+
 
 ## 📖 Documentación Oficial
 
 Lecturas recomendadas en orden:
 
-1. [Custom Directives](https://angular.dev/guide/directives#creating-custom-directives)\n1. [@Directive](https://angular.dev/api/core/Directive)\n1. [ElementRef & Renderer2](https://angular.dev/guide/security#DOM-manipulation)\n
+1. [Custom Directives](https://angular.dev/guide/directives#creating-custom-directives)
+1. [@Directive](https://angular.dev/api/core/Directive)
+1. [ElementRef & Renderer2](https://angular.dev/guide/security#DOM-manipulation)
+
 
 ## 🎥 Ejemplos y Videos
 
 Recursos externos para aprender más:
 
-- [Custom Directives Tutorial](https://www.w3schools.com/angular/angular_directive_custom.asp)\n- [Attribute Directives](https://stackblitz.com/angular/attribute-directives)\n- [Advanced Directives (YouTube)](https://www.youtube.com/results?search_query=angular+custom+directives)\n
+- [Custom Directives Tutorial](https://www.w3schools.com/angular/angular_directive_custom.asp)
+- [Attribute Directives](https://stackblitz.com/angular/attribute-directives)
+- [Advanced Directives (YouTube)](https://www.youtube.com/results?search_query=angular+custom+directives)
+
 
 ## ⚠️ Notas Importantes - Qué Hacer y Qué NO Hacer
 
-❌ **NO:** Manipular DOM con nativeElement (usa Renderer2)\n✅ **SÍ:** Usar [appNombre] en templates para aplicar directiva\n💡 **Tip:** Directivas de atributo vs estructurales (*ngIf, *ngFor)\n
+❌ **NO:** Manipular DOM con nativeElement (usa Renderer2)
+✅ **SÍ:** Usar [appNombre] en templates para aplicar directiva
+💡 **Tip:** Directivas de atributo vs estructurales (*ngIf, *ngFor)
+
 
 ## 🚀 Cómo Ejecutar
 
