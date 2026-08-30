@@ -1,5 +1,14 @@
+<!-- Encabezado principal -->
 <h1>{{ title }}</h1>
 
+<!-- EJEMPLO 1: Property Binding para enlazar un atributo HTML (href) -->
+<!-- La sintaxis [atributo]="propiedad" vincula dinámicamente propiedades de la clase -->
 <a [href]="documentacion">Documentación de Angular</a>
 <br>
-<img [src]="logo" />
+
+<!-- EJEMPLO 2: Property Binding para enlazar la imagen (src) -->
+<!-- El atributo 'src' se actualiza automáticamente cuando cambien el valor de 'logo' -->
+<img [src]="logo" alt="Logo de Angular" />
+
+<hr>
+<p><strong>Concepto:</strong> Property Binding permite conectar propiedades de la clase TypeScript con atributos HTML de forma dinámica.</p>
