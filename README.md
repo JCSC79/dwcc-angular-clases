@@ -1,12 +1,13 @@
 # 📚 Ejercicio de Angular
 
 ## 🎯 Objetivo del ejercicio
-Este ejercicio te enseña conceptos fundamentales de Angular aplicados en un caso práctico.
+Este ejercicio te enseña conceptos fundamentales de Angular en aplicación práctica.
 
 ## 📚 Conceptos clave
 - **Componentes**: Bloques reutilizables de la interfaz
-- **Data Binding**: Sincronización entre datos y vista
+- **Data Binding**: Sincronización entre datos y vista  
 - **Directivas**: Instrucciones que modifican el comportamiento del DOM
+- **Servicios**: Lógica compartida entre componentes
 
 ## 🚀 Cómo ejecutar
 ```bash
@@ -20,4 +21,4 @@ ng serve
 - ✅ Interpolación de variables
 
 ---
-**Última actualización**: $(date '+%Y-%m-%d')
+**Última actualización**: 2026-08-30
