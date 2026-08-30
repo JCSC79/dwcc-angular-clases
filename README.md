@@ -1,15 +1,15 @@
-# 🎯 ANIMACIONES CON CSS
+# 🎯 ANIMACIONES CON JAVASCRIPT
 
 ## ¿Qué se usa?
 
 Este ejercicio enseña:
-- **@keyframes**
-- **animation**
+- **requestAnimationFrame**
+- **timing**
 - Patrones y mejores prácticas
 
 ## ❓ ¿Por qué se usa?
 
-Animaciones básicas Este concepto es fundamental porque:
+Control programático de animaciones Este concepto es fundamental porque:
 
 1. **Reutilización** - Permite escribir código más limpio y mantenible
 2. **Escalabilidad** - Facilita crecer y extender la aplicación
@@ -20,8 +20,8 @@ Animaciones básicas Este concepto es fundamental porque:
 
 | Concepto | Sintaxis | Ejemplo | Memorizar |
 |----------|----------|---------|-----------|
-| @keyframes | Ver código | app.component.ts | Mirar el src/ |
-| Patrón | Estructura | CSS Animations | Practicar |
+| requestAnimationFram | Ver código | app.component.ts | Mirar el src/ |
+| Patrón | Estructura | JS Animations | Practicar |
 
 ## 🔗 Conexiones con Otros Conceptos
 
@@ -52,7 +52,7 @@ Si prefieres aprender en español, aquí hay opciones:
 
 - [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
 - [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
-- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=css+animations+en+español)
+- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=js+animations+en+español)
 
 ## ⚠️ Notas Importantes
 
