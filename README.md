@@ -1,26 +1,26 @@
-# 📘 T05E07-componhentes - Componentes Básicos
+# 📘 T05E07 - Componentes
 
 ## 🎯 Objetivo del Ejercicio
 
-Crear y usar componentes reutilizables, entendiendo la arquitectura modular de Angular
+Aprender y dominar **Componentes** en Angular.
 
-**Tema**: Aprenderás a crear componentes independientes y reutilizables
+Este ejercicio te enseña cómo bloques reutilizables que encapsulan lógica, plantilla y estilos, fundamental para construir
+aplicaciones interactivas y bien estructuradas.
 
 ---
 
 ## 📚 Conceptos Clave
 
 ### 1. **Componentes**
-Concepto fundamental para entender componentes básicos.
 
-### 2. **Selectores**
-Concepto fundamental para entender componentes básicos.
+Componentes es un concepto clave en Angular que te permite:
 
-### 3. **Standalone**
-Concepto fundamental para entender componentes básicos.
+- Crear componentes
+- Anidar componentes
 
-### 4. **Reutilización**
-Concepto fundamental para entender componentes básicos.
+```typescript
+// Ejemplo de Componentes
+```
 
 ---
 
@@ -28,102 +28,80 @@ Concepto fundamental para entender componentes básicos.
 
 ### TypeScript (`app.component.ts`)
 
-Los componentes en Angular están formados por:
-- **Decorador @Component**: Configura el selector, template y estilos
-- **Propiedades**: Variables que almacenan datos
-- **Métodos**: Funciones que ejecutan lógica
-- **Constructor**: Se ejecuta al crear el componente
+El componente contiene la lógica de la aplicación.
+
+**Propiedades principales:** title, title
+
+```typescript
+// Lógica del componente
+```
 
 ### HTML (`app.component.html`)
 
-La plantilla HTML es donde:
-- Se muestra la interfaz del usuario
-- Se vinculan datos con el modelo TypeScript
-- Se capturan eventos del usuario
-- Se aplican directivas y pipes
+La plantilla define la interfaz de usuario.
+
+```html
+<!-- Elementos HTML que forman la interfaz -->
+```
 
 ### CSS (`app.component.css`)
 
-Estilos específicos del componente que:
-- Se aplican solo a este componente
-- No contaminan otros componentes
-- Mejoran la apariencia visual
+Los estilos definen la apariencia visual.
 
 ---
 
 ## 🚀 Cómo Ejecutar
 
 ```bash
-# 1. Ir a la rama
 git checkout T05E07-componhentes
-
-# 2. Instalar dependencias
 npm install --legacy-peer-deps
-
-# 3. Ejecutar servidor
 ng serve -o
 ```
-
-**Resultado esperado:**
-El navegador abrirá http://localhost:4200 y podrás ver la aplicación funcionando.
 
 ---
 
 ## 💡 Ejercicios Propuestos
 
-### Nivel 1: Modificaciones Básicas
+### Nivel 1: Básico
+1. Entender los conceptos básicos y hacer el ejemplo funcionar
 
-1. Cambia los valores de las propiedades
-2. Modifica el HTML para mostrar datos diferentes
-3. Añade nuevas propiedades a la clase
+### Nivel 2: Intermedio
+2. Modificar el código para agregar nueva funcionalidad
 
-### Nivel 2: Lógica Interactiva
-
-4. Agrega un método que modifique las propiedades
-5. Crea un evento que ejecute el método
-6. Implementa condicionales en la plantilla
-
-### Nivel 3: Desafío Avanzado
-
-7. Combina múltiples conceptos del ejercicio
-8. Crea funcionalidades nuevas
-9. Mejora la interfaz visualmente
+### Nivel 3: Avanzado
+3. Crear una variante más compleja del ejercicio
 
 ---
 
 ## 🔗 Recursos Complementarios
 
-- [Angular Documentation](https://angular.io/docs)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
-- [MDN Web Docs](https://developer.mozilla.org/)
+- [Documentación oficial de Angular](https://angular.io/docs)
+- [Guías de Angular](https://angular.io/guide)
 
 ---
 
 ## 🎓 Conceptos Aprendidos
 
-✅ Componentes
-✅ Selectores
-✅ Standalone
-✅ Reutilización
+✅ Comprensión de Componentes
+✅ Aplicación práctica en componentes
+✅ Mejores prácticas
 
 ---
 
 ## 📌 Notas Importantes
 
-- Angular es un framework basado en componentes
-- Cada componente es independiente y reutilizable
-- TypeScript proporciona seguridad de tipos
-- La plantilla HTML se actualiza automáticamente
-- Los estilos CSS son locales al componente
+- Revisa los comentarios en el código para entender cada parte
+- Practica modificando los valores y viendo los cambios
+- Intenta los ejercicios propuestos
 
 ---
 
 ## 🚀 Próximo Paso
 
-Continúa con **T05E08-componhentes-layout - Layout con Componentes**
+Continúa con el siguiente ejercicio para profundizar en Angular.
 
 ---
 
-**¡Felicidades!** 🎉 Ya entiendes componentes básicos, un concepto clave en Angular.
+**¡Felicidades!** 🎉 Has completado T05E07
 
-*Última actualización: 2026-08-30 08:15*
+*Última actualización: 2026-08-30*
