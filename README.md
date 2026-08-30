@@ -18,29 +18,44 @@
 
 | Sintaxis | Significado |
 |----------|------------|
-| `@Output() evento = new EventEmitter()` | Declara evento personalizado |\n| `evento.emit(valor)` | Emite evento con datos |\n| `(evento)="handler($event)"` | Captura evento en padre |\n
+| `@Output() evento = new EventEmitter()` | Declara evento personalizado |
+| `evento.emit(valor)` | Emite evento con datos |
+| `(evento)="handler($event)"` | Captura evento en padre |
+
 
 ## 🔗 Conexiones con Otros Conceptos
 
 Este concepto se relaciona con:
 
-- **T05E10-input** - Comunicación padre → hijo\n- **T05E12-input-output** - Combinación @Input + @Output\n- **T05E05-enlazado-eventos** - Event Binding básico\n
+- **T05E10-input** - Comunicación padre → hijo
+- **T05E12-input-output** - Combinación @Input + @Output
+- **T05E05-enlazado-eventos** - Event Binding básico
+
 
 ## 📖 Documentación Oficial
 
 Lecturas recomendadas en orden:
 
-1. [@Output Decorator](https://angular.dev/guide/directives-pipes#output-properties)\n1. [EventEmitter](https://angular.dev/api/core/EventEmitter)\n1. [Component Interaction](https://angular.dev/guide/components/inputs-outputs)\n
+1. [@Output Decorator](https://angular.dev/guide/directives-pipes#output-properties)
+1. [EventEmitter](https://angular.dev/api/core/EventEmitter)
+1. [Component Interaction](https://angular.dev/guide/components/inputs-outputs)
+
 
 ## 🎥 Ejemplos y Videos
 
 Recursos externos para aprender más:
 
-- [NgOutput Tutorial](https://www.w3schools.com/angular/angular_outputs.asp)\n- [Component Events](https://stackblitz.com/angular/component-outputs)\n- [Parent-Child Communication (YouTube)](https://www.youtube.com/results?search_query=angular+output+decorator)\n
+- [NgOutput Tutorial](https://www.w3schools.com/angular/angular_outputs.asp)
+- [Component Events](https://stackblitz.com/angular/component-outputs)
+- [Parent-Child Communication (YouTube)](https://www.youtube.com/results?search_query=angular+output+decorator)
+
 
 ## ⚠️ Notas Importantes - Qué Hacer y Qué NO Hacer
 
-❌ **NO:** Modificar propiedades del padre desde el hijo (usa @Output)\n✅ **SÍ:** Emitir eventos y dejar que padre decida qué hacer\n💡 **Tip:** Nombres de eventos con 'Change': @Output() valueChange = new EventEmitter()\n
+❌ **NO:** Modificar propiedades del padre desde el hijo (usa @Output)
+✅ **SÍ:** Emitir eventos y dejar que padre decida qué hacer
+💡 **Tip:** Nombres de eventos con 'Change': @Output() valueChange = new EventEmitter()
+
 
 ## 🚀 Cómo Ejecutar
 
