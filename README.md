@@ -1,15 +1,15 @@
-# 🎯 OPERADOR SPREAD
+# 🎯 DESESTRUCTURACIÓN
 
 ## ¿Qué se usa?
 
 Este ejercicio enseña:
-- **...**
-- **spread syntax**
+- **const { x**
+- **y } = obj**
 - Patrones y mejores prácticas
 
 ## ❓ ¿Por qué se usa?
 
-Trabajar con arrays/objetos Este concepto es fundamental porque:
+Extraer valores de estructuras Este concepto es fundamental porque:
 
 1. **Reutilización** - Permite escribir código más limpio y mantenible
 2. **Escalabilidad** - Facilita crecer y extender la aplicación
@@ -20,8 +20,8 @@ Trabajar con arrays/objetos Este concepto es fundamental porque:
 
 | Concepto | Sintaxis | Ejemplo | Memorizar |
 |----------|----------|---------|-----------|
-| ... | Ver código | app.component.ts | Mirar el src/ |
-| Patrón | Estructura | Spread Operator | Practicar |
+| const { x | Ver código | app.component.ts | Mirar el src/ |
+| Patrón | Estructura | Destructuring | Practicar |
 
 ## 🔗 Conexiones con Otros Conceptos
 
@@ -52,7 +52,7 @@ Si prefieres aprender en español, aquí hay opciones:
 
 - [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
 - [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
-- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=spread+operator+en+español)
+- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=destructuring+en+español)
 
 ## ⚠️ Notas Importantes
 
