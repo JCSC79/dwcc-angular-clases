@@ -20,29 +20,45 @@ Las animaciones mejoran significativamente la UX:
 
 | Sintaxis | Significado |
 |----------|------------|
-| `trigger('nombre', [...])` | Define animación nombrada |\n| `state('estado', style(...))` | Estado visual |\n| `transition('estado1 => estado2', animate(...))` | Cambio animado |\n| `[@trigger]="valor"` | Aplica animación en template |\n
+| `trigger('nombre', [...])` | Define animación nombrada |
+| `state('estado', style(...))` | Estado visual |
+| `transition('estado1 => estado2', animate(...))` | Cambio animado |
+| `[@trigger]="valor"` | Aplica animación en template |
+
 
 ## 🔗 Conexiones con Otros Conceptos
 
 Este concepto se relaciona con:
 
-- **T05E23-ngSwitch-ngStyle** - CSS y estilos\n- **T06E05-servizos** - Disparar animaciones desde servicio\n- **T06E06-servizos-observables** - Observables + animaciones\n
+- **T05E23-ngSwitch-ngStyle** - CSS y estilos
+- **T06E05-servizos** - Disparar animaciones desde servicio
+- **T06E06-servizos-observables** - Observables + animaciones
+
 
 ## 📖 Documentación Oficial
 
 Lecturas recomendadas en orden:
 
-1. [Angular Animations](https://angular.dev/guide/animations)\n1. [Animation API](https://angular.dev/api/animations)\n1. [Animation Examples](https://angular.dev/guide/animations#quick-example)\n
+1. [Angular Animations](https://angular.dev/guide/animations)
+1. [Animation API](https://angular.dev/api/animations)
+1. [Animation Examples](https://angular.dev/guide/animations#quick-example)
+
 
 ## 🎥 Ejemplos y Videos
 
 Recursos externos para aprender más:
 
-- [Animations Tutorial](https://www.w3schools.com/angular/angular_animations.asp)\n- [Advanced Animations](https://stackblitz.com/angular/animations)\n- [Animation Techniques (YouTube)](https://www.youtube.com/results?search_query=angular+animations+tutorial)\n
+- [Animations Tutorial](https://www.w3schools.com/angular/angular_animations.asp)
+- [Advanced Animations](https://stackblitz.com/angular/animations)
+- [Animation Techniques (YouTube)](https://www.youtube.com/results?search_query=angular+animations+tutorial)
+
 
 ## ⚠️ Notas Importantes - Qué Hacer y Qué NO Hacer
 
-❌ **NO:** Confundir CSS transitions con Angular animations\n✅ **SÍ:** Usar Angular animations para control total\n💡 **Tip:** BrowserAnimationsModule debe estar en AppConfig\n
+❌ **NO:** Confundir CSS transitions con Angular animations
+✅ **SÍ:** Usar Angular animations para control total
+💡 **Tip:** BrowserAnimationsModule debe estar en AppConfig
+
 
 ## 🚀 Cómo Ejecutar
 
