@@ -4,6 +4,12 @@ import { CompoAComponent } from './compo-a/compo-a.component';
 import { CompoBComponent } from './compo-b/compo-b.component';
 import { ServizoService } from './servizo.service';
 
+/**
+ * Componente que demuestra Componente de Angular
+ * 
+ * Demuestra conceptos de Angular
+ */
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -13,5 +19,6 @@ import { ServizoService } from './servizo.service';
   providers: [ServizoService]
 })
 export class AppComponent {
+  // title: propiedade que almacena un valor
   title = 'Servizo-Observables';
 }
