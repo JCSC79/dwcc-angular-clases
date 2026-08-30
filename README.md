@@ -1,27 +1,123 @@
-# ProxectoEnBranco
+# 📘 Exercicios-AngularMaterial - Ejercicio: Material
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+## 🎯 Objetivo del Ejercicio
 
-## Development server
+Proyecto con Material
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Aprenderás conceptos fundamentales de Angular aplicados de forma práctica.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 📚 Conceptos Clave
 
-## Build
+### Concepto Principal
+Este ejercicio enseña los fundamentos y buenas prácticas de ejercicio: material.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Aplicación Práctica
+Los conceptos aprendidos serán aplicables en proyectos reales y profesionales.
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🔍 Desglose del Código
 
-## Running end-to-end tests
+### TypeScript (`src/app/app.component.ts`)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+El componente TypeScript contiene:
+- **Decorador @Component**: Configuración del componente
+- **Propiedades**: Variables que almacenan datos
+- **Métodos**: Lógica que ejecuta acciones
+- **Constructor**: Inicialización del componente
 
-## Further help
+### HTML (`src/app/app.component.html`)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+La plantilla HTML implementa:
+- Interfaz de usuario
+- Vinculación de datos
+- Captura de eventos
+- Directivas estructurales
+
+### CSS (`src/app/app.component.css`)
+
+Estilos específicos que:
+- Se aplican solo a este componente
+- Mejoran la apariencia visual
+- No contaminan otros componentes
+
+---
+
+## 🚀 Cómo Ejecutar
+
+```bash
+# 1. Cambiar a la rama
+git checkout Exercicios-AngularMaterial
+
+# 2. Instalar dependencias
+npm install --legacy-peer-deps
+
+# 3. Ejecutar servidor
+ng serve -o
+
+# 4. Acceder a la aplicación
+# El navegador abrirá http://localhost:4200
+```
+
+---
+
+## 💡 Ejercicios Propuestos
+
+### Nivel 1: Modificaciones Básicas
+1. Cambia los valores de las propiedades
+2. Modifica el HTML para mostrar datos diferentes
+3. Añade nuevas propiedades a la clase
+
+### Nivel 2: Lógica Interactiva
+4. Agrega un método que modifique las propiedades
+5. Crea un evento que ejecute el método
+6. Implementa condicionales en la plantilla
+
+### Nivel 3: Desafío Avanzado
+7. Combina múltiples conceptos
+8. Crea funcionalidades nuevas
+9. Mejora la interfaz visualmente
+
+---
+
+## 📌 Conceptos Aprendidos
+
+✅ Entender la estructura de componentes Angular
+✅ Trabajar con propiedades y métodos
+✅ Vincular datos con plantillas HTML
+✅ Capturar eventos del usuario
+✅ Aplicar estilos CSS
+✅ Usar directivas y pipes
+
+---
+
+## 🔗 Recursos Complementarios
+
+- [Angular Oficial](https://angular.io)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
+- [MDN Web Docs](https://developer.mozilla.org/)
+- [Angular Style Guide](https://angular.io/guide/styleguide)
+
+---
+
+## ⚠️ Notas Importantes
+
+- Angular es un framework basado en componentes
+- Cada componente es independiente y reutilizable
+- TypeScript proporciona seguridad de tipos
+- La detección de cambios es automática
+- Los estilos CSS son locales al componente
+
+---
+
+## 🚀 Próximo Paso
+
+Continúa con **Exercicios-Exercicio-Animacions** para profundizar en los conceptos.
+
+---
+
+**¡Felicidades!** 🎉 Ya entiendes ejercicio: material, un concepto clave en Angular.
+
+*Última actualización: 2026-08-30 08:21*
