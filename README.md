@@ -18,29 +18,45 @@ Two-Way Binding es esencial cuando necesitas sincronización bidireccional:
 
 | Sintaxis | Significado |
 |----------|------------|
-| `[(ngModel)]="propiedad"` | Sintaxis: banana in a box: [( )] |\n| `Requiere FormsModule importado` | Siempre verificar imports |\n| `Actualización automática en AMBAS direcciones` | No necesita @Input/@Output |\n
+| `[(ngModel)]="propiedad"` | Sintaxis: banana in a box: [( )] |
+| `Requiere FormsModule importado` | Siempre verificar imports |
+| `Actualización automática en AMBAS direcciones` | No necesita @Input/@Output |
+
 
 ## 🔗 Conexiones con Otros Conceptos
 
 Este concepto se relaciona con:
 
-- **T05E04-enlazado-propiedades** - [propiedad] - One-way binding\n- **T05E05-enlazado-eventos** - (evento) - Event binding\n- **T05E03-interpolacion-strings** - {{ }} - Interpolación\n
+- **T05E04-enlazado-propiedades** - [propiedad] - One-way binding
+- **T05E05-enlazado-eventos** - (evento) - Event binding
+- **T05E03-interpolacion-strings** - {{ }} - Interpolación
+
 
 ## 📖 Documentación Oficial
 
 Lecturas recomendadas en orden:
 
-1. [Two-Way Binding](https://angular.dev/guide/templates/two-way-binding)\n1. [ngModel](https://angular.dev/api/forms/NgModel)\n1. [Forms Guide](https://angular.dev/guide/forms)\n
+1. [Two-Way Binding](https://angular.dev/guide/templates/two-way-binding)
+1. [ngModel](https://angular.dev/api/forms/NgModel)
+1. [Forms Guide](https://angular.dev/guide/forms)
+
 
 ## 🎥 Ejemplos y Videos
 
 Recursos externos para aprender más:
 
-- [NgModel Tutorial](https://www.w3schools.com/angular/angular_ng-model.asp)\n- [Forms Examples](https://stackblitz.com/angular/two-way-binding)\n- [Form Validation (YouTube)](https://www.youtube.com/results?search_query=angular+ngmodel+forms)\n
+- [NgModel Tutorial](https://www.w3schools.com/angular/angular_ng-model.asp)
+- [Forms Examples](https://stackblitz.com/angular/two-way-binding)
+- [Form Validation (YouTube)](https://www.youtube.com/results?search_query=angular+ngmodel+forms)
+
 
 ## ⚠️ Notas Importantes - Qué Hacer y Qué NO Hacer
 
-❌ **NO:** Olvidar importar FormsModule ([(ngModel)] no funciona sin él)\n✅ **SÍ:** Usar en formularios, campos de entrada, controles\n💡 **Tip:** Equivalente a [ngModel]="prop" + (ngModelChange)="prop=$event"\n⚠️ **Rendimiento:** En listas grandes, puede ser lento (considera OnPush)\n
+❌ **NO:** Olvidar importar FormsModule ([(ngModel)] no funciona sin él)
+✅ **SÍ:** Usar en formularios, campos de entrada, controles
+💡 **Tip:** Equivalente a [ngModel]="prop" + (ngModelChange)="prop=$event"
+⚠️ **Rendimiento:** En listas grandes, puede ser lento (considera OnPush)
+
 
 ## 🚀 Cómo Ejecutar
 
