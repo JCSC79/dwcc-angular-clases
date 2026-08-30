@@ -3,6 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { ContidoComponent } from './contido/contido.component';
 import { CommonModule } from '@angular/common';
 
+/**
+ * Componente que demuestra @Input - Propiedades de Entrada
+ * 
+ * Pasar datos de componente padre a componente hijo usando @Input
+ */
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -11,6 +17,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  // title: propiedade que almacena un valor
   title = '18-input';
   compartida: number = 0; // Esta propiedade da compoñente nai vai almacenar o valor que iremos pasando á compoñente filla
 }
