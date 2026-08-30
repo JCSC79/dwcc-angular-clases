@@ -20,29 +20,44 @@ Las interfaces son fundamentales en TypeScript/Angular:
 
 | Sintaxis | Significado |
 |----------|------------|
-| `interface Usuario { nombre: string; edad: number; }` | Sintaxis básica |\n| `edad?: number` | Propiedad opcional (? = opcional) |\n| `propiedadSoloLectura: readonly string` | Propiedad inmutable |\n
+| `interface Usuario { nombre: string; edad: number; }` | Sintaxis básica |
+| `edad?: number` | Propiedad opcional (? = opcional) |
+| `propiedadSoloLectura: readonly string` | Propiedad inmutable |
+
 
 ## 🔗 Conexiones con Otros Conceptos
 
 Este concepto se relaciona con:
 
-- **T06E02-clases** - Implementar interfaces en clases\n- **T06E05-servizos** - Interfaces para tipos de datos en servicios\n- **T05E01-TypeScript** - Tipos básicos de TypeScript\n
+- **T06E02-clases** - Implementar interfaces en clases
+- **T06E05-servizos** - Interfaces para tipos de datos en servicios
+- **T05E01-TypeScript** - Tipos básicos de TypeScript
+
 
 ## 📖 Documentación Oficial
 
 Lecturas recomendadas en orden:
 
-1. [TypeScript Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)\n1. [Angular Style Guide](https://angular.dev/guide/styleguide#interfaces)\n1. [Type Safety in Angular](https://angular.dev/guide/strict-mode)\n
+1. [TypeScript Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)
+1. [Angular Style Guide](https://angular.dev/guide/styleguide#interfaces)
+1. [Type Safety in Angular](https://angular.dev/guide/strict-mode)
+
 
 ## 🎥 Ejemplos y Videos
 
 Recursos externos para aprender más:
 
-- [Interfaces Explained](https://www.w3schools.com/typescript/typescript_interfaces.php)\n- [TypeScript Course](https://stackblitz.com/typescript/interfaces)\n- [Angular Type Safety (YouTube)](https://www.youtube.com/results?search_query=typescript+interfaces+angular)\n
+- [Interfaces Explained](https://www.w3schools.com/typescript/typescript_interfaces.php)
+- [TypeScript Course](https://stackblitz.com/typescript/interfaces)
+- [Angular Type Safety (YouTube)](https://www.youtube.com/results?search_query=typescript+interfaces+angular)
+
 
 ## ⚠️ Notas Importantes - Qué Hacer y Qué NO Hacer
 
-❌ **NO:** Confundir interfaces con clases (interfaces no se compilan)\n✅ **SÍ:** Usar interfaces para tipos de datos, clases para lógica\n💡 **Tip:** Interfaces son type hints, no generan código JavaScript\n
+❌ **NO:** Confundir interfaces con clases (interfaces no se compilan)
+✅ **SÍ:** Usar interfaces para tipos de datos, clases para lógica
+💡 **Tip:** Interfaces son type hints, no generan código JavaScript
+
 
 ## 🚀 Cómo Ejecutar
 
