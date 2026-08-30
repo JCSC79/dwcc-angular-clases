@@ -1,60 +1,54 @@
-# 📘 T05E05-enlazado-eventos - Event Binding (Enlazado de Eventos)
+# 📘 T05E05-enlazado-eventos - Event Binding
 
 ## 🎯 Objetivo del Ejercicio
 
-Capturar y manejar eventos del usuario (clics, inputs, teclado) usando la sintaxis (evento)='método'
+Capturar y manejar eventos del usuario
 
-**Tema**: Aprenderás a capturar eventos del usuario y ejecutar métodos en respuesta
+Aprenderás conceptos fundamentales de Angular aplicados de forma práctica.
 
 ---
 
 ## 📚 Conceptos Clave
 
-### 1. **Event Binding**
-Concepto fundamental para entender event binding (enlazado de eventos).
+### Concepto Principal
+Este ejercicio enseña los fundamentos y buenas prácticas de event binding.
 
-### 2. **Manejadores de eventos**
-Concepto fundamental para entender event binding (enlazado de eventos).
-
-### 3. **Métodos en componentes**
-Concepto fundamental para entender event binding (enlazado de eventos).
-
-### 4. **Pasaje de parámetros**
-Concepto fundamental para entender event binding (enlazado de eventos).
+### Aplicación Práctica
+Los conceptos aprendidos serán aplicables en proyectos reales y profesionales.
 
 ---
 
 ## 🔍 Desglose del Código
 
-### TypeScript (`app.component.ts`)
+### TypeScript (`src/app/app.component.ts`)
 
-Los componentes en Angular están formados por:
-- **Decorador @Component**: Configura el selector, template y estilos
+El componente TypeScript contiene:
+- **Decorador @Component**: Configuración del componente
 - **Propiedades**: Variables que almacenan datos
-- **Métodos**: Funciones que ejecutan lógica
-- **Constructor**: Se ejecuta al crear el componente
+- **Métodos**: Lógica que ejecuta acciones
+- **Constructor**: Inicialización del componente
 
-### HTML (`app.component.html`)
+### HTML (`src/app/app.component.html`)
 
-La plantilla HTML es donde:
-- Se muestra la interfaz del usuario
-- Se vinculan datos con el modelo TypeScript
-- Se capturan eventos del usuario
-- Se aplican directivas y pipes
+La plantilla HTML implementa:
+- Interfaz de usuario
+- Vinculación de datos
+- Captura de eventos
+- Directivas estructurales
 
-### CSS (`app.component.css`)
+### CSS (`src/app/app.component.css`)
 
-Estilos específicos del componente que:
+Estilos específicos que:
 - Se aplican solo a este componente
-- No contaminan otros componentes
 - Mejoran la apariencia visual
+- No contaminan otros componentes
 
 ---
 
 ## 🚀 Cómo Ejecutar
 
 ```bash
-# 1. Ir a la rama
+# 1. Cambiar a la rama
 git checkout T05E05-enlazado-eventos
 
 # 2. Instalar dependencias
@@ -62,68 +56,68 @@ npm install --legacy-peer-deps
 
 # 3. Ejecutar servidor
 ng serve -o
-```
 
-**Resultado esperado:**
-El navegador abrirá http://localhost:4200 y podrás ver la aplicación funcionando.
+# 4. Acceder a la aplicación
+# El navegador abrirá http://localhost:4200
+```
 
 ---
 
 ## 💡 Ejercicios Propuestos
 
 ### Nivel 1: Modificaciones Básicas
-
 1. Cambia los valores de las propiedades
 2. Modifica el HTML para mostrar datos diferentes
 3. Añade nuevas propiedades a la clase
 
 ### Nivel 2: Lógica Interactiva
-
 4. Agrega un método que modifique las propiedades
 5. Crea un evento que ejecute el método
 6. Implementa condicionales en la plantilla
 
 ### Nivel 3: Desafío Avanzado
-
-7. Combina múltiples conceptos del ejercicio
+7. Combina múltiples conceptos
 8. Crea funcionalidades nuevas
 9. Mejora la interfaz visualmente
 
 ---
 
+## 📌 Conceptos Aprendidos
+
+✅ Entender la estructura de componentes Angular
+✅ Trabajar con propiedades y métodos
+✅ Vincular datos con plantillas HTML
+✅ Capturar eventos del usuario
+✅ Aplicar estilos CSS
+✅ Usar directivas y pipes
+
+---
+
 ## 🔗 Recursos Complementarios
 
-- [Angular Documentation](https://angular.io/docs)
+- [Angular Oficial](https://angular.io)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 - [MDN Web Docs](https://developer.mozilla.org/)
+- [Angular Style Guide](https://angular.io/guide/styleguide)
 
 ---
 
-## 🎓 Conceptos Aprendidos
-
-✅ Event Binding
-✅ Manejadores de eventos
-✅ Métodos en componentes
-✅ Pasaje de parámetros
-
----
-
-## 📌 Notas Importantes
+## ⚠️ Notas Importantes
 
 - Angular es un framework basado en componentes
 - Cada componente es independiente y reutilizable
 - TypeScript proporciona seguridad de tipos
-- La plantilla HTML se actualiza automáticamente
+- La detección de cambios es automática
 - Los estilos CSS son locales al componente
 
 ---
 
 ## 🚀 Próximo Paso
 
-Continúa con **T05E06-enlazado-bidireccional - Two-Way Binding (Enlazado Bidireccional)**
+Continúa con **T05E06-enlazado-bidireccional** para profundizar en los conceptos.
 
 ---
 
-**¡Felicidades!** 🎉 Ya entiendes event binding (enlazado de eventos), un concepto clave en Angular.
+**¡Felicidades!** 🎉 Ya entiendes event binding, un concepto clave en Angular.
 
-*Última actualización: 2026-08-30 08:15*
+*Última actualización: 2026-08-30 08:17*
