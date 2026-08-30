@@ -1,15 +1,15 @@
-# 🎯 SEGURIDAD DE TIPOS
+# 🎯 OPERADOR SPREAD
 
 ## ¿Qué se usa?
 
 Este ejercicio enseña:
-- **strict mode**
-- **type checking**
+- **...**
+- **spread syntax**
 - Patrones y mejores prácticas
 
 ## ❓ ¿Por qué se usa?
 
-TypeScript estricto Este concepto es fundamental porque:
+Trabajar con arrays/objetos Este concepto es fundamental porque:
 
 1. **Reutilización** - Permite escribir código más limpio y mantenible
 2. **Escalabilidad** - Facilita crecer y extender la aplicación
@@ -20,8 +20,8 @@ TypeScript estricto Este concepto es fundamental porque:
 
 | Concepto | Sintaxis | Ejemplo | Memorizar |
 |----------|----------|---------|-----------|
-| strict mode | Ver código | app.component.ts | Mirar el src/ |
-| Patrón | Estructura | Type Safety | Practicar |
+| ... | Ver código | app.component.ts | Mirar el src/ |
+| Patrón | Estructura | Spread Operator | Practicar |
 
 ## 🔗 Conexiones con Otros Conceptos
 
@@ -52,7 +52,7 @@ Si prefieres aprender en español, aquí hay opciones:
 
 - [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
 - [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
-- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=type+safety+en+español)
+- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=spread+operator+en+español)
 
 ## ⚠️ Notas Importantes
 
