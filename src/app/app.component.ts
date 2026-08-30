@@ -3,6 +3,12 @@ import { Component } from '@angular/core';
 import { ComponhenteAComponent } from './componhente-a/componhente-a.component';
 import { ComponhenteBComponent } from './componhente-b/componhente-b.component';
 
+/**
+ * Componente que demuestra Componente de Angular
+ * 
+ * Demuestra conceptos de Angular
+ */
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -11,6 +17,7 @@ import { ComponhenteBComponent } from './componhente-b/componhente-b.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  // title: propiedade que almacena un valor
   title = 'ngComponentOutlet';
   componhenteA = ComponhenteAComponent; // Esta propiedade almacena unha referencia á clase ComponhenteAComponent
   componhenteB = ComponhenteBComponent; // Esta propiedade almacena unha referencia á clase ComponhenteBComponent
