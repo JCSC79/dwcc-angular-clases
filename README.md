@@ -1,15 +1,15 @@
-# 🎯 COMPONENT DEV KIT
+# 🎯 GESTIÓN DE ESTADO
 
 ## ¿Qué se usa?
 
 Este ejercicio enseña:
-- **@angular/cdk**
-- **drag-drop**
+- **NgRx**
+- **state**
 - Patrones y mejores prácticas
 
 ## ❓ ¿Por qué se usa?
 
-Funcionalidades avanzadas Este concepto es fundamental porque:
+Manejo centralizado de estado Este concepto es fundamental porque:
 
 1. **Reutilización** - Permite escribir código más limpio y mantenible
 2. **Escalabilidad** - Facilita crecer y extender la aplicación
@@ -20,8 +20,8 @@ Funcionalidades avanzadas Este concepto es fundamental porque:
 
 | Concepto | Sintaxis | Ejemplo | Memorizar |
 |----------|----------|---------|-----------|
-| @angular/cdk | Ver código | app.component.ts | Mirar el src/ |
-| Patrón | Estructura | CDK | Practicar |
+| NgRx | Ver código | app.component.ts | Mirar el src/ |
+| Patrón | Estructura | State Management | Practicar |
 
 ## 🔗 Conexiones con Otros Conceptos
 
@@ -52,7 +52,7 @@ Si prefieres aprender en español, aquí hay opciones:
 
 - [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
 - [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
-- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=cdk+en+español)
+- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=state+management+en+español)
 
 ## ⚠️ Notas Importantes
 
