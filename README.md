@@ -1,15 +1,15 @@
-# 🎯 PIPES EN ANGULAR
+# 🎯 PIPES PERSONALIZADOS
 
 ## ¿Qué se usa?
 
 Este ejercicio enseña:
-- **{{ value | pipe }}**
-- **custom pipes**
+- **@Pipe**
+- **transform method**
 - Patrones y mejores prácticas
 
 ## ❓ ¿Por qué se usa?
 
-Transformar datos en templates Este concepto es fundamental porque:
+Crear pipes customizados Este concepto es fundamental porque:
 
 1. **Reutilización** - Permite escribir código más limpio y mantenible
 2. **Escalabilidad** - Facilita crecer y extender la aplicación
@@ -20,8 +20,8 @@ Transformar datos en templates Este concepto es fundamental porque:
 
 | Concepto | Sintaxis | Ejemplo | Memorizar |
 |----------|----------|---------|-----------|
-| {{ value | pipe }} | Ver código | app.component.ts | Mirar el src/ |
-| Patrón | Estructura | Pipes | Practicar |
+| @Pipe | Ver código | app.component.ts | Mirar el src/ |
+| Patrón | Estructura | Custom Pipes | Practicar |
 
 ## 🔗 Conexiones con Otros Conceptos
 
@@ -52,7 +52,7 @@ Si prefieres aprender en español, aquí hay opciones:
 
 - [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
 - [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
-- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=pipes+en+español)
+- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=custom+pipes+en+español)
 
 ## ⚠️ Notas Importantes
 
