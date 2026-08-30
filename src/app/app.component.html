@@ -1,7 +1,16 @@
+<!-- Encabezado que cambia dinámicamente de color -->
+<!-- [ngStyle] vincula estilos CSS dinámicamente -->
 <h1 [ngStyle]="{ 'color': cor }">{{ title }}</h1>
 
-<input type="checkbox" (change)="mudarTitulo()">
-<br>
-<button (click)="mudarCor()">
-    MUDAR COR
-</button>
+<!-- Checkbox que dispara el evento (change) cuando cambias su estado -->
+<!-- Este es un ejemplo de Event Binding: (evento)="método()" -->
+<input type="checkbox" (change)="mudarTitulo()" />
+<label>Cambiar título</label>
+<br><br>
+
+<!-- Botón que dispara el evento (click) cuando haces clic en él -->
+<!-- Cada clic alterna el color entre azul y púrpura -->
+<button (click)="mudarCor()">CAMBIAR COLOR</button>
+
+<hr>
+<p><strong>Concepto:</strong> Event Binding captura eventos del usuario y ejecuta métodos de la clase.</p>

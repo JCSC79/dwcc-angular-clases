@@ -1,123 +1,168 @@
-# 📘 T05E05-enlazado-eventos - Event Binding
+# 📘 T05E05 - Event Binding (Enlazado de Eventos)
 
 ## 🎯 Objetivo del Ejercicio
 
-Capturar y manejar eventos del usuario
-
-Aprenderás conceptos fundamentales de Angular aplicados de forma práctica.
+Aprender a **capturar eventos del usuario** (clics, cambios de inputs, etc.) y ejecutar métodos en respuesta. Dominarás:
+- La sintaxis `(evento)="método()"`
+- Eventos comunes: (click), (change), (input), (blur), etc.
+- Comunicación usuario → componente
 
 ---
 
 ## 📚 Conceptos Clave
 
-### Concepto Principal
-Este ejercicio enseña los fundamentos y buenas prácticas de event binding.
+### Event Binding: `(evento)="método()"`
 
-### Aplicación Práctica
-Los conceptos aprendidos serán aplicables en proyectos reales y profesionales.
+Event Binding **vincula eventos HTML** con **métodos de la clase**, permitiendo que el componente reaccione a las interacciones del usuario.
+
+```html
+<!-- Cuando el usuario hace clic, se ejecuta mudarCor() -->
+<button (click)="mudarCor()">Cambiar</button>
+
+<!-- Cuando el usuario cambia el estado del checkbox, se ejecuta mudarTitulo() -->
+<input type="checkbox" (change)="mudarTitulo()" />
+```
+
+### Eventos Comunes
+
+| Evento | Cuándo Ocurre | Ejemplo |
+|--------|---------------|---------|
+| **(click)** | Cuando haces clic en un elemento | `<button (click)="metodo()">` |
+| **(change)** | Cuando cambia el valor de un input/select/checkbox | `<input (change)="metodo()">` |
+| **(input)** | Cuando escribes en un input (más frecuente que change) | `<input (input)="metodo()">` |
+| **(blur)** | Cuando el input pierde el foco | `<input (blur)="metodo()">` |
+| **(keyup)** | Cuando sueltas una tecla | `<input (keyup)="metodo()">` |
+| **(keydown)** | Cuando presionas una tecla | `<input (keydown)="metodo()">` |
+| **(submit)** | Cuando envías un formulario | `<form (submit)="metodo()">` |
+| **(mouseover)** | Cuando pasas el ratón sobre un elemento | `<div (mouseover)="metodo()">` |
+| **(mouseout)** | Cuando el ratón sale de un elemento | `<div (mouseout)="metodo()">` |
 
 ---
 
 ## 🔍 Desglose del Código
 
-### TypeScript (`src/app/app.component.ts`)
+### TypeScript
 
-El componente TypeScript contiene:
-- **Decorador @Component**: Configuración del componente
-- **Propiedades**: Variables que almacenan datos
-- **Métodos**: Lógica que ejecuta acciones
-- **Constructor**: Inicialización del componente
+```typescript
+export class AppComponent {
+  title = 'T05E05 - Event Binding';
+  cor: string = "blue";
 
-### HTML (`src/app/app.component.html`)
+  // Se ejecuta cuando el checkbox cambia de estado
+  mudarTitulo(): void {
+    this.title = 'El evento (change) fue disparado!';
+  }
 
-La plantilla HTML implementa:
-- Interfaz de usuario
-- Vinculación de datos
-- Captura de eventos
-- Directivas estructurales
+  // Se ejecuta cuando haces clic en el botón
+  mudarCor(): void {
+    this.cor === "blue" ? this.cor = "purple" : this.cor = "blue";
+  }
+}
+```
 
-### CSS (`src/app/app.component.css`)
+### HTML
 
-Estilos específicos que:
-- Se aplican solo a este componente
-- Mejoran la apariencia visual
-- No contaminan otros componentes
+```html
+<!-- Vinculación de estilos dinámicos + evento -->
+<h1 [ngStyle]="{ 'color': cor }">{{ title }}</h1>
+
+<!-- Event Binding: (change)="mudarTitulo()" -->
+<input type="checkbox" (change)="mudarTitulo()" />
+
+<!-- Event Binding: (click)="mudarCor()" -->
+<button (click)="mudarCor()">CAMBIAR COLOR</button>
+```
 
 ---
 
 ## 🚀 Cómo Ejecutar
 
 ```bash
-# 1. Cambiar a la rama
 git checkout T05E05-enlazado-eventos
-
-# 2. Instalar dependencias
 npm install --legacy-peer-deps
-
-# 3. Ejecutar servidor
 ng serve -o
-
-# 4. Acceder a la aplicación
-# El navegador abrirá http://localhost:4200
 ```
+
+**Resultado:** Un título que cambia de color cuando haces clic en el botón, y su texto cambia cuando cambias el checkbox.
 
 ---
 
 ## 💡 Ejercicios Propuestos
 
-### Nivel 1: Modificaciones Básicas
-1. Cambia los valores de las propiedades
-2. Modifica el HTML para mostrar datos diferentes
-3. Añade nuevas propiedades a la clase
+### Nivel 1: Agregar Más Eventos
 
-### Nivel 2: Lógica Interactiva
-4. Agrega un método que modifique las propiedades
-5. Crea un evento que ejecute el método
-6. Implementa condicionales en la plantilla
+1. **Contador de clics**:
+   ```typescript
+   contador = 0;
+   incrementar(): void {
+     this.contador++;
+   }
+   ```
+   ```html
+   <button (click)="incrementar()">Clics: {{ contador }}</button>
+   ```
 
-### Nivel 3: Desafío Avanzado
-7. Combina múltiples conceptos
-8. Crea funcionalidades nuevas
-9. Mejora la interfaz visualmente
+### Nivel 2: Múltiples Eventos
+
+2. **Mostrar/ocultar elemento**:
+   ```typescript
+   visible = true;
+   toggle(): void {
+     this.visible = !this.visible;
+   }
+   ```
+   ```html
+   <button (click)="toggle()">Mostrar/Ocultar</button>
+   <div *ngIf="visible">Visible</div>
+   ```
+
+### Nivel 3: Capturar Datos del Evento
+
+3. **Leer valor de input en el evento**:
+   ```typescript
+   mensaje = '';
+   capturar(evento: any): void {
+     this.mensaje = evento.target.value;
+   }
+   ```
+   ```html
+   <input (input)="capturar($event)" />
+   <p>{{ mensaje }}</p>
+   ```
 
 ---
 
-## 📌 Conceptos Aprendidos
+## 🔗 Recursos
 
-✅ Entender la estructura de componentes Angular
-✅ Trabajar con propiedades y métodos
-✅ Vincular datos con plantillas HTML
-✅ Capturar eventos del usuario
-✅ Aplicar estilos CSS
-✅ Usar directivas y pipes
+- [Angular Event Binding](https://angular.io/guide/event-binding)
+- [Template Syntax - Events](https://angular.io/guide/template-syntax#event-binding)
+- [DOM Events List](https://developer.mozilla.org/en-US/docs/Web/Events)
 
 ---
 
-## 🔗 Recursos Complementarios
+## 🎓 Conceptos Aprendidos
 
-- [Angular Oficial](https://angular.io)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
-- [MDN Web Docs](https://developer.mozilla.org/)
-- [Angular Style Guide](https://angular.io/guide/styleguide)
+✅ Usar la sintaxis `(evento)="método()"`  
+✅ Conocer eventos comunes (click, change, input, etc.)  
+✅ Ejecutar métodos en respuesta a eventos del usuario  
+✅ Combinar Event Binding con Property Binding  
+✅ Actualizar el estado del componente dinámicamente  
 
 ---
 
-## ⚠️ Notas Importantes
+## 📌 Notas Importantes
 
-- Angular es un framework basado en componentes
-- Cada componente es independiente y reutilizable
-- TypeScript proporciona seguridad de tipos
-- La detección de cambios es automática
-- Los estilos CSS son locales al componente
+- **Event Binding es unidireccional**: Usuario → Componente
+- **$event**: Contiene información del evento (puedes recibirlo como parámetro)
+- **Detección de cambios**: Angular actualiza automáticamente la vista cuando el método modifica propiedades
+- **Rendimiento**: Los eventos se disparan muchas veces, evita lógica pesada
 
 ---
 
 ## 🚀 Próximo Paso
 
-Continúa con **T05E06-enlazado-bidireccional** para profundizar en los conceptos.
+Continúa con **T05E06-enlazado-bidireccional** para aprender Two-Way Binding, que combina Property Binding + Event Binding.
 
 ---
 
-**¡Felicidades!** 🎉 Ya entiendes event binding, un concepto clave en Angular.
-
-*Última actualización: 2026-08-30 08:17*
+**¡Felicidades!** 🎉 Ya captura eventos del usuario como un profesional.
