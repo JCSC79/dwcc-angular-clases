@@ -1,9 +1,24 @@
+<!-- Título de la aplicación -->
 <h1>{{ title }}</h1>
-<p>O resultado de sumar {{ numero1 }} e {{ numero2 }} é {{ numero1+numero2 }}</p>
-<p>Os datos do obxecto corresponden á persoa {{ obxecto.nome}} de idade {{ obxecto.idade }} anos</p>
-<h2>Fases da Lúa</h2>
+
+<!-- EJEMPLO 1: Interpolación de números y operaciones aritméticas -->
+<!-- La sintaxis {{ }} permite realizar operaciones simples dentro del HTML -->
+<p>El resultado de sumar {{ numero1 }} + {{ numero2 }} = {{ numero1 + numero2 }}</p>
+
+<!-- EJEMPLO 2: Acceso a propiedades de objetos -->
+<!-- Puedes acceder a propiedades anidadas usando la notación de punto (.) -->
+<p>Los datos del objeto pertenecen a la persona <strong>{{ obxecto.nome }}</strong> de edad <strong>{{ obxecto.idade }}</strong> años</p>
+
+<!-- EJEMPLO 3: Iteración sobre arrays con *ngFor -->
+<h2>Fases de la Luna</h2>
 <ul>
+    <!-- La directiva *ngFor itera sobre el array y crea un elemento <li> para cada fase -->
+    <!-- "let fase of fases" - creamos una variable local 'fase' para cada iteración -->
     <li *ngFor="let fase of fases">
-        {{ fase }}
+        {{ fase }}  <!-- Mostramos el valor de cada fase -->
     </li>
 </ul>
+
+<!-- Información adicional -->
+<hr>
+<p><small><strong>Nota:</strong> La interpolación {{ }} solo funciona con expresiones simples. Para lógica compleja, usa métodos en la clase.</small></p>
