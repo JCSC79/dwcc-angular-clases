@@ -1,313 +1,108 @@
-# 📘 T05E03 - Interpolación de Strings y Expresiones en Angular
+# 🎯 INTERPOLACIÓN DE STRINGS
 
-## 🎯 Objetivo del Ejercicio
+## ¿Qué se usa?
 
-Dominar la **interpolación de datos** en Angular, que es la forma más básica de mostrar valores dinámicos en templates. Aprenderás a:
+Este ejercicio enseña:
+- **{{ variable }}**
+- **template expressions**
+- Patrones y mejores prácticas
 
-- Mostrar valores de propiedades simples
-- Realizar operaciones aritméticas en la vista
-- Acceder a propiedades de objetos
-- Iterar sobre arrays usando `*ngFor`
+## ❓ ¿Por qué se usa?
 
----
+Mostrar datos en la vista dinámicamente Este concepto es fundamental porque:
 
-## 📚 Conceptos Clave
+1. **Reutilización** - Permite escribir código más limpio y mantenible
+2. **Escalabilidad** - Facilita crecer y extender la aplicación
+3. **Profesionalismo** - Sigue estándares de la industria
+4. **Debugging** - Código más fácil de debuguear y testear
 
-### 1. **¿Qué es la Interpolación?**
+## 💾 Recordar - Sintaxis Clave
 
-La **interpolación** es la técnica de insertar expresiones dinámicas en una plantilla HTML usando la sintaxis `{{ expresión }}`.
+| Concepto | Sintaxis | Ejemplo | Memorizar |
+|----------|----------|---------|-----------|
+| {{ variable }} | Ver código | app.component.ts | Mirar el src/ |
+| Patrón | Estructura | String Interpolation | Practicar |
 
-```html
-<!-- Variable simple -->
-<p>Hola {{ nombre }}</p>
+## 🔗 Conexiones con Otros Conceptos
 
-<!-- Operación aritmética -->
-<p>La suma es: {{ 5 + 3 }}</p>
+Este ejercicio se relaciona con:
+- Ejercicios anteriores en progresión pedagógica
+- Conceptos de Angular fundamentales
+- Patrones de TypeScript
 
-<!-- Propiedad de objeto -->
-<p>Tu nombre es: {{ persona.nombre }}</p>
+Ver **[Mapa de Aprendizaje](../README.md)** para contexto completo.
 
-<!-- Llamada a método -->
-<p>{{ obtenerSaludo() }}</p>
-```
+## 📖 Documentación Oficial
 
-### 2. **Limitaciones de la Interpolación**
+**Documentación recomendada:**
+- [Angular Docs - Conceptos](https://angular.dev/guide)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
+- [MDN Web Docs](https://developer.mozilla.org/)
 
-| ✅ Permitido | ❌ No Permitido |
-|-------------|-----------------|
-| `{{ numero1 + numero2 }}` | `{{ var = 5 }}` (asignación) |
-| `{{ nombre.toUpperCase() }}` | `{{ if(x > 5) {} }}` (condicionales) |
-| `{{ persona.edad }}` | `{{ new Date() }}` (new operator) |
-| `{{ metodo() }}` | `{{ console.log(x) }}` (efectos secundarios) |
+## 🎥 Ejemplos y Videos
 
-> 💡 Para lógica compleja, usa métodos en la clase o directivas como `*ngIf`, `*ngFor`
+**Recursos en inglés:**
+- [Angular Official Examples](https://angular.dev/examples)
+- [StackBlitz - Ejemplos interactivos](https://stackblitz.com)
+- [W3Schools Angular](https://www.w3schools.com/angular/default.asp)
 
-### 3. **Acceso a Propiedades de Objetos**
+## 📚 Recursos en ESPAÑOL
 
-```typescript
-// Objeto con propiedades anidadas
-persona: any = {
-  nombre: 'Juan',
-  edad: 30,
-  direccion: {
-    ciudad: 'Madrid',
-    calle: 'Calle Principal'
-  }
-};
-```
+Si prefieres aprender en español, aquí hay opciones:
 
-En el HTML:
-```html
-<p>{{ persona.nombre }}</p>                          <!-- Juan -->
-<p>{{ persona.direccion.ciudad }}</p>                <!-- Madrid -->
-<p>{{ persona.nombre.toUpperCase() }}</p>            <!-- JUAN -->
-```
+- [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
+- [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
+- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=string+interpolation+en+español)
 
----
+## ⚠️ Notas Importantes
 
-## 🔍 Desglose del Código
+### ❌ NO hacer:
+- No mezclar lógica con presentación
+- No reutilizar código sin refactorizar
+- No ignorar los errores de TypeScript
 
-### Componente TypeScript (`app.component.ts`)
+### ✅ SÍ hacer:
+- Mantener componentes pequeños y enfocados
+- Usar TypeScript strict mode
+- Escribir código autodocumentado
 
-```typescript
-export class AppComponent {
-  // Variables numéricas para operaciones
-  numero1: number = 12;
-  numero2: number = 27;
-  
-  // Objeto con propiedades anidadas
-  obxecto: any = {
-    nome: 'Pepito Castro',
-    idade: 22
-  };
-  
-  // Array de strings para iteración
-  fases: string[] = ["Chea", "Menguante", "Nova", "Creciente"];
-}
-```
-
-### Plantilla HTML (`app.component.html`)
-
-#### Ejemplo 1: Operaciones Aritméticas
-```html
-<p>El resultado de sumar {{ numero1 }} + {{ numero2 }} = {{ numero1 + numero2 }}</p>
-<!-- Salida: El resultado de sumar 12 + 27 = 39 -->
-```
-
-#### Ejemplo 2: Acceso a Objetos
-```html
-<p>La persona {{ obxecto.nome }} tiene {{ obxecto.idade }} años</p>
-<!-- Salida: La persona Pepito Castro tiene 22 años -->
-```
-
-#### Ejemplo 3: Iteración con *ngFor
-```html
-<ul>
-    <li *ngFor="let fase of fases">
-        {{ fase }}
-    </li>
-</ul>
-<!-- Salida:
-    - Chea
-    - Menguante
-    - Nova
-    - Creciente
--->
-```
-
----
+### 💡 Tips Profesionales:
+- Lee los comentarios en el código fuente
+- Experimenta modificando los valores
+- Prueba casos extremos (vacío, null, undefined)
 
 ## 🚀 Cómo Ejecutar
 
 ```bash
-# 1. Cambiar a la rama
-git checkout T05E03-interpolacion-strings
-
-# 2. Instalar dependencias
+# 1. Instalar dependencias
 npm install --legacy-peer-deps
 
-# 3. Ejecutar servidor
+# 2. Servir la aplicación
 ng serve -o
 
-# 4. Verás la salida en http://localhost:4200/
+# 3. Ver en http://localhost:4200
 ```
-
-**Resultado esperado:**
-```
-T05E03 - Interpolación de Strings y Expresiones
-
-El resultado de sumar 12 + 27 = 39
-
-Los datos del objeto pertenecen a la persona Pepito Castro de edad 22 años
-
-Fases de la Luna
-- Chea
-- Menguante
-- Nova
-- Creciente
-```
-
----
-
-## 📝 Sintaxis Disponible en Interpolación
-
-### Operaciones Aritméticas
-```html
-<p>{{ 10 + 5 }}</p>           <!-- 15 -->
-<p>{{ 20 - 8 }}</p>           <!-- 12 -->
-<p>{{ 3 * 4 }}</p>            <!-- 12 -->
-<p>{{ 20 / 4 }}</p>           <!-- 5 -->
-<p>{{ 17 % 5 }}</p>           <!-- 2 -->
-```
-
-### Operadores Lógicos
-```html
-<p>{{ true && false }}</p>    <!-- false -->
-<p>{{ true || false }}</p>    <!-- true -->
-<p>{{ !false }}</p>           <!-- true -->
-```
-
-### Métodos de String
-```html
-<p>{{ 'hola'.toUpperCase() }}</p>       <!-- HOLA -->
-<p>{{ 'MUNDO'.toLowerCase() }}</p>      <!-- mundo -->
-<p>{{ 'Angular'.length }}</p>           <!-- 7 -->
-<p>{{ 'Angular'.substring(0, 3) }}</p>  <!-- Ang -->
-```
-
-### Operador Ternario
-```html
-<p>{{ edad >= 18 ? 'Mayor' : 'Menor' }}</p>
-```
-
-### Acceso a Índices
-```html
-<p>{{ array[0] }}</p>         <!-- Primer elemento -->
-<p>{{ objeto.propiedad }}</p> <!-- Propiedad del objeto -->
-```
-
----
 
 ## 💡 Ejercicios Propuestos
 
-### Nivel 1: Modificaciones Simples
+### Nivel 1: Reproduce y Entiende
+1. Ejecuta el ejercicio y observa el comportamiento
+2. Lee los comentarios en el código fuente
+3. Identifica dónde se usan los conceptos explicados
+4. Responde: ¿Qué hace este código? ¿Por qué se estructura así?
 
-1. **Cambia los números**:
-   ```typescript
-   numero1: number = 100;
-   numero2: number = 50;
-   ```
+### Nivel 2: Modifica y Experimenta
+1. Cambia valores de prueba (strings, números)
+2. Añade un nuevo campo/propiedad
+3. Modifica el comportamiento de una función
+4. Prueba casos límite (valores especiales, vacíos)
 
-2. **Agrega más operaciones**:
-   ```html
-   <p>Multiplicación: {{ numero1 * numero2 }}</p>
-   <p>División: {{ numero1 / numero2 }}</p>
-   ```
-
-3. **Modifica el objeto**:
-   ```typescript
-   obxecto = {
-     nome: 'Tu Nombre',
-     idade: 25,
-     ciudad: 'Tu Ciudad'
-   };
-   ```
-
-### Nivel 2: Arrays Dinámicos
-
-4. **Agrega más arrays**:
-   ```typescript
-   colores: string[] = ["Rojo", "Verde", "Azul"];
-   numeros: number[] = [1, 2, 3, 4, 5];
-   ```
-
-5. **Itera sobre ellos**:
-   ```html
-   <p>Colores disponibles:</p>
-   <ul>
-     <li *ngFor="let color of colores">{{ color }}</li>
-   </ul>
-   ```
-
-### Nivel 3: Operaciones Complejas
-
-6. **Usa métodos en interpolación**:
-   ```typescript
-   obtenerSuma(): number {
-     return this.numero1 + this.numero2;
-   }
-   ```
-   ```html
-   <p>Suma mediante método: {{ obtenerSuma() }}</p>
-   ```
-
-7. **Formato de números**:
-   ```html
-   <p>Edad en años: {{ obxecto.idade }}</p>
-   <p>Año de nacimiento: {{ 2024 - obxecto.idade }}</p>
-   ```
+### Nivel 3: Crea y Aplica
+1. Crea un nuevo componente similar
+2. Integra lo aprendido en tu propia aplicación
+3. Extiende la funcionalidad
+4. Documenta tu código
 
 ---
 
-## 🔗 Recursos Complementarios
-
-- [Angular Template Syntax](https://angular.io/guide/template-syntax)
-- [Interpolation Guide](https://angular.io/guide/interpolation)
-- [Template Expressions](https://angular.io/guide/template-expressions)
-- [Built-in Directives](https://angular.io/guide/built-in-directives)
-
----
-
-## ⚡ Rendimiento: ¿Cuándo Evitar Interpolación?
-
-⚠️ Evita lógica compleja en interpolaciones:
-
-```html
-<!-- ❌ MAL - Lógica compleja -->
-<p *ngFor="let item of array; let i = index">
-  {{ i % 2 === 0 ? (item.precio * 1.21) : item.precio }}
-</p>
-
-<!-- ✅ BIEN - Usar método -->
-<p *ngFor="let item of array">
-  {{ aplicarIVA(item) }}
-</p>
-```
-
-En la clase:
-```typescript
-aplicarIVA(item: any): number {
-  return item.precio * 1.21;
-}
-```
-
----
-
-## 🎓 Conceptos Aprendidos
-
-✅ Usar la sintaxis de interpolación `{{ }}`  
-✅ Realizar operaciones aritméticas en templates  
-✅ Acceder a propiedades de objetos  
-✅ Iterar sobre arrays con `*ngFor`  
-✅ Aplicar métodos y transformaciones en interpolación  
-✅ Entender las limitaciones de la interpolación  
-
----
-
-## 📌 Notas Importantes
-
-- **Actualización automática**: Angular actualiza la vista automáticamente cuando cambian las propiedades
-- **Sin asignaciones**: No puedes asignar valores dentro de {{ }}
-- **Sin operadores new**: No puedes crear objetos con `new` dentro de interpolación
-- **Sin efectos secundarios**: No hagas llamadas a APIs o cambios de estado en métodos usados en interpolación
-- **Rendimiento**: Cada interpolación se evalúa en cada ciclo de detección de cambios
-
----
-
-## 🚀 Próximo Paso
-
-Continúa con **T05E04-enlazado-propiedades** para aprender **Property Binding**, una forma más poderosa de enlazar datos a propiedades HTML.
-
----
-
-**¡Felicidades!** 🎉 Ya dominas la interpolación, el corazón de la reactividad en Angular.
+**📝 Nota:** Este ejercicio es parte de la progresión de aprendizaje. Complétalo en orden para mejor comprensión.
