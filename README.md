@@ -1,123 +1,72 @@
-# 📘 T06E27-pipes-personalizados - Pipes Personalizados
+# 📘 T06E27 - Pipes
 
 ## 🎯 Objetivo del Ejercicio
 
-Transformaciones específicas
+Aprender y dominar **Pipes** en Angular.
 
-Aprenderás conceptos fundamentales de Angular aplicados de forma práctica.
+Este ejercicio enseña cómo transformación de datos.
 
 ---
 
 ## 📚 Conceptos Clave
 
-### Concepto Principal
-Este ejercicio enseña los fundamentos y buenas prácticas de pipes personalizados.
+### Pipes
 
-### Aplicación Práctica
-Los conceptos aprendidos serán aplicables en proyectos reales y profesionales.
+Transformación de datos es fundamental para...
 
 ---
 
 ## 🔍 Desglose del Código
 
-### TypeScript (`src/app/app.component.ts`)
+### TypeScript (`app.component.ts`)
 
-El componente TypeScript contiene:
-- **Decorador @Component**: Configuración del componente
-- **Propiedades**: Variables que almacenan datos
-- **Métodos**: Lógica que ejecuta acciones
-- **Constructor**: Inicialización del componente
+```typescript
+// Lógica del componente
+```
 
-### HTML (`src/app/app.component.html`)
+### HTML (`app.component.html`)
 
-La plantilla HTML implementa:
-- Interfaz de usuario
-- Vinculación de datos
-- Captura de eventos
-- Directivas estructurales
+```html
+<!-- Plantilla HTML -->
+```
 
-### CSS (`src/app/app.component.css`)
+### CSS (`app.component.css`)
 
-Estilos específicos que:
-- Se aplican solo a este componente
-- Mejoran la apariencia visual
-- No contaminan otros componentes
+Los estilos CSS definen la apariencia.
 
 ---
 
 ## 🚀 Cómo Ejecutar
 
 ```bash
-# 1. Cambiar a la rama
 git checkout T06E27-pipes-personalizados
-
-# 2. Instalar dependencias
 npm install --legacy-peer-deps
-
-# 3. Ejecutar servidor
 ng serve -o
-
-# 4. Acceder a la aplicación
-# El navegador abrirá http://localhost:4200
 ```
 
 ---
 
 ## 💡 Ejercicios Propuestos
 
-### Nivel 1: Modificaciones Básicas
-1. Cambia los valores de las propiedades
-2. Modifica el HTML para mostrar datos diferentes
-3. Añade nuevas propiedades a la clase
+### Nivel 1: Básico
+1. Entender los conceptos y hacer funcionar el código
 
-### Nivel 2: Lógica Interactiva
-4. Agrega un método que modifique las propiedades
-5. Crea un evento que ejecute el método
-6. Implementa condicionales en la plantilla
+### Nivel 2: Intermedio
+2. Modificar el código para agregar funcionalidad
 
-### Nivel 3: Desafío Avanzado
-7. Combina múltiples conceptos
-8. Crea funcionalidades nuevas
-9. Mejora la interfaz visualmente
+### Nivel 3: Avanzado
+3. Crear una variante más compleja
 
 ---
 
-## 📌 Conceptos Aprendidos
+## 🎓 Conceptos Aprendidos
 
-✅ Entender la estructura de componentes Angular
-✅ Trabajar con propiedades y métodos
-✅ Vincular datos con plantillas HTML
-✅ Capturar eventos del usuario
-✅ Aplicar estilos CSS
-✅ Usar directivas y pipes
+✅ Pipes
+✅ Aplicación práctica
+✅ Mejores prácticas
 
 ---
 
-## 🔗 Recursos Complementarios
+**¡Felicidades!** 🎉 Has completado T06E27
 
-- [Angular Oficial](https://angular.io)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
-- [MDN Web Docs](https://developer.mozilla.org/)
-- [Angular Style Guide](https://angular.io/guide/styleguide)
-
----
-
-## ⚠️ Notas Importantes
-
-- Angular es un framework basado en componentes
-- Cada componente es independiente y reutilizable
-- TypeScript proporciona seguridad de tipos
-- La detección de cambios es automática
-- Los estilos CSS son locales al componente
-
----
-
-## 🚀 Próximo Paso
-
-Continúa con **T06E28-directiva-personalizada** para profundizar en los conceptos.
-
----
-
-**¡Felicidades!** 🎉 Ya entiendes pipes personalizados, un concepto clave en Angular.
-
-*Última actualización: 2026-08-30 08:20*
+*Última actualización: 2026-08-30*
