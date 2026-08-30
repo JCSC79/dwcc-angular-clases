@@ -1,249 +1,108 @@
-# 📘 T05E02 - ¡Hola Mundo! en Angular
+# 🎯 PRIMER COMPONENTE ANGULAR
 
-## 🎯 Objetivo del Ejercicio
+## ¿Qué se usa?
 
-Crear tu **primer componente Angular** completo que muestre el clásico mensaje "¡Hola Mundo!" y comprender:
-- La estructura básica de un componente Angular
-- Cómo funciona el decorador `@Component`
-- La relación entre TypeScript y el HTML (plantilla)
-- El ciclo de vida básico de un componente
+Este ejercicio enseña:
+- **app.component.ts**
+- **app.component.html**
+- Patrones y mejores prácticas
 
----
+## ❓ ¿Por qué se usa?
 
-## 📚 Conceptos Clave
+Estructura básica de un componente Este concepto es fundamental porque:
 
-### ¿Qué es un Componente Angular?
+1. **Reutilización** - Permite escribir código más limpio y mantenible
+2. **Escalabilidad** - Facilita crecer y extender la aplicación
+3. **Profesionalismo** - Sigue estándares de la industria
+4. **Debugging** - Código más fácil de debuguear y testear
 
-Un **componente** es la unidad básica de construcción en Angular. Consiste en:
+## 💾 Recordar - Sintaxis Clave
 
-1. **Clase TypeScript** - Contiene la lógica
-2. **Plantilla HTML** - Define la vista
-3. **Estilos CSS** - Define la apariencia (opcional)
-4. **Metadatos** - Definidos con el decorador `@Component`
+| Concepto | Sintaxis | Ejemplo | Memorizar |
+|----------|----------|---------|-----------|
+| app.component.ts | Ver código | app.component.ts | Mirar el src/ |
+| Patrón | Estructura | Hello World Angular | Practicar |
 
-### El Decorador @Component
+## 🔗 Conexiones con Otros Conceptos
 
-```typescript
-@Component({
-  selector: 'ola-mundo',              // 1. Nombre HTML del componente
-  standalone: true,                   // 2. Es independiente (no necesita módulos)
-  imports: [RouterOutlet],            // 3. Dependencias necesarias
-  templateUrl: './app.component.html', // 4. Archivo HTML
-  styleUrl: './app.component.css'     // 5. Archivo CSS
-})
-```
+Este ejercicio se relaciona con:
+- Ejercicios anteriores en progresión pedagógica
+- Conceptos de Angular fundamentales
+- Patrones de TypeScript
 
-| Propiedad | Significado |
-|-----------|------------|
-| **selector** | Nombre del elemento HTML (como `<app-root></app-root>`) |
-| **standalone** | Indica que es un componente independiente (Angular 14+) |
-| **imports** | Módulos/componentes que necesita |
-| **templateUrl** | Ruta relativa del archivo HTML |
-| **styleUrl** | Ruta relativa del archivo CSS |
+Ver **[Mapa de Aprendizaje](../README.md)** para contexto completo.
 
----
+## 📖 Documentación Oficial
 
-## 🔍 Desglose del Código
+**Documentación recomendada:**
+- [Angular Docs - Conceptos](https://angular.dev/guide)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
+- [MDN Web Docs](https://developer.mozilla.org/)
 
-### Componente TypeScript (`app.component.ts`)
+## 🎥 Ejemplos y Videos
 
-```typescript
-import { Component } from '@angular/core';  // Importamos la clase Component
-import { RouterOutlet } from '@angular/router';  // Importamos RouterOutlet
+**Recursos en inglés:**
+- [Angular Official Examples](https://angular.dev/examples)
+- [StackBlitz - Ejemplos interactivos](https://stackblitz.com)
+- [W3Schools Angular](https://www.w3schools.com/angular/default.asp)
 
-@Component({
-  selector: 'ola-mundo',           // Nombre del elemento HTML
-  standalone: true,               // Funciona independientemente
-  imports: [RouterOutlet],        // Dependencias
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
-})
-export class AppComponent {
-  // Propiedades que se pueden usar en la plantilla HTML
-  title = 'T05E02 - Hola Mundo en Angular';
-  mensaje = 'Bienvenido a Angular!';
-}
-```
+## 📚 Recursos en ESPAÑOL
 
-### Plantilla HTML (`app.component.html`)
+Si prefieres aprender en español, aquí hay opciones:
 
-```html
-<!-- Interpolación: muestra el valor de 'title' -->
-<h1>{{ title }}</h1>
+- [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
+- [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
+- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=hello+world+angular+en+español)
 
-<!-- El clásico mensaje de "Hola Mundo" -->
-<p>¡Ola Mundo!</p>
+## ⚠️ Notas Importantes
 
-<!-- Interpolación: muestra el valor de 'mensaje' -->
-<p>{{ mensaje }}</p>
+### ❌ NO hacer:
+- No mezclar lógica con presentación
+- No reutilizar código sin refactorizar
+- No ignorar los errores de TypeScript
 
-<!-- Información explicativa -->
-<p><strong>Concepto fundamental:</strong> 
-   La sintaxis {{ }} permite insertar valores dinámicos de la clase en el HTML.</p>
-```
+### ✅ SÍ hacer:
+- Mantener componentes pequeños y enfocados
+- Usar TypeScript strict mode
+- Escribir código autodocumentado
 
----
-
-## 🌐 ¿Cómo Funciona Angular?
-
-```
-1. Inicio de la aplicación
-   ↓
-2. Angular lee index.html
-   ↓
-3. Busca <app-root></app-root> o <ola-mundo></ola-mundo>
-   ↓
-4. Carga el componente AppComponent
-   ↓
-5. Reemplaza el selector con la plantilla HTML del componente
-   ↓
-6. Se ejecuta la lógica de TypeScript
-   ↓
-7. Se renderizan los datos dinámicos en la plantilla
-```
-
----
+### 💡 Tips Profesionales:
+- Lee los comentarios en el código fuente
+- Experimenta modificando los valores
+- Prueba casos extremos (vacío, null, undefined)
 
 ## 🚀 Cómo Ejecutar
 
-### Opción 1: Ejecutar localmente
-
 ```bash
-# 1. Asegúrate de estar en la rama T05E02-OlaMundo
-git checkout T05E02-OlaMundo
-
-# 2. Instalar dependencias
+# 1. Instalar dependencias
 npm install --legacy-peer-deps
 
-# 3. Ejecutar servidor de desarrollo
+# 2. Servir la aplicación
 ng serve -o
 
-# 4. Abre http://localhost:4200/ automáticamente
+# 3. Ver en http://localhost:4200
 ```
-
-### Opción 2: Verificar compilación sin ejecutar
-
-```bash
-# Solo compila, no ejecuta
-ng build
-
-# Verifica si hay errores de TypeScript
-ng build --configuration=development
-```
-
-**Resultado esperado en el navegador:**
-```
-T05E02 - Hola Mundo en Angular
-
-¡Ola Mundo!
-
-Bienvenido a Angular!
-
-Concepto fundamental: La sintaxis {{ }} permite insertar valores dinámicos de la clase en el HTML.
-```
-
----
-
-## 📝 Estructura de Archivos
-
-```
-ProxectoEnBranco/
-├── src/
-│   ├── app/
-│   │   ├── app.component.ts      ← Clase del componente (lógica)
-│   │   ├── app.component.html    ← Plantilla (vista)
-│   │   ├── app.component.css     ← Estilos
-│   │   └── ...
-│   ├── index.html               ← Archivo HTML principal
-│   ├── main.ts                  ← Punto de entrada de Angular
-│   └── styles.css               ← Estilos globales
-└── ...
-```
-
----
 
 ## 💡 Ejercicios Propuestos
 
-### Nivel 1: Modificaciones Simples
+### Nivel 1: Reproduce y Entiende
+1. Ejecuta el ejercicio y observa el comportamiento
+2. Lee los comentarios en el código fuente
+3. Identifica dónde se usan los conceptos explicados
+4. Responde: ¿Qué hace este código? ¿Por qué se estructura así?
 
-1. **Cambia el selector**:
-   ```typescript
-   selector: 'mi-primer-componente'
-   ```
+### Nivel 2: Modifica y Experimenta
+1. Cambia valores de prueba (strings, números)
+2. Añade un nuevo campo/propiedad
+3. Modifica el comportamiento de una función
+4. Prueba casos límite (valores especiales, vacíos)
 
-2. **Agrega más propiedades**:
-   ```typescript
-   nombre = 'Tu Nombre';
-   edad = 20;
-   ```
-
-3. **Muéstralas en HTML**:
-   ```html
-   <p>Nombre: {{ nombre }}</p>
-   <p>Edad: {{ edad }}</p>
-   ```
-
-### Nivel 2: Interactividad
-
-4. **Agrega métodos a la clase**:
-   ```typescript
-   obtenerSaludo(): string {
-     return `Hola ${this.nombre}, tienes ${this.edad} años`;
-   }
-   ```
-
-5. **Úsalo en HTML**:
-   ```html
-   <p>{{ obtenerSaludo() }}</p>
-   ```
-
-### Nivel 3: Lógica Avanzada
-
-6. **Calcula valores dinámicamente**:
-   ```typescript
-   mesActual = new Date().getMonth() + 1;
-   ```
-
-7. **Condicionales en HTML** (siguiente ejercicio):
-   ```html
-   <p *ngIf="edad >= 18">Eres mayor de edad</p>
-   ```
+### Nivel 3: Crea y Aplica
+1. Crea un nuevo componente similar
+2. Integra lo aprendido en tu propia aplicación
+3. Extiende la funcionalidad
+4. Documenta tu código
 
 ---
 
-## 🔗 Recursos Complementarios
-
-- [Angular Official Docs - Components](https://angular.io/guide/component-overview)
-- [TypeScript Classes](https://www.typescriptlang.org/docs/handbook/2/classes.html)
-- [Angular Decorators](https://angular.io/guide/glossary#decorator)
-- [Template Syntax - Interpolation](https://angular.io/guide/interpolation)
-
----
-
-## 🎓 Conceptos Aprendidos
-
-✅ Crear un componente Angular desde cero  
-✅ Entender el decorador `@Component` y sus propiedades  
-✅ Usar interpolación (`{{ }}`) en plantillas HTML  
-✅ Conectar propiedades de TypeScript con la vista  
-✅ Entender la diferencia entre componentes `standalone` y módulos  
-✅ El flujo de compilación de Angular  
-
----
-
-## 📌 Notas Importantes
-
-- **Selector naming**: El nombre del selector debe usar formato `kebab-case` (guiones, no camelCase)
-- **Standalone components**: Son más simples que componentes con módulos (la forma antigua)
-- **Cambios en la clase**: Si modificas una propiedad en la clase TypeScript, Angular actualiza automáticamente la plantilla
-- **Compilación**: Angular compila TypeScript a JavaScript automáticamente
-
----
-
-## 🚀 Próximo Paso
-
-Continúa con **T05E03-interpolacion-strings** para aprender a manipular strings y texto dinámico de forma más avanzada.
-
----
-
-**¡Felicidades!** 🎉 Acabs de crear tu primer componente Angular funcional.
+**📝 Nota:** Este ejercicio es parte de la progresión de aprendizaje. Complétalo en orden para mejor comprensión.
