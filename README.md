@@ -1,123 +1,34 @@
-# 📘 T06E30-angular-material - Angular Material
+# 📚 Angular Material: Autocomplete & Pagination
 
-## 🎯 Objetivo del Ejercicio
-
-Componentes profesionales
-
-Aprenderás conceptos fundamentales de Angular aplicados de forma práctica.
-
----
-
-## 📚 Conceptos Clave
-
-### Concepto Principal
-Este ejercicio enseña los fundamentos y buenas prácticas de angular material.
-
-### Aplicación Práctica
-Los conceptos aprendidos serán aplicables en proyectos reales y profesionales.
-
----
-
-## 🔍 Desglose del Código
-
-### TypeScript (`src/app/app.component.ts`)
-
-El componente TypeScript contiene:
-- **Decorador @Component**: Configuración del componente
-- **Propiedades**: Variables que almacenan datos
-- **Métodos**: Lógica que ejecuta acciones
-- **Constructor**: Inicialización del componente
-
-### HTML (`src/app/app.component.html`)
-
-La plantilla HTML implementa:
-- Interfaz de usuario
-- Vinculación de datos
-- Captura de eventos
-- Directivas estructurales
-
-### CSS (`src/app/app.component.css`)
-
-Estilos específicos que:
-- Se aplican solo a este componente
-- Mejoran la apariencia visual
-- No contaminan otros componentes
-
----
-
-## 🚀 Cómo Ejecutar
+## ⚠️ Nota importante
+Este ejercicio requiere **Angular Material** instalado.
 
 ```bash
-# 1. Cambiar a la rama
-git checkout T06E30-angular-material
-
-# 2. Instalar dependencias
-npm install --legacy-peer-deps
-
-# 3. Ejecutar servidor
-ng serve -o
-
-# 4. Acceder a la aplicación
-# El navegador abrirá http://localhost:4200
+npm install @angular/material --legacy-peer-deps
 ```
 
----
+## 🎯 Objetivo
+Aprender a usar componentes avanzados de Angular Material.
 
-## 💡 Ejercicios Propuestos
+## 📚 Componentes incluidos
+- Material Autocomplete
+- Material Pagination
+- Material Animations
 
-### Nivel 1: Modificaciones Básicas
-1. Cambia los valores de las propiedades
-2. Modifica el HTML para mostrar datos diferentes
-3. Añade nuevas propiedades a la clase
+## 🚀 Cómo ejecutar
+```bash
+npm install --legacy-peer-deps
+ng serve
+```
 
-### Nivel 2: Lógica Interactiva
-4. Agrega un método que modifique las propiedades
-5. Crea un evento que ejecute el método
-6. Implementa condicionales en la plantilla
+## 💡 Ejercicios propuestos
+- Explorar componentes de Material
+- Integrar más componentes
+- Personalizar estilos de Material
 
-### Nivel 3: Desafío Avanzado
-7. Combina múltiples conceptos
-8. Crea funcionalidades nuevas
-9. Mejora la interfaz visualmente
-
----
-
-## 📌 Conceptos Aprendidos
-
-✅ Entender la estructura de componentes Angular
-✅ Trabajar con propiedades y métodos
-✅ Vincular datos con plantillas HTML
-✅ Capturar eventos del usuario
-✅ Aplicar estilos CSS
-✅ Usar directivas y pipes
+## 📌 Recursos
+- [Angular Material Docs](https://material.angular.io)
+- [Angular Material Components](https://material.angular.io/components)
 
 ---
-
-## 🔗 Recursos Complementarios
-
-- [Angular Oficial](https://angular.io)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
-- [MDN Web Docs](https://developer.mozilla.org/)
-- [Angular Style Guide](https://angular.io/guide/styleguide)
-
----
-
-## ⚠️ Notas Importantes
-
-- Angular es un framework basado en componentes
-- Cada componente es independiente y reutilizable
-- TypeScript proporciona seguridad de tipos
-- La detección de cambios es automática
-- Los estilos CSS son locales al componente
-
----
-
-## 🚀 Próximo Paso
-
-Continúa con **T06E31-formulario-ficheiro** para profundizar en los conceptos.
-
----
-
-**¡Felicidades!** 🎉 Ya entiendes angular material, un concepto clave en Angular.
-
-*Última actualización: 2026-08-30 08:20*
+Ejercicio DWCC - Angular Material
