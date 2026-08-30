@@ -6,6 +6,7 @@
 - **Expresiones booleanas** - Evaluación de condiciones
 - **else/then blocks** - Lógica condicional avanzada
 
+
 ## ❓ ¿Por qué se usa?
 
 *ngIf es fundamental en Angular porque:
@@ -28,23 +29,35 @@
 
 Este concepto se relaciona con:
 
-- **T05E14-ngIf-componhentes** - Uso avanzado con componentes\n- **T05E18-ngSwitch** - Alternativa para múltiples condiciones\n- **T05E20-ngTemplate** - Plantillas reusables con ng-template\n
+- **T05E14-ngIf-componhentes** - Uso avanzado con componentes
+- **T05E18-ngSwitch** - Alternativa para múltiples condiciones
+- **T05E20-ngTemplate** - Plantillas reusables con ng-template
+
 
 ## 📖 Documentación Oficial
 
 Lecturas recomendadas en orden:
 
-1. [*ngIf Directive](https://angular.dev/api/common/NgIf)\n1. [Template Syntax](https://angular.dev/guide/templates)\n1. [Conditional Rendering](https://angular.dev/guide/directives-pipes#conditional-rendering)\n
+- [*ngIf Directive (Oficial)](https://angular.dev/api/common/NgIf)
+- [Template Syntax (Oficial)](https://angular.dev/guide/templates)
+- [Conditional Rendering (Oficial)](https://angular.dev/guide/directives-pipes#conditional-rendering)
+
 
 ## 🎥 Ejemplos y Videos
 
 Recursos externos para aprender más:
 
-- [NgIf Tutorial](https://www.w3schools.com/angular/angular_ng-if.asp)\n- [Angular Structural Directives](https://angular.io/guide/structural-directives)\n- [Conditional Rendering Examples](https://stackblitz.com/angular/conditional-rendering)\n
+- [Tutorial NgIf (W3Schools)](https://www.w3schools.com/angular/angular_ng-if.asp)
+- [Structural Directives (Oficial)](https://angular.io/guide/structural-directives)
+- [StackBlitz - Conditional Rendering](https://stackblitz.com/)
+
 
 ## ⚠️ Notas Importantes - Qué Hacer y Qué NO Hacer
 
-❌ **NO:** Usar *ngIf para ocultar/mostrar (usa [hidden] o ngHide)\n✅ **SÍ:** Usar *ngIf cuando el DOM sea pesado o costoso\n💡 **Tip:** *ngIf con async pipe: *ngIf="datos$ | async as dato" para Observables\n
+❌ **NO:** Usar *ngIf para ocultar/mostrar (usa [hidden] o ngHide)
+✅ **SÍ:** Usar *ngIf cuando el DOM sea pesado o costoso
+💡 **Tip:** *ngIf con async pipe: *ngIf="datos$ | async as dato" para Observables
+
 
 ## 🚀 Cómo Ejecutar
 
@@ -57,19 +70,19 @@ ng serve
 ## 💡 Ejercicios Propuestos
 
 ### Nivel 1: Reproduce y Entiende
-1. Ejecuta el código y observa qué pasa
-2. Abre DevTools (F12) → Elements
-3. Verifica los cambios en el DOM
+1. Ejecuta el código y observa el comportamiento
+2. Lee los comentarios en el código fuente
+3. Experimenta con valores diferentes
 
 ### Nivel 2: Modifica y Experimenta
-1. Cambia los valores iniciales
-2. Agrega nuevas propiedades
-3. Prueba diferentes tipos de datos
+1. Cambia la lógica existente
+2. Agrega nuevas funcionalidades
+3. Combina con otros conceptos
 
 ### Nivel 3: Crea y Aplica
-1. Crea un componente similar desde cero
-2. Implementa tu propio caso de uso
-3. Combina con otros conceptos
+1. Implementa desde cero
+2. Resuelve un problema real
+3. Integra en un proyecto mayor
 
 ---
 **Ejercicio de DWCC - Angular**
