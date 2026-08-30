@@ -1,6 +1,12 @@
 import { style } from '@angular/animations';
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 
+/**
+ * Componente que demuestra Componente de Angular
+ * 
+ * Demuestra conceptos de Angular
+ */
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -9,6 +15,7 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  // title: propiedade que almacena un valor
   title = 'HostListener';
 
   // Tomamos a referencia do elemento 'caixa' de HTML
