@@ -1,72 +1,37 @@
-# 📘 T06E05 - Servicios
+# 📚 Angular Services
 
-## 🎯 Objetivo del Ejercicio
+## 🎯 Objetivo
+Aprender sobre **@Injectable decorator** en Angular.
 
-Aprender y dominar **Servicios** en Angular.
+## 📚 Conceptos clave
+- **@Injectable decorator**
+- **singleton pattern**
+- **inyección dependencias**
 
-Este ejercicio enseña cómo lógica compartida.
-
----
-
-## 📚 Conceptos Clave
-
-### Servicios
-
-Lógica compartida es fundamental para...
-
----
-
-## 🔍 Desglose del Código
-
-### TypeScript (`app.component.ts`)
-
+## 🔍 Ejemplo clave
 ```typescript
-// Lógica del componente
+@Injectable() service comparte lógica entre componentes
 ```
 
-### HTML (`app.component.html`)
-
-```html
-<!-- Plantilla HTML -->
-```
-
-### CSS (`app.component.css`)
-
-Los estilos CSS definen la apariencia.
-
----
-
-## 🚀 Cómo Ejecutar
-
+## 🚀 Cómo ejecutar
 ```bash
-git checkout T06E05-servizos
 npm install --legacy-peer-deps
-ng serve -o
+ng serve
 ```
 
----
+## 💡 Ejercicios propuestos
 
-## 💡 Ejercicios Propuestos
+### Nivel 1: Reproducir el ejemplo
+- Revisa el código y modifica valores
 
-### Nivel 1: Básico
-1. Entender los conceptos y hacer funcionar el código
+### Nivel 2: Extender
+- Agrega nuevas propiedades o métodos
 
-### Nivel 2: Intermedio
-2. Modificar el código para agregar funcionalidad
+### Nivel 3: Aplicar
+- Crea un caso de uso similar
 
-### Nivel 3: Avanzado
-3. Crear una variante más compleja
-
----
-
-## 🎓 Conceptos Aprendidos
-
-✅ Servicios
-✅ Aplicación práctica
-✅ Mejores prácticas
+## 🔗 Recursos
+- [Angular Docs](https://angular.dev/docs)
 
 ---
-
-**¡Felicidades!** 🎉 Has completado T06E05
-
-*Última actualización: 2026-08-30*
+Ejercicio de DWCC - Angular
