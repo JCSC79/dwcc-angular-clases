@@ -1,23 +1,26 @@
-# 📘 T05E18-ngSwitch - ngSwitch - Renderizado Selectivo
+# 📘 T05E18 - Directiva *ngSwitch
 
 ## 🎯 Objetivo del Ejercicio
 
-Usar *ngSwitch para mostrar diferentes contenidos basados en una condición
+Aprender y dominar **Directiva *ngSwitch** en Angular.
 
-**Tema**: Implementarás lógica de switch-case en las plantillas
+Este ejercicio te enseña cómo cambiar entre múltiples opciones basado en una expresión, fundamental para construir
+aplicaciones interactivas y bien estructuradas.
 
 ---
 
 ## 📚 Conceptos Clave
 
-### 1. ***ngSwitch**
-Concepto fundamental para entender ngswitch - renderizado selectivo.
+### 1. **Directiva *ngSwitch**
 
-### 2. ***ngSwitchCase**
-Concepto fundamental para entender ngswitch - renderizado selectivo.
+Directiva *ngSwitch es un concepto clave en Angular que te permite:
 
-### 3. ***ngSwitchDefault**
-Concepto fundamental para entender ngswitch - renderizado selectivo.
+- Switch statements
+- Rendering condicional múltiple
+
+```typescript
+// Ejemplo de Directiva *ngSwitch
+```
 
 ---
 
@@ -25,101 +28,80 @@ Concepto fundamental para entender ngswitch - renderizado selectivo.
 
 ### TypeScript (`app.component.ts`)
 
-Los componentes en Angular están formados por:
-- **Decorador @Component**: Configura el selector, template y estilos
-- **Propiedades**: Variables que almacenan datos
-- **Métodos**: Funciones que ejecutan lógica
-- **Constructor**: Se ejecuta al crear el componente
+El componente contiene la lógica de la aplicación.
+
+**Propiedades principales:** title, title, contador
+
+```typescript
+// Lógica del componente
+```
 
 ### HTML (`app.component.html`)
 
-La plantilla HTML es donde:
-- Se muestra la interfaz del usuario
-- Se vinculan datos con el modelo TypeScript
-- Se capturan eventos del usuario
-- Se aplican directivas y pipes
+La plantilla define la interfaz de usuario.
+
+```html
+<!-- Elementos HTML que forman la interfaz -->
+```
 
 ### CSS (`app.component.css`)
 
-Estilos específicos del componente que:
-- Se aplican solo a este componente
-- No contaminan otros componentes
-- Mejoran la apariencia visual
+Los estilos definen la apariencia visual.
 
 ---
 
 ## 🚀 Cómo Ejecutar
 
 ```bash
-# 1. Ir a la rama
 git checkout T05E18-ngSwitch
-
-# 2. Instalar dependencias
 npm install --legacy-peer-deps
-
-# 3. Ejecutar servidor
 ng serve -o
 ```
-
-**Resultado esperado:**
-El navegador abrirá http://localhost:4200 y podrás ver la aplicación funcionando.
 
 ---
 
 ## 💡 Ejercicios Propuestos
 
-### Nivel 1: Modificaciones Básicas
+### Nivel 1: Básico
+1. Entender los conceptos básicos y hacer el ejemplo funcionar
 
-1. Cambia los valores de las propiedades
-2. Modifica el HTML para mostrar datos diferentes
-3. Añade nuevas propiedades a la clase
+### Nivel 2: Intermedio
+2. Modificar el código para agregar nueva funcionalidad
 
-### Nivel 2: Lógica Interactiva
-
-4. Agrega un método que modifique las propiedades
-5. Crea un evento que ejecute el método
-6. Implementa condicionales en la plantilla
-
-### Nivel 3: Desafío Avanzado
-
-7. Combina múltiples conceptos del ejercicio
-8. Crea funcionalidades nuevas
-9. Mejora la interfaz visualmente
+### Nivel 3: Avanzado
+3. Crear una variante más compleja del ejercicio
 
 ---
 
 ## 🔗 Recursos Complementarios
 
-- [Angular Documentation](https://angular.io/docs)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
-- [MDN Web Docs](https://developer.mozilla.org/)
+- [Documentación oficial de Angular](https://angular.io/docs)
+- [Guías de Angular](https://angular.io/guide)
 
 ---
 
 ## 🎓 Conceptos Aprendidos
 
-✅ *ngSwitch
-✅ *ngSwitchCase
-✅ *ngSwitchDefault
+✅ Comprensión de Directiva *ngSwitch
+✅ Aplicación práctica en componentes
+✅ Mejores prácticas
 
 ---
 
 ## 📌 Notas Importantes
 
-- Angular es un framework basado en componentes
-- Cada componente es independiente y reutilizable
-- TypeScript proporciona seguridad de tipos
-- La plantilla HTML se actualiza automáticamente
-- Los estilos CSS son locales al componente
+- Revisa los comentarios en el código para entender cada parte
+- Practica modificando los valores y viendo los cambios
+- Intenta los ejercicios propuestos
 
 ---
 
 ## 🚀 Próximo Paso
 
-Continúa con **T05E19-ngPlural - ngPlural - Plural Dinámico**
+Continúa con el siguiente ejercicio para profundizar en Angular.
 
 ---
 
-**¡Felicidades!** 🎉 Ya entiendes ngswitch - renderizado selectivo, un concepto clave en Angular.
+**¡Felicidades!** 🎉 Has completado T05E18
 
-*Última actualización: 2026-08-30 08:16*
+*Última actualización: 2026-08-30*
