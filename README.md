@@ -1,72 +1,108 @@
-# 📘 T05E18 - Concepto Angular
+# 🎯 CONDICIONALES CON NGSWITCH
 
-## 🎯 Objetivo del Ejercicio
+## ¿Qué se usa?
 
-Aprender y dominar **Concepto Angular** en Angular.
+Este ejercicio enseña:
+- ***ngSwitch**
+- ***ngSwitchCase**
+- Patrones y mejores prácticas
 
-Este ejercicio enseña cómo demuestra un concepto de angular.
+## ❓ ¿Por qué se usa?
 
----
+Alternativa a múltiples *ngIf Este concepto es fundamental porque:
 
-## 📚 Conceptos Clave
+1. **Reutilización** - Permite escribir código más limpio y mantenible
+2. **Escalabilidad** - Facilita crecer y extender la aplicación
+3. **Profesionalismo** - Sigue estándares de la industria
+4. **Debugging** - Código más fácil de debuguear y testear
 
-### Concepto Angular
+## 💾 Recordar - Sintaxis Clave
 
-Demuestra un concepto de Angular es fundamental para...
+| Concepto | Sintaxis | Ejemplo | Memorizar |
+|----------|----------|---------|-----------|
+| *ngSwitch | Ver código | app.component.ts | Mirar el src/ |
+| Patrón | Estructura | NgSwitch | Practicar |
 
----
+## 🔗 Conexiones con Otros Conceptos
 
-## 🔍 Desglose del Código
+Este ejercicio se relaciona con:
+- Ejercicios anteriores en progresión pedagógica
+- Conceptos de Angular fundamentales
+- Patrones de TypeScript
 
-### TypeScript (`app.component.ts`)
+Ver **[Mapa de Aprendizaje](../README.md)** para contexto completo.
 
-```typescript
-// Lógica del componente
-```
+## 📖 Documentación Oficial
 
-### HTML (`app.component.html`)
+**Documentación recomendada:**
+- [Angular Docs - Conceptos](https://angular.dev/guide)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
+- [MDN Web Docs](https://developer.mozilla.org/)
 
-```html
-<!-- Plantilla HTML -->
-```
+## 🎥 Ejemplos y Videos
 
-### CSS (`app.component.css`)
+**Recursos en inglés:**
+- [Angular Official Examples](https://angular.dev/examples)
+- [StackBlitz - Ejemplos interactivos](https://stackblitz.com)
+- [W3Schools Angular](https://www.w3schools.com/angular/default.asp)
 
-Los estilos CSS definen la apariencia.
+## 📚 Recursos en ESPAÑOL
 
----
+Si prefieres aprender en español, aquí hay opciones:
+
+- [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
+- [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
+- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=ngswitch+en+español)
+
+## ⚠️ Notas Importantes
+
+### ❌ NO hacer:
+- No mezclar lógica con presentación
+- No reutilizar código sin refactorizar
+- No ignorar los errores de TypeScript
+
+### ✅ SÍ hacer:
+- Mantener componentes pequeños y enfocados
+- Usar TypeScript strict mode
+- Escribir código autodocumentado
+
+### 💡 Tips Profesionales:
+- Lee los comentarios en el código fuente
+- Experimenta modificando los valores
+- Prueba casos extremos (vacío, null, undefined)
 
 ## 🚀 Cómo Ejecutar
 
 ```bash
-git checkout T05E18-ngSwitch
+# 1. Instalar dependencias
 npm install --legacy-peer-deps
-ng serve -o
-```
 
----
+# 2. Servir la aplicación
+ng serve -o
+
+# 3. Ver en http://localhost:4200
+```
 
 ## 💡 Ejercicios Propuestos
 
-### Nivel 1: Básico
-1. Entender los conceptos y hacer funcionar el código
+### Nivel 1: Reproduce y Entiende
+1. Ejecuta el ejercicio y observa el comportamiento
+2. Lee los comentarios en el código fuente
+3. Identifica dónde se usan los conceptos explicados
+4. Responde: ¿Qué hace este código? ¿Por qué se estructura así?
 
-### Nivel 2: Intermedio
-2. Modificar el código para agregar funcionalidad
+### Nivel 2: Modifica y Experimenta
+1. Cambia valores de prueba (strings, números)
+2. Añade un nuevo campo/propiedad
+3. Modifica el comportamiento de una función
+4. Prueba casos límite (valores especiales, vacíos)
 
-### Nivel 3: Avanzado
-3. Crear una variante más compleja
+### Nivel 3: Crea y Aplica
+1. Crea un nuevo componente similar
+2. Integra lo aprendido en tu propia aplicación
+3. Extiende la funcionalidad
+4. Documenta tu código
 
 ---
 
-## 🎓 Conceptos Aprendidos
-
-✅ Concepto Angular
-✅ Aplicación práctica
-✅ Mejores prácticas
-
----
-
-**¡Felicidades!** 🎉 Has completado T05E18
-
-*Última actualización: 2026-08-30*
+**📝 Nota:** Este ejercicio es parte de la progresión de aprendizaje. Complétalo en orden para mejor comprensión.
