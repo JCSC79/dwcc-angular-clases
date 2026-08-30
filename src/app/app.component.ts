@@ -2,6 +2,12 @@ import { Component } from '@angular/core';
 import { ContidoComponent } from './contido/contido.component';
 import { CommonModule } from '@angular/common';
 
+/**
+ * Componente que demuestra @Input y @Output
+ * 
+ * Comunicación bidireccional entre componentes padre e hijo
+ */
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -10,6 +16,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  // title: propiedade que almacena un valor
   title = 'input-output';
   compartida: number = 0;
 

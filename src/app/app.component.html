@@ -1,7 +1,10 @@
+<!-- P: Elemento principal -->
 <p>Valor da propiedade compartida na compoñente nai: {{ compartida }}</p>
 
+ <!-- BUTTON: Elemento principal -->
  <button (click)="incrementar()">
     INCREMENTAR
  </button>
 
+ <!-- APP: Elemento principal -->
  <app-contido [compartida]="compartida" (emisor)="recibirDatos($event)"></app-contido>
