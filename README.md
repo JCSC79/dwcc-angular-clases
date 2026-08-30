@@ -1,72 +1,37 @@
-# 📘 T05E15 - Concepto Angular
+# 📚 List Rendering with ngFor
 
-## 🎯 Objetivo del Ejercicio
+## 🎯 Objetivo
+Aprender sobre ***ngFor directive** en Angular.
 
-Aprender y dominar **Concepto Angular** en Angular.
+## 📚 Conceptos clave
+- ***ngFor directive**
+- **iteración de listas**
+- **renderizado dinámico**
 
-Este ejercicio enseña cómo demuestra un concepto de angular.
-
----
-
-## 📚 Conceptos Clave
-
-### Concepto Angular
-
-Demuestra un concepto de Angular es fundamental para...
-
----
-
-## 🔍 Desglose del Código
-
-### TypeScript (`app.component.ts`)
-
+## 🔍 Ejemplo clave
 ```typescript
-// Lógica del componente
+*ngFor="let item of lista" recorre arrays y crea elementos
 ```
 
-### HTML (`app.component.html`)
-
-```html
-<!-- Plantilla HTML -->
-```
-
-### CSS (`app.component.css`)
-
-Los estilos CSS definen la apariencia.
-
----
-
-## 🚀 Cómo Ejecutar
-
+## 🚀 Cómo ejecutar
 ```bash
-git checkout T05E15-ngFor
 npm install --legacy-peer-deps
-ng serve -o
+ng serve
 ```
 
----
+## 💡 Ejercicios propuestos
 
-## 💡 Ejercicios Propuestos
+### Nivel 1: Reproducir el ejemplo
+- Revisa el código y modifica valores
 
-### Nivel 1: Básico
-1. Entender los conceptos y hacer funcionar el código
+### Nivel 2: Extender
+- Agrega nuevas propiedades o métodos
 
-### Nivel 2: Intermedio
-2. Modificar el código para agregar funcionalidad
+### Nivel 3: Aplicar
+- Crea un caso de uso similar
 
-### Nivel 3: Avanzado
-3. Crear una variante más compleja
-
----
-
-## 🎓 Conceptos Aprendidos
-
-✅ Concepto Angular
-✅ Aplicación práctica
-✅ Mejores prácticas
+## 🔗 Recursos
+- [Angular Docs](https://angular.dev/docs)
 
 ---
-
-**¡Felicidades!** 🎉 Has completado T05E15
-
-*Última actualización: 2026-08-30*
+Ejercicio de DWCC - Angular
