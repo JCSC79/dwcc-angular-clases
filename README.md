@@ -1,168 +1,108 @@
-# 📘 T05E05 - Event Binding (Enlazado de Eventos)
+# 🎯 ENLAZADO DE EVENTOS
 
-## 🎯 Objetivo del Ejercicio
+## ¿Qué se usa?
 
-Aprender a **capturar eventos del usuario** (clics, cambios de inputs, etc.) y ejecutar métodos en respuesta. Dominarás:
-- La sintaxis `(evento)="método()"`
-- Eventos comunes: (click), (change), (input), (blur), etc.
-- Comunicación usuario → componente
+Este ejercicio enseña:
+- **(click)='method()'**
+- **event binding**
+- Patrones y mejores prácticas
 
----
+## ❓ ¿Por qué se usa?
 
-## 📚 Conceptos Clave
+Capturar eventos del usuario Este concepto es fundamental porque:
 
-### Event Binding: `(evento)="método()"`
+1. **Reutilización** - Permite escribir código más limpio y mantenible
+2. **Escalabilidad** - Facilita crecer y extender la aplicación
+3. **Profesionalismo** - Sigue estándares de la industria
+4. **Debugging** - Código más fácil de debuguear y testear
 
-Event Binding **vincula eventos HTML** con **métodos de la clase**, permitiendo que el componente reaccione a las interacciones del usuario.
+## 💾 Recordar - Sintaxis Clave
 
-```html
-<!-- Cuando el usuario hace clic, se ejecuta mudarCor() -->
-<button (click)="mudarCor()">Cambiar</button>
+| Concepto | Sintaxis | Ejemplo | Memorizar |
+|----------|----------|---------|-----------|
+| (click)='method()' | Ver código | app.component.ts | Mirar el src/ |
+| Patrón | Estructura | Event Binding | Practicar |
 
-<!-- Cuando el usuario cambia el estado del checkbox, se ejecuta mudarTitulo() -->
-<input type="checkbox" (change)="mudarTitulo()" />
-```
+## 🔗 Conexiones con Otros Conceptos
 
-### Eventos Comunes
+Este ejercicio se relaciona con:
+- Ejercicios anteriores en progresión pedagógica
+- Conceptos de Angular fundamentales
+- Patrones de TypeScript
 
-| Evento | Cuándo Ocurre | Ejemplo |
-|--------|---------------|---------|
-| **(click)** | Cuando haces clic en un elemento | `<button (click)="metodo()">` |
-| **(change)** | Cuando cambia el valor de un input/select/checkbox | `<input (change)="metodo()">` |
-| **(input)** | Cuando escribes en un input (más frecuente que change) | `<input (input)="metodo()">` |
-| **(blur)** | Cuando el input pierde el foco | `<input (blur)="metodo()">` |
-| **(keyup)** | Cuando sueltas una tecla | `<input (keyup)="metodo()">` |
-| **(keydown)** | Cuando presionas una tecla | `<input (keydown)="metodo()">` |
-| **(submit)** | Cuando envías un formulario | `<form (submit)="metodo()">` |
-| **(mouseover)** | Cuando pasas el ratón sobre un elemento | `<div (mouseover)="metodo()">` |
-| **(mouseout)** | Cuando el ratón sale de un elemento | `<div (mouseout)="metodo()">` |
+Ver **[Mapa de Aprendizaje](../README.md)** para contexto completo.
 
----
+## 📖 Documentación Oficial
 
-## 🔍 Desglose del Código
+**Documentación recomendada:**
+- [Angular Docs - Conceptos](https://angular.dev/guide)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
+- [MDN Web Docs](https://developer.mozilla.org/)
 
-### TypeScript
+## 🎥 Ejemplos y Videos
 
-```typescript
-export class AppComponent {
-  title = 'T05E05 - Event Binding';
-  cor: string = "blue";
+**Recursos en inglés:**
+- [Angular Official Examples](https://angular.dev/examples)
+- [StackBlitz - Ejemplos interactivos](https://stackblitz.com)
+- [W3Schools Angular](https://www.w3schools.com/angular/default.asp)
 
-  // Se ejecuta cuando el checkbox cambia de estado
-  mudarTitulo(): void {
-    this.title = 'El evento (change) fue disparado!';
-  }
+## 📚 Recursos en ESPAÑOL
 
-  // Se ejecuta cuando haces clic en el botón
-  mudarCor(): void {
-    this.cor === "blue" ? this.cor = "purple" : this.cor = "blue";
-  }
-}
-```
+Si prefieres aprender en español, aquí hay opciones:
 
-### HTML
+- [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
+- [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
+- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=event+binding+en+español)
 
-```html
-<!-- Vinculación de estilos dinámicos + evento -->
-<h1 [ngStyle]="{ 'color': cor }">{{ title }}</h1>
+## ⚠️ Notas Importantes
 
-<!-- Event Binding: (change)="mudarTitulo()" -->
-<input type="checkbox" (change)="mudarTitulo()" />
+### ❌ NO hacer:
+- No mezclar lógica con presentación
+- No reutilizar código sin refactorizar
+- No ignorar los errores de TypeScript
 
-<!-- Event Binding: (click)="mudarCor()" -->
-<button (click)="mudarCor()">CAMBIAR COLOR</button>
-```
+### ✅ SÍ hacer:
+- Mantener componentes pequeños y enfocados
+- Usar TypeScript strict mode
+- Escribir código autodocumentado
 
----
+### 💡 Tips Profesionales:
+- Lee los comentarios en el código fuente
+- Experimenta modificando los valores
+- Prueba casos extremos (vacío, null, undefined)
 
 ## 🚀 Cómo Ejecutar
 
 ```bash
-git checkout T05E05-enlazado-eventos
+# 1. Instalar dependencias
 npm install --legacy-peer-deps
+
+# 2. Servir la aplicación
 ng serve -o
+
+# 3. Ver en http://localhost:4200
 ```
-
-**Resultado:** Un título que cambia de color cuando haces clic en el botón, y su texto cambia cuando cambias el checkbox.
-
----
 
 ## 💡 Ejercicios Propuestos
 
-### Nivel 1: Agregar Más Eventos
+### Nivel 1: Reproduce y Entiende
+1. Ejecuta el ejercicio y observa el comportamiento
+2. Lee los comentarios en el código fuente
+3. Identifica dónde se usan los conceptos explicados
+4. Responde: ¿Qué hace este código? ¿Por qué se estructura así?
 
-1. **Contador de clics**:
-   ```typescript
-   contador = 0;
-   incrementar(): void {
-     this.contador++;
-   }
-   ```
-   ```html
-   <button (click)="incrementar()">Clics: {{ contador }}</button>
-   ```
+### Nivel 2: Modifica y Experimenta
+1. Cambia valores de prueba (strings, números)
+2. Añade un nuevo campo/propiedad
+3. Modifica el comportamiento de una función
+4. Prueba casos límite (valores especiales, vacíos)
 
-### Nivel 2: Múltiples Eventos
-
-2. **Mostrar/ocultar elemento**:
-   ```typescript
-   visible = true;
-   toggle(): void {
-     this.visible = !this.visible;
-   }
-   ```
-   ```html
-   <button (click)="toggle()">Mostrar/Ocultar</button>
-   <div *ngIf="visible">Visible</div>
-   ```
-
-### Nivel 3: Capturar Datos del Evento
-
-3. **Leer valor de input en el evento**:
-   ```typescript
-   mensaje = '';
-   capturar(evento: any): void {
-     this.mensaje = evento.target.value;
-   }
-   ```
-   ```html
-   <input (input)="capturar($event)" />
-   <p>{{ mensaje }}</p>
-   ```
+### Nivel 3: Crea y Aplica
+1. Crea un nuevo componente similar
+2. Integra lo aprendido en tu propia aplicación
+3. Extiende la funcionalidad
+4. Documenta tu código
 
 ---
 
-## 🔗 Recursos
-
-- [Angular Event Binding](https://angular.io/guide/event-binding)
-- [Template Syntax - Events](https://angular.io/guide/template-syntax#event-binding)
-- [DOM Events List](https://developer.mozilla.org/en-US/docs/Web/Events)
-
----
-
-## 🎓 Conceptos Aprendidos
-
-✅ Usar la sintaxis `(evento)="método()"`  
-✅ Conocer eventos comunes (click, change, input, etc.)  
-✅ Ejecutar métodos en respuesta a eventos del usuario  
-✅ Combinar Event Binding con Property Binding  
-✅ Actualizar el estado del componente dinámicamente  
-
----
-
-## 📌 Notas Importantes
-
-- **Event Binding es unidireccional**: Usuario → Componente
-- **$event**: Contiene información del evento (puedes recibirlo como parámetro)
-- **Detección de cambios**: Angular actualiza automáticamente la vista cuando el método modifica propiedades
-- **Rendimiento**: Los eventos se disparan muchas veces, evita lógica pesada
-
----
-
-## 🚀 Próximo Paso
-
-Continúa con **T05E06-enlazado-bidireccional** para aprender Two-Way Binding, que combina Property Binding + Event Binding.
-
----
-
-**¡Felicidades!** 🎉 Ya captura eventos del usuario como un profesional.
+**📝 Nota:** Este ejercicio es parte de la progresión de aprendizaje. Complétalo en orden para mejor comprensión.
