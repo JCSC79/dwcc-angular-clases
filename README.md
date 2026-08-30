@@ -1,15 +1,15 @@
-# 🎯 LAZY LOADING EN RUTAS
+# 🎯 GUARDIAS DE RUTA
 
 ## ¿Qué se usa?
 
 Este ejercicio enseña:
-- **loadChildren**
-- **lazy loading**
+- **CanActivate**
+- **CanDeactivate**
 - Patrones y mejores prácticas
 
 ## ❓ ¿Por qué se usa?
 
-Optimizar con lazy loading Este concepto es fundamental porque:
+Proteger acceso a rutas Este concepto es fundamental porque:
 
 1. **Reutilización** - Permite escribir código más limpio y mantenible
 2. **Escalabilidad** - Facilita crecer y extender la aplicación
@@ -20,8 +20,8 @@ Optimizar con lazy loading Este concepto es fundamental porque:
 
 | Concepto | Sintaxis | Ejemplo | Memorizar |
 |----------|----------|---------|-----------|
-| loadChildren | Ver código | app.component.ts | Mirar el src/ |
-| Patrón | Estructura | Route Lazy Loading | Practicar |
+| CanActivate | Ver código | app.component.ts | Mirar el src/ |
+| Patrón | Estructura | Route Guards | Practicar |
 
 ## 🔗 Conexiones con Otros Conceptos
 
@@ -52,7 +52,7 @@ Si prefieres aprender en español, aquí hay opciones:
 
 - [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
 - [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
-- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=route+lazy+loading+en+español)
+- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=route+guards+en+español)
 
 ## ⚠️ Notas Importantes
 
