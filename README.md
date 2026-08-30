@@ -1,253 +1,108 @@
-# 📘 T05E04 - Property Binding (Enlazado de Propiedades)
+# 🎯 ENLAZADO DE PROPIEDADES
 
-## 🎯 Objetivo del Ejercicio
+## ¿Qué se usa?
 
-Aprender a **vincular dinámicamente propiedades** de la clase TypeScript con **atributos HTML**, que es la forma más poderosa de enlazar datos. Comprenderás:
+Este ejercicio enseña:
+- **[property]='value'**
+- **property binding**
+- Patrones y mejores prácticas
 
-- Qué es Property Binding y cuándo usarlo
-- La sintaxis `[atributo]="propiedad"`
-- Diferencia entre Property Binding e Interpolación
-- Vinculación de atributos comunes (src, href, disabled, etc.)
+## ❓ ¿Por qué se usa?
 
----
+Vincular datos desde TypeScript a HTML Este concepto es fundamental porque:
 
-## 📚 Conceptos Clave
+1. **Reutilización** - Permite escribir código más limpio y mantenible
+2. **Escalabilidad** - Facilita crecer y extender la aplicación
+3. **Profesionalismo** - Sigue estándares de la industria
+4. **Debugging** - Código más fácil de debuguear y testear
 
-### Property Binding vs Interpolación
+## 💾 Recordar - Sintaxis Clave
 
-| Aspecto | Interpolación `{{ }}` | Property Binding `[  ]` |
-|--------|----------------------|------------------------|
-| Sintaxis | `<h1>{{ titulo }}</h1>` | `<img [src]="logo" />` |
-| Uso | Mostrar texto dinámico | Vincular atributos HTML |
-| Atributos | Solo texto | Cualquier atributo HTML |
-| Ejemplo | `{{ 5 + 3 }}` | `[disabled]="isDisabled"` |
+| Concepto | Sintaxis | Ejemplo | Memorizar |
+|----------|----------|---------|-----------|
+| [property]='value' | Ver código | app.component.ts | Mirar el src/ |
+| Patrón | Estructura | Property Binding | Practicar |
 
-### ¿Cuándo Usar Cada Una?
+## 🔗 Conexiones con Otros Conceptos
 
-```html
-<!-- ✅ Interpolación - para mostrar valores en el contenido -->
-<p>El usuario es: {{ nombreUsuario }}</p>
+Este ejercicio se relaciona con:
+- Ejercicios anteriores en progresión pedagógica
+- Conceptos de Angular fundamentales
+- Patrones de TypeScript
 
-<!-- ✅ Property Binding - para atributos HTML -->
-<img [src]="logoUrl" />
-<a [href]="linkDocumentacion" />
-<button [disabled]="estaDeshabilitado" />
+Ver **[Mapa de Aprendizaje](../README.md)** para contexto completo.
 
-<!-- ✅ Combinación - ambas son válidas en contextos diferentes -->
-<div [title]="descripcion">{{ mensaje }}</div>
-```
+## 📖 Documentación Oficial
 
-### Atributos Comunes para Property Binding
+**Documentación recomendada:**
+- [Angular Docs - Conceptos](https://angular.dev/guide)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
+- [MDN Web Docs](https://developer.mozilla.org/)
 
-```html
-<!-- Atributo src (imágenes) -->
-<img [src]="urlImagen" />
+## 🎥 Ejemplos y Videos
 
-<!-- Atributo href (enlaces) -->
-<a [href]="url">Enlace</a>
+**Recursos en inglés:**
+- [Angular Official Examples](https://angular.dev/examples)
+- [StackBlitz - Ejemplos interactivos](https://stackblitz.com)
+- [W3Schools Angular](https://www.w3schools.com/angular/default.asp)
 
-<!-- Atributo disabled (botones, inputs) -->
-<button [disabled]="estoyOcupado">Enviar</button>
+## 📚 Recursos en ESPAÑOL
 
-<!-- Atributo placeholder (inputs) -->
-<input [placeholder]="textoPlaceholder" />
+Si prefieres aprender en español, aquí hay opciones:
 
-<!-- Atributo value (inputs) -->
-<input [value]="valorPorDefecto" />
+- [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
+- [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
+- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=property+binding+en+español)
 
-<!-- Atributo class (clases CSS) -->
-<div [class]="clasesDinamicas" />
+## ⚠️ Notas Importantes
 
-<!-- Atributo style (estilos inline) -->
-<div [style.color]="colorFondo" />
-```
+### ❌ NO hacer:
+- No mezclar lógica con presentación
+- No reutilizar código sin refactorizar
+- No ignorar los errores de TypeScript
 
----
+### ✅ SÍ hacer:
+- Mantener componentes pequeños y enfocados
+- Usar TypeScript strict mode
+- Escribir código autodocumentado
 
-## 🔍 Desglose del Código
-
-### TypeScript (`app.component.ts`)
-
-```typescript
-export class AppComponent {
-  // URL de documentación
-  documentacion: string = 'https://angular.dev/docs';
-  
-  // URL de imagen
-  logo: string = 'https://angular.dev/assets/images/press-kit/angular_icon_gradient.gif';
-}
-```
-
-### HTML (`app.component.html`)
-
-```html
-<!-- Property Binding: vincula la propiedad 'documentacion' al atributo 'href' -->
-<a [href]="documentacion">Documentación de Angular</a>
-
-<!-- Property Binding: vincula la propiedad 'logo' al atributo 'src' -->
-<img [src]="logo" alt="Logo de Angular" />
-```
-
-### Cómo Funciona
-
-```
-Clase TypeScript          Plantilla HTML        Navegador
-    ↓                          ↓                    ↓
-documentacion:         <a [href]="documentacion">
-'https://...'          ↓
-  ├─ Angular detecta cambios
-  ├─ Lee el valor de la propiedad
-  ├─ Lo asigna al atributo HTML
-  └─> <a href="https://angular.dev/docs">
-```
-
----
+### 💡 Tips Profesionales:
+- Lee los comentarios en el código fuente
+- Experimenta modificando los valores
+- Prueba casos extremos (vacío, null, undefined)
 
 ## 🚀 Cómo Ejecutar
 
 ```bash
-# 1. Ir a la rama
-git checkout T05E04-enlazado-propiedades
-
-# 2. Instalar dependencias
+# 1. Instalar dependencias
 npm install --legacy-peer-deps
 
-# 3. Ejecutar servidor
+# 2. Servir la aplicación
 ng serve -o
+
+# 3. Ver en http://localhost:4200
 ```
-
-**Resultado esperado:**
-```
-T05E04 - Property Binding (Enlazado de Propiedades)
-
-[Enlace clicable] Documentación de Angular
-[Logo de Angular visible]
-
-Concepto: Property Binding permite conectar propiedades de la clase TypeScript 
-con atributos HTML de forma dinámica.
-```
-
----
 
 ## 💡 Ejercicios Propuestos
 
-### Nivel 1: Modificaciones Simples
+### Nivel 1: Reproduce y Entiende
+1. Ejecuta el ejercicio y observa el comportamiento
+2. Lee los comentarios en el código fuente
+3. Identifica dónde se usan los conceptos explicados
+4. Responde: ¿Qué hace este código? ¿Por qué se estructura así?
 
-1. **Cambia las URLs**:
-   ```typescript
-   documentacion = 'https://www.google.es';
-   logo = 'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png';
-   ```
+### Nivel 2: Modifica y Experimenta
+1. Cambia valores de prueba (strings, números)
+2. Añade un nuevo campo/propiedad
+3. Modifica el comportamiento de una función
+4. Prueba casos límite (valores especiales, vacíos)
 
-2. **Agrega más atributos**:
-   ```html
-   <a [href]="documentacion" [title]="'Ir a documentación'">Enlace</a>
-   ```
-
-### Nivel 2: Propiedades Dinámicas
-
-3. **Agrega propiedades booleanas**:
-   ```typescript
-   estaDeshabilitado = false;
-   ```
-
-4. **Úsalas en Property Binding**:
-   ```html
-   <button [disabled]="estaDeshabilitado">Haz clic</button>
-   ```
-
-5. **Cambia dinámicamente**:
-   ```typescript
-   constructor() {
-     setTimeout(() => {
-       this.estaDeshabilitado = true;
-     }, 3000);
-   }
-   ```
-
-### Nivel 3: Operaciones en Property Binding
-
-6. **Concatena URLs dinámicamente**:
-   ```typescript
-   dominio = 'https://angular.dev';
-   rutaDocumentacion = '/docs';
-   
-   get documentacionCompleta() {
-     return this.dominio + this.rutaDocumentacion;
-   }
-   ```
-
-7. **Úsalo en el HTML**:
-   ```html
-   <a [href]="documentacionCompleta">Docs completa</a>
-   ```
+### Nivel 3: Crea y Aplica
+1. Crea un nuevo componente similar
+2. Integra lo aprendido en tu propia aplicación
+3. Extiende la funcionalidad
+4. Documenta tu código
 
 ---
 
-## 🔗 Recursos Complementarios
-
-- [Angular Property Binding](https://angular.io/guide/property-binding)
-- [Template Syntax Guide](https://angular.io/guide/template-syntax)
-- [Attribute Binding vs Property Binding](https://angular.io/guide/attribute-binding)
-
----
-
-## ⚠️ Limitaciones y Consideraciones
-
-### ❌ Lo que NO puedes hacer
-
-```html
-<!-- ❌ MAL - No puedes asignar valores -->
-<div [propiedad]="x = 5">Error</div>
-
-<!-- ❌ MAL - No puedes usar new -->
-<div [title]="new Date()">Error</div>
-
-<!-- ❌ MAL - Property Binding no funciona con expresiones complejas -->
-<img [src]="if(x > 5) { return url1 } else { return url2 }" />
-```
-
-### ✅ Las soluciones
-
-```typescript
-// Usa métodos en la clase
-calcularUrl(): string {
-  return this.x > 5 ? this.url1 : this.url2;
-}
-```
-
-```html
-<!-- Usa el método en Property Binding -->
-<img [src]="calcularUrl()" />
-```
-
----
-
-## 🎓 Conceptos Aprendidos
-
-✅ Entender qué es Property Binding  
-✅ Usar la sintaxis `[atributo]="propiedad"`  
-✅ Vincular atributos HTML comunes (href, src, disabled)  
-✅ Diferencia entre Property Binding e Interpolación  
-✅ Crear propiedades dinámicas que se reflejan en la vista  
-✅ Usar getters para lógica de Property Binding  
-
----
-
-## 📌 Notas Importantes
-
-- **One-way binding**: Property Binding es unidireccional (clase → HTML)
-- **Detección de cambios**: Angular actualiza automáticamente cuando cambia la propiedad
-- **Rendimiento**: Property Binding es más eficiente que Interpolación para atributos
-- **Tipado**: TypeScript verifica los tipos de las propiedades
-- **Atributos vs Propiedades**: No todos los atributos HTML son propiedades del DOM
-
----
-
-## 🚀 Próximo Paso
-
-Continúa con **T05E05-enlazado-eventos** para aprender a capturar eventos del usuario (clics, inputs, etc.) con **Event Binding**.
-
----
-
-**¡Felicidades!** 🎉 Ya dominas Property Binding, un concepto fundamental en Angular.
+**📝 Nota:** Este ejercicio es parte de la progresión de aprendizaje. Complétalo en orden para mejor comprensión.
