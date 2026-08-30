@@ -57,6 +57,14 @@ Recursos externos para aprender más:
 💡 **Tip:** Nombres de eventos con 'Change': @Output() valueChange = new EventEmitter()
 
 
+## 📚 Recursos en ESPAÑOL
+
+Si prefieres aprender en español, aquí hay opciones:
+
+- [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
+- [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
+- [YouTube - Tutoriales en Español](https://www.youtube.com/results?search_query=angular+tutorial+en+español)
+
 ## 🚀 Cómo Ejecutar
 
 ```bash
