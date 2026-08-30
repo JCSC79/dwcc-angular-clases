@@ -1,54 +1,57 @@
-# 📘 Exercicios-Exercicio-Animacions - Ejercicio: Animaciones
+# 📘 Exercicios-Exercicio-Animacions - Ejercicio Especial: Animaciones
 
 ## 🎯 Objetivo del Ejercicio
 
-Animaciones complejas
+Crear animaciones complejas y transiciones
 
-Aprenderás conceptos fundamentales de Angular aplicados de forma práctica.
+**Tema**: Dominaras animaciones avanzadas
 
 ---
 
 ## 📚 Conceptos Clave
 
-### Concepto Principal
-Este ejercicio enseña los fundamentos y buenas prácticas de ejercicio: animaciones.
+### 1. **Animaciones**
+Concepto fundamental para entender ejercicio especial: animaciones.
 
-### Aplicación Práctica
-Los conceptos aprendidos serán aplicables en proyectos reales y profesionales.
+### 2. **Transiciones**
+Concepto fundamental para entender ejercicio especial: animaciones.
+
+### 3. **Estados**
+Concepto fundamental para entender ejercicio especial: animaciones.
 
 ---
 
 ## 🔍 Desglose del Código
 
-### TypeScript (`src/app/app.component.ts`)
+### TypeScript (`app.component.ts`)
 
-El componente TypeScript contiene:
-- **Decorador @Component**: Configuración del componente
+Los componentes en Angular están formados por:
+- **Decorador @Component**: Configura el selector, template y estilos
 - **Propiedades**: Variables que almacenan datos
-- **Métodos**: Lógica que ejecuta acciones
-- **Constructor**: Inicialización del componente
+- **Métodos**: Funciones que ejecutan lógica
+- **Constructor**: Se ejecuta al crear el componente
 
-### HTML (`src/app/app.component.html`)
+### HTML (`app.component.html`)
 
-La plantilla HTML implementa:
-- Interfaz de usuario
-- Vinculación de datos
-- Captura de eventos
-- Directivas estructurales
+La plantilla HTML es donde:
+- Se muestra la interfaz del usuario
+- Se vinculan datos con el modelo TypeScript
+- Se capturan eventos del usuario
+- Se aplican directivas y pipes
 
-### CSS (`src/app/app.component.css`)
+### CSS (`app.component.css`)
 
-Estilos específicos que:
+Estilos específicos del componente que:
 - Se aplican solo a este componente
-- Mejoran la apariencia visual
 - No contaminan otros componentes
+- Mejoran la apariencia visual
 
 ---
 
 ## 🚀 Cómo Ejecutar
 
 ```bash
-# 1. Cambiar a la rama
+# 1. Ir a la rama
 git checkout Exercicios-Exercicio-Animacions
 
 # 2. Instalar dependencias
@@ -56,68 +59,67 @@ npm install --legacy-peer-deps
 
 # 3. Ejecutar servidor
 ng serve -o
-
-# 4. Acceder a la aplicación
-# El navegador abrirá http://localhost:4200
 ```
+
+**Resultado esperado:**
+El navegador abrirá http://localhost:4200 y podrás ver la aplicación funcionando.
 
 ---
 
 ## 💡 Ejercicios Propuestos
 
 ### Nivel 1: Modificaciones Básicas
+
 1. Cambia los valores de las propiedades
 2. Modifica el HTML para mostrar datos diferentes
 3. Añade nuevas propiedades a la clase
 
 ### Nivel 2: Lógica Interactiva
+
 4. Agrega un método que modifique las propiedades
 5. Crea un evento que ejecute el método
 6. Implementa condicionales en la plantilla
 
 ### Nivel 3: Desafío Avanzado
-7. Combina múltiples conceptos
+
+7. Combina múltiples conceptos del ejercicio
 8. Crea funcionalidades nuevas
 9. Mejora la interfaz visualmente
 
 ---
 
-## 📌 Conceptos Aprendidos
-
-✅ Entender la estructura de componentes Angular
-✅ Trabajar con propiedades y métodos
-✅ Vincular datos con plantillas HTML
-✅ Capturar eventos del usuario
-✅ Aplicar estilos CSS
-✅ Usar directivas y pipes
-
----
-
 ## 🔗 Recursos Complementarios
 
-- [Angular Oficial](https://angular.io)
+- [Angular Documentation](https://angular.io/docs)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 - [MDN Web Docs](https://developer.mozilla.org/)
-- [Angular Style Guide](https://angular.io/guide/styleguide)
 
 ---
 
-## ⚠️ Notas Importantes
+## 🎓 Conceptos Aprendidos
+
+✅ Animaciones
+✅ Transiciones
+✅ Estados
+
+---
+
+## 📌 Notas Importantes
 
 - Angular es un framework basado en componentes
 - Cada componente es independiente y reutilizable
 - TypeScript proporciona seguridad de tipos
-- La detección de cambios es automática
+- La plantilla HTML se actualiza automáticamente
 - Los estilos CSS son locales al componente
 
 ---
 
 ## 🚀 Próximo Paso
 
-Continúa con **Exercicios-ExercicioParametros** para profundizar en los conceptos.
+Continúa con **Exercicios-ExercicioParametros - Ejercicio Especial: Parámetros Dinámicos**
 
 ---
 
-**¡Felicidades!** 🎉 Ya entiendes ejercicio: animaciones, un concepto clave en Angular.
+**¡Felicidades!** 🎉 Ya entiendes ejercicio especial: animaciones, un concepto clave en Angular.
 
 *Última actualización: 2026-08-30 08:21*
