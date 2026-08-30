@@ -1,24 +1,125 @@
-# 📚 Ejercicio de Angular
+# 📘 Exercicios-XanelasModaisv1 - Ejercicio Especial: Diálogos Modales v1
 
-## 🎯 Objetivo del ejercicio
-Este ejercicio te enseña conceptos fundamentales de Angular en aplicación práctica.
+## 🎯 Objetivo del Ejercicio
 
-## 📚 Conceptos clave
-- **Componentes**: Bloques reutilizables de la interfaz
-- **Data Binding**: Sincronización entre datos y vista  
-- **Directivas**: Instrucciones que modifican el comportamiento del DOM
-- **Servicios**: Lógica compartida entre componentes
+Versión 1 de diálogos modales
 
-## 🚀 Cómo ejecutar
-```bash
-npm install
-ng serve
-```
-
-## 📝 Lo que aprendes
-- ✅ Estructura básica de un componente Angular
-- ✅ Cómo funciona el data binding
-- ✅ Interpolación de variables
+**Tema**: Versión básica de diálogos modales
 
 ---
-**Última actualización**: 2026-08-30
+
+## 📚 Conceptos Clave
+
+### 1. **Modal**
+Concepto fundamental para entender ejercicio especial: diálogos modales v1.
+
+### 2. **v1**
+Concepto fundamental para entender ejercicio especial: diálogos modales v1.
+
+### 3. **Implementación**
+Concepto fundamental para entender ejercicio especial: diálogos modales v1.
+
+---
+
+## 🔍 Desglose del Código
+
+### TypeScript (`app.component.ts`)
+
+Los componentes en Angular están formados por:
+- **Decorador @Component**: Configura el selector, template y estilos
+- **Propiedades**: Variables que almacenan datos
+- **Métodos**: Funciones que ejecutan lógica
+- **Constructor**: Se ejecuta al crear el componente
+
+### HTML (`app.component.html`)
+
+La plantilla HTML es donde:
+- Se muestra la interfaz del usuario
+- Se vinculan datos con el modelo TypeScript
+- Se capturan eventos del usuario
+- Se aplican directivas y pipes
+
+### CSS (`app.component.css`)
+
+Estilos específicos del componente que:
+- Se aplican solo a este componente
+- No contaminan otros componentes
+- Mejoran la apariencia visual
+
+---
+
+## 🚀 Cómo Ejecutar
+
+```bash
+# 1. Ir a la rama
+git checkout Exercicios-XanelasModaisv1
+
+# 2. Instalar dependencias
+npm install --legacy-peer-deps
+
+# 3. Ejecutar servidor
+ng serve -o
+```
+
+**Resultado esperado:**
+El navegador abrirá http://localhost:4200 y podrás ver la aplicación funcionando.
+
+---
+
+## 💡 Ejercicios Propuestos
+
+### Nivel 1: Modificaciones Básicas
+
+1. Cambia los valores de las propiedades
+2. Modifica el HTML para mostrar datos diferentes
+3. Añade nuevas propiedades a la clase
+
+### Nivel 2: Lógica Interactiva
+
+4. Agrega un método que modifique las propiedades
+5. Crea un evento que ejecute el método
+6. Implementa condicionales en la plantilla
+
+### Nivel 3: Desafío Avanzado
+
+7. Combina múltiples conceptos del ejercicio
+8. Crea funcionalidades nuevas
+9. Mejora la interfaz visualmente
+
+---
+
+## 🔗 Recursos Complementarios
+
+- [Angular Documentation](https://angular.io/docs)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
+- [MDN Web Docs](https://developer.mozilla.org/)
+
+---
+
+## 🎓 Conceptos Aprendidos
+
+✅ Modal
+✅ v1
+✅ Implementación
+
+---
+
+## 📌 Notas Importantes
+
+- Angular es un framework basado en componentes
+- Cada componente es independiente y reutilizable
+- TypeScript proporciona seguridad de tipos
+- La plantilla HTML se actualiza automáticamente
+- Los estilos CSS son locales al componente
+
+---
+
+## 🚀 Próximo Paso
+
+Continúa con **Exercicios-XanelasModaisv2 - Ejercicio Especial: Diálogos Modales v2**
+
+---
+
+**¡Felicidades!** 🎉 Ya entiendes ejercicio especial: diálogos modales v1, un concepto clave en Angular.
+
+*Última actualización: 2026-08-30 08:22*
