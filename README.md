@@ -1,24 +1,108 @@
-# 📚 Ejercicio de Angular
+# 🎯 FUNDAMENTOS DE TYPESCRIPT
 
-## 🎯 Objetivo del ejercicio
-Este ejercicio te enseña conceptos fundamentales de Angular en aplicación práctica.
+## ¿Qué se usa?
 
-## 📚 Conceptos clave
-- **Componentes**: Bloques reutilizables de la interfaz
-- **Data Binding**: Sincronización entre datos y vista  
-- **Directivas**: Instrucciones que modifican el comportamiento del DOM
-- **Servicios**: Lógica compartida entre componentes
+Este ejercicio enseña:
+- **Variables**
+- **tipos**
+- Patrones y mejores prácticas
 
-## 🚀 Cómo ejecutar
+## ❓ ¿Por qué se usa?
+
+TypeScript permite tipado estático Este concepto es fundamental porque:
+
+1. **Reutilización** - Permite escribir código más limpio y mantenible
+2. **Escalabilidad** - Facilita crecer y extender la aplicación
+3. **Profesionalismo** - Sigue estándares de la industria
+4. **Debugging** - Código más fácil de debuguear y testear
+
+## 💾 Recordar - Sintaxis Clave
+
+| Concepto | Sintaxis | Ejemplo | Memorizar |
+|----------|----------|---------|-----------|
+| Variables | Ver código | app.component.ts | Mirar el src/ |
+| Patrón | Estructura | TypeScript Basics | Practicar |
+
+## 🔗 Conexiones con Otros Conceptos
+
+Este ejercicio se relaciona con:
+- Ejercicios anteriores en progresión pedagógica
+- Conceptos de Angular fundamentales
+- Patrones de TypeScript
+
+Ver **[Mapa de Aprendizaje](../README.md)** para contexto completo.
+
+## 📖 Documentación Oficial
+
+**Documentación recomendada:**
+- [Angular Docs - Conceptos](https://angular.dev/guide)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
+- [MDN Web Docs](https://developer.mozilla.org/)
+
+## 🎥 Ejemplos y Videos
+
+**Recursos en inglés:**
+- [Angular Official Examples](https://angular.dev/examples)
+- [StackBlitz - Ejemplos interactivos](https://stackblitz.com)
+- [W3Schools Angular](https://www.w3schools.com/angular/default.asp)
+
+## 📚 Recursos en ESPAÑOL
+
+Si prefieres aprender en español, aquí hay opciones:
+
+- [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
+- [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
+- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=typescript+basics+en+español)
+
+## ⚠️ Notas Importantes
+
+### ❌ NO hacer:
+- No mezclar lógica con presentación
+- No reutilizar código sin refactorizar
+- No ignorar los errores de TypeScript
+
+### ✅ SÍ hacer:
+- Mantener componentes pequeños y enfocados
+- Usar TypeScript strict mode
+- Escribir código autodocumentado
+
+### 💡 Tips Profesionales:
+- Lee los comentarios en el código fuente
+- Experimenta modificando los valores
+- Prueba casos extremos (vacío, null, undefined)
+
+## 🚀 Cómo Ejecutar
+
 ```bash
-npm install
-ng serve
+# 1. Instalar dependencias
+npm install --legacy-peer-deps
+
+# 2. Servir la aplicación
+ng serve -o
+
+# 3. Ver en http://localhost:4200
 ```
 
-## 📝 Lo que aprendes
-- ✅ Estructura básica de un componente Angular
-- ✅ Cómo funciona el data binding
-- ✅ Interpolación de variables
+## 💡 Ejercicios Propuestos
+
+### Nivel 1: Reproduce y Entiende
+1. Ejecuta el ejercicio y observa el comportamiento
+2. Lee los comentarios en el código fuente
+3. Identifica dónde se usan los conceptos explicados
+4. Responde: ¿Qué hace este código? ¿Por qué se estructura así?
+
+### Nivel 2: Modifica y Experimenta
+1. Cambia valores de prueba (strings, números)
+2. Añade un nuevo campo/propiedad
+3. Modifica el comportamiento de una función
+4. Prueba casos límite (valores especiales, vacíos)
+
+### Nivel 3: Crea y Aplica
+1. Crea un nuevo componente similar
+2. Integra lo aprendido en tu propia aplicación
+3. Extiende la funcionalidad
+4. Documenta tu código
 
 ---
-**Última actualización**: 2026-08-30
+
+**📝 Nota:** Este ejercicio es parte de la progresión de aprendizaje. Complétalo en orden para mejor comprensión.
