@@ -1,3 +1,15 @@
+<!-- Encabezado principal que muestra el título de la aplicación -->
 <h1>{{ title }}</h1>
-<p>Número 1 (inicializado): {{ numero1 }}</p>
-<p>Número 2 (no inicializado): {{ numero2 }}</p>
+
+<!-- Párrafo que demuestra la interpolación de una variable inicializada -->
+<!-- La sintaxis {{ }} permite mostrar el valor de las propiedades de la clase -->
+<p>Número 1 (inicializado en la declaración): {{ numero1 }}</p>
+
+<!-- Párrafo que demuestra la interpolación de una variable no inicializada pero asignada en el constructor -->
+<p>Número 2 (inicializado en el constructor): {{ numero2 }}</p>
+
+<!-- Comentario informativo sobre los tipos en TypeScript -->
+<!-- TypeScript proporciona verificación de tipos en tiempo de compilación, 
+     lo que previene errores antes de que se ejecute el código -->
+<hr>
+<p><strong>Concepto:</strong> Ambas variables son de tipo 'number' y se muestran usando interpolación de Angular.</p>
