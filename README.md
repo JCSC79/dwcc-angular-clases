@@ -1,15 +1,15 @@
-# 🎯 REPASO: FORMULARIOS
+# 🎯 REPASO: ROUTING
 
 ## ¿Qué se usa?
 
 Este ejercicio enseña:
-- **Forms**
-- **validation**
+- **Routes**
+- **navigation**
 - Patrones y mejores prácticas
 
 ## ❓ ¿Por qué se usa?
 
-Consolidar formularios Este concepto es fundamental porque:
+Consolidar routing Este concepto es fundamental porque:
 
 1. **Reutilización** - Permite escribir código más limpio y mantenible
 2. **Escalabilidad** - Facilita crecer y extender la aplicación
@@ -20,8 +20,8 @@ Consolidar formularios Este concepto es fundamental porque:
 
 | Concepto | Sintaxis | Ejemplo | Memorizar |
 |----------|----------|---------|-----------|
-| Forms | Ver código | app.component.ts | Mirar el src/ |
-| Patrón | Estructura | Review Forms | Practicar |
+| Routes | Ver código | app.component.ts | Mirar el src/ |
+| Patrón | Estructura | Review Routing | Practicar |
 
 ## 🔗 Conexiones con Otros Conceptos
 
@@ -52,7 +52,7 @@ Si prefieres aprender en español, aquí hay opciones:
 
 - [Dev.to - Artículos Angular en Español](https://dev.to/search?q=angular)
 - [Stack Overflow en Español - Angular](https://es.stackoverflow.com/questions/tagged/angular)
-- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=review+forms+en+español)
+- [YouTube - Tutoriales Angular en Español](https://www.youtube.com/results?search_query=review+routing+en+español)
 
 ## ⚠️ Notas Importantes
 
