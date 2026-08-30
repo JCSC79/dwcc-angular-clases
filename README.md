@@ -1,24 +1,129 @@
-# 📚 Ejercicio de Angular
+# 📘 T06E11-rutas-simples - Rutas Simples
 
-## 🎯 Objetivo del ejercicio
-Este ejercicio te enseña conceptos fundamentales de Angular en aplicación práctica.
+## 🎯 Objetivo del Ejercicio
 
-## 📚 Conceptos clave
-- **Componentes**: Bloques reutilizables de la interfaz
-- **Data Binding**: Sincronización entre datos y vista  
-- **Directivas**: Instrucciones que modifican el comportamiento del DOM
-- **Servicios**: Lógica compartida entre componentes
+Configurar rutas básicas y navegación entre componentes
 
-## 🚀 Cómo ejecutar
-```bash
-npm install
-ng serve
-```
-
-## 📝 Lo que aprendes
-- ✅ Estructura básica de un componente Angular
-- ✅ Cómo funciona el data binding
-- ✅ Interpolación de variables
+**Tema**: Navegaras entre páginas con routing
 
 ---
-**Última actualización**: 2026-08-30
+
+## 📚 Conceptos Clave
+
+### 1. **Router**
+Concepto fundamental para entender rutas simples.
+
+### 2. **Routes**
+Concepto fundamental para entender rutas simples.
+
+### 3. **RouterLink**
+Concepto fundamental para entender rutas simples.
+
+### 4. **RouterOutlet**
+Concepto fundamental para entender rutas simples.
+
+---
+
+## 🔍 Desglose del Código
+
+### TypeScript (`app.component.ts`)
+
+Los componentes en Angular están formados por:
+- **Decorador @Component**: Configura el selector, template y estilos
+- **Propiedades**: Variables que almacenan datos
+- **Métodos**: Funciones que ejecutan lógica
+- **Constructor**: Se ejecuta al crear el componente
+
+### HTML (`app.component.html`)
+
+La plantilla HTML es donde:
+- Se muestra la interfaz del usuario
+- Se vinculan datos con el modelo TypeScript
+- Se capturan eventos del usuario
+- Se aplican directivas y pipes
+
+### CSS (`app.component.css`)
+
+Estilos específicos del componente que:
+- Se aplican solo a este componente
+- No contaminan otros componentes
+- Mejoran la apariencia visual
+
+---
+
+## 🚀 Cómo Ejecutar
+
+```bash
+# 1. Ir a la rama
+git checkout T06E11-rutas-simples
+
+# 2. Instalar dependencias
+npm install --legacy-peer-deps
+
+# 3. Ejecutar servidor
+ng serve -o
+```
+
+**Resultado esperado:**
+El navegador abrirá http://localhost:4200 y podrás ver la aplicación funcionando.
+
+---
+
+## 💡 Ejercicios Propuestos
+
+### Nivel 1: Modificaciones Básicas
+
+1. Cambia los valores de las propiedades
+2. Modifica el HTML para mostrar datos diferentes
+3. Añade nuevas propiedades a la clase
+
+### Nivel 2: Lógica Interactiva
+
+4. Agrega un método que modifique las propiedades
+5. Crea un evento que ejecute el método
+6. Implementa condicionales en la plantilla
+
+### Nivel 3: Desafío Avanzado
+
+7. Combina múltiples conceptos del ejercicio
+8. Crea funcionalidades nuevas
+9. Mejora la interfaz visualmente
+
+---
+
+## 🔗 Recursos Complementarios
+
+- [Angular Documentation](https://angular.io/docs)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
+- [MDN Web Docs](https://developer.mozilla.org/)
+
+---
+
+## 🎓 Conceptos Aprendidos
+
+✅ Router
+✅ Routes
+✅ RouterLink
+✅ RouterOutlet
+
+---
+
+## 📌 Notas Importantes
+
+- Angular es un framework basado en componentes
+- Cada componente es independiente y reutilizable
+- TypeScript proporciona seguridad de tipos
+- La plantilla HTML se actualiza automáticamente
+- Los estilos CSS son locales al componente
+
+---
+
+## 🚀 Próximo Paso
+
+Continúa con **T06E12-rutas-aninhadas - Rutas Anidadas**
+
+---
+
+**¡Felicidades!** 🎉 Ya entiendes rutas simples, un concepto clave en Angular.
+
+*Última actualización: 2026-08-30 08:19*
