@@ -1,72 +1,37 @@
-# 📘 T06E06 - Servicios
+# 📚 Observables in Services
 
-## 🎯 Objetivo del Ejercicio
+## 🎯 Objetivo
+Aprender sobre **RxJS Observables** en Angular.
 
-Aprender y dominar **Servicios** en Angular.
+## 📚 Conceptos clave
+- **RxJS Observables**
+- **reactive programming**
+- **data streams**
 
-Este ejercicio enseña cómo lógica compartida.
-
----
-
-## 📚 Conceptos Clave
-
-### Servicios
-
-Lógica compartida es fundamental para...
-
----
-
-## 🔍 Desglose del Código
-
-### TypeScript (`app.component.ts`)
-
+## 🔍 Ejemplo clave
 ```typescript
-// Lógica del componente
+Observable emite valores que componentes se suscriben
 ```
 
-### HTML (`app.component.html`)
-
-```html
-<!-- Plantilla HTML -->
-```
-
-### CSS (`app.component.css`)
-
-Los estilos CSS definen la apariencia.
-
----
-
-## 🚀 Cómo Ejecutar
-
+## 🚀 Cómo ejecutar
 ```bash
-git checkout T06E06-servizos-observables
 npm install --legacy-peer-deps
-ng serve -o
+ng serve
 ```
 
----
+## 💡 Ejercicios propuestos
 
-## 💡 Ejercicios Propuestos
+### Nivel 1: Entender el ejemplo
+- Revisa cómo funciona el código
 
-### Nivel 1: Básico
-1. Entender los conceptos y hacer funcionar el código
+### Nivel 2: Modificar
+- Cambia valores, agrega propiedades
 
-### Nivel 2: Intermedio
-2. Modificar el código para agregar funcionalidad
+### Nivel 3: Crear
+- Implementa tu propia versión
 
-### Nivel 3: Avanzado
-3. Crear una variante más compleja
-
----
-
-## 🎓 Conceptos Aprendidos
-
-✅ Servicios
-✅ Aplicación práctica
-✅ Mejores prácticas
+## 🔗 Recursos
+- [Angular Docs](https://angular.dev/docs)
 
 ---
-
-**¡Felicidades!** 🎉 Has completado T06E06
-
-*Última actualización: 2026-08-30*
+Ejercicio de DWCC - Angular
